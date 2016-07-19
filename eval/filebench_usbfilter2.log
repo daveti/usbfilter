@@ -1,0 +1,523 @@
+# 1K
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3158: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3158: 2.915: File-server Version 3.0 personality successfully loaded
+ 3158: 2.915: Usage: set $dir=<dir>
+ 3158: 2.915:        set $meanfilesize=<size>     defaults to 131072
+ 3158: 2.915:        set $nfiles=<value>      defaults to 10000
+ 3158: 2.915:        set $nthreads=<value>    defaults to 50
+ 3158: 2.915:        set $meanappendsize=<value>  defaults to 16384
+ 3158: 2.915:        set $iosize=<size>  defaults to 1048576
+ 3158: 2.915:        set $meandirwidth=<size> defaults to 20
+ 3158: 2.915:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=1024
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3158: 39.770: Creating/pre-allocating files and filesets
+ 3158: 39.770: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 0.016MB
+ 3158: 39.775: Removed any existing fileset bigfileset in 1 seconds
+ 3158: 39.775: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3158: 39.775: Creating fileset bigfileset...
+ 3158: 41.572: Preallocated 18 of 20 of fileset bigfileset in 2 seconds
+ 3158: 41.572: waiting for fileset pre-allocation to finish
+ 3163: 41.572: Starting 1 filereader instances
+ 3164: 41.573: Starting 1 filereaderthread threads
+ 3158: 42.573: Running...
+ 3158: 162.582: Run took 120 seconds...
+ 3158: 162.582: Per-Operation Breakdown
+statfile1            408ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+deletefile1          408ops        3ops/s   0.0mb/s      0.1ms/op      123us/op-cpu [0ms - 0ms]
+closefile3           408ops        3ops/s   0.0mb/s     98.6ms/op      123us/op-cpu [0ms - 99ms]
+readfile1            408ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+openfile2            408ops        3ops/s   0.0mb/s      0.0ms/op       74us/op-cpu [0ms - 0ms]
+closefile2           408ops        3ops/s   0.0mb/s     96.9ms/op      172us/op-cpu [0ms - 99ms]
+appendfilerand1      408ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+openfile1            408ops        3ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           408ops        3ops/s   0.0mb/s     97.8ms/op      147us/op-cpu [0ms - 99ms]
+wrtfile1             409ops        3ops/s   0.0mb/s      0.1ms/op       49us/op-cpu [0ms - 5ms]
+createfile1          409ops        3ops/s   0.0mb/s      0.1ms/op       24us/op-cpu [0ms - 0ms]
+ 3158: 162.582: IO Summary:  4490 ops, 37.414 ops/s, (3/7 r/w),   0.0mb/s,   1249us cpu/op,  97.7ms latency
+ 3158: 162.582: Shutting down processes
+root@arpsec04:~# 
+
+
+
+# 10K
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3171: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3171: 3.131: File-server Version 3.0 personality successfully loaded
+ 3171: 3.131: Usage: set $dir=<dir>
+ 3171: 3.131:        set $meanfilesize=<size>     defaults to 131072
+ 3171: 3.131:        set $nfiles=<value>      defaults to 10000
+ 3171: 3.131:        set $nthreads=<value>    defaults to 50
+ 3171: 3.131:        set $meanappendsize=<value>  defaults to 16384
+ 3171: 3.131:        set $iosize=<size>  defaults to 1048576
+ 3171: 3.131:        set $meandirwidth=<size> defaults to 20
+ 3171: 3.131:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=10240
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3171: 43.858: Creating/pre-allocating files and filesets
+ 3171: 43.859: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 0.159MB
+ 3171: 43.863: Removed any existing fileset bigfileset in 1 seconds
+ 3171: 43.863: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3171: 43.864: Creating fileset bigfileset...
+ 3171: 45.661: Preallocated 18 of 20 of fileset bigfileset in 2 seconds
+ 3171: 45.661: waiting for fileset pre-allocation to finish
+ 3177: 45.661: Starting 1 filereader instances
+ 3178: 45.662: Starting 1 filereaderthread threads
+ 3171: 46.662: Running...
+ 3171: 166.671: Run took 120 seconds...
+ 3171: 166.671: Per-Operation Breakdown
+statfile1            406ops        3ops/s   0.0mb/s      0.0ms/op       74us/op-cpu [0ms - 0ms]
+deletefile1          406ops        3ops/s   0.0mb/s      0.1ms/op       99us/op-cpu [0ms - 0ms]
+closefile3           406ops        3ops/s   0.0mb/s     97.9ms/op      123us/op-cpu [0ms - 99ms]
+readfile1            406ops        3ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile2            406ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+closefile2           406ops        3ops/s   0.0mb/s     98.3ms/op      172us/op-cpu [0ms - 99ms]
+appendfilerand1      406ops        3ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile1            406ops        3ops/s   0.0mb/s      0.0ms/op       49us/op-cpu [0ms - 0ms]
+closefile1           406ops        3ops/s   0.0mb/s     98.4ms/op      172us/op-cpu [0ms - 100ms]
+wrtfile1             407ops        3ops/s   0.0mb/s      0.1ms/op       74us/op-cpu [0ms - 7ms]
+createfile1          407ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+ 3171: 166.671: IO Summary:  4468 ops, 37.231 ops/s, (3/7 r/w),   0.1mb/s,    664us cpu/op,  98.2ms latency
+ 3171: 166.671: Shutting down processes
+root@arpsec04:~# 
+
+
+
+# 100K
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3196: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3196: 4.378: File-server Version 3.0 personality successfully loaded
+ 3196: 4.378: Usage: set $dir=<dir>
+ 3196: 4.378:        set $meanfilesize=<size>     defaults to 131072
+ 3196: 4.378:        set $nfiles=<value>      defaults to 10000
+ 3196: 4.378:        set $nthreads=<value>    defaults to 50
+ 3196: 4.378:        set $meanappendsize=<value>  defaults to 16384
+ 3196: 4.378:        set $iosize=<size>  defaults to 1048576
+ 3196: 4.378:        set $meandirwidth=<size> defaults to 20
+ 3196: 4.378:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=102400
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3196: 69.697: Creating/pre-allocating files and filesets
+ 3196: 69.697: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 1.593MB
+ 3196: 69.703: Removed any existing fileset bigfileset in 1 seconds
+ 3196: 69.703: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3196: 69.703: Creating fileset bigfileset...
+ 3196: 71.501: Preallocated 18 of 20 of fileset bigfileset in 2 seconds
+ 3196: 71.501: waiting for fileset pre-allocation to finish
+ 3201: 71.502: Starting 1 filereader instances
+ 3202: 71.503: Starting 1 filereaderthread threads
+ 3196: 72.503: Running...
+ 3196: 192.512: Run took 120 seconds...
+ 3196: 192.512: Per-Operation Breakdown
+statfile1            400ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+deletefile1          400ops        3ops/s   0.0mb/s      0.1ms/op       75us/op-cpu [0ms - 0ms]
+closefile3           400ops        3ops/s   0.0mb/s     97.6ms/op       75us/op-cpu [0ms - 99ms]
+readfile1            400ops        3ops/s   0.2mb/s      0.0ms/op       50us/op-cpu [0ms - 0ms]
+openfile2            400ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+closefile2           400ops        3ops/s   0.0mb/s     98.9ms/op      200us/op-cpu [0ms - 99ms]
+appendfilerand1      401ops        3ops/s   0.0mb/s      0.2ms/op       50us/op-cpu [0ms - 55ms]
+openfile1            401ops        3ops/s   0.0mb/s      0.0ms/op       25us/op-cpu [0ms - 0ms]
+closefile1           401ops        3ops/s   0.0mb/s     97.9ms/op      150us/op-cpu [0ms - 99ms]
+wrtfile1             401ops        3ops/s   0.3mb/s      4.2ms/op      125us/op-cpu [0ms - 844ms]
+createfile1          401ops        3ops/s   0.0mb/s      0.0ms/op      100us/op-cpu [0ms - 0ms]
+ 3196: 192.512: IO Summary:  4405 ops, 36.706 ops/s, (3/7 r/w),   0.5mb/s,    507us cpu/op,  99.6ms latency
+ 3196: 192.512: Shutting down processes
+root@arpsec04:~# 
+
+
+
+# 1M
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3216: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3216: 6.805: File-server Version 3.0 personality successfully loaded
+ 3216: 6.805: Usage: set $dir=<dir>
+ 3216: 6.806:        set $meanfilesize=<size>     defaults to 131072
+ 3216: 6.806:        set $nfiles=<value>      defaults to 10000
+ 3216: 6.806:        set $nthreads=<value>    defaults to 50
+ 3216: 6.806:        set $meanappendsize=<value>  defaults to 16384
+ 3216: 6.806:        set $iosize=<size>  defaults to 1048576
+ 3216: 6.806:        set $meandirwidth=<size> defaults to 20
+ 3216: 6.806:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=1024000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3216: 71.733: Creating/pre-allocating files and filesets
+ 3216: 71.733: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 15.927MB
+ 3216: 71.738: Removed any existing fileset bigfileset in 1 seconds
+ 3216: 71.738: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3216: 71.739: Creating fileset bigfileset...
+ 3216: 73.963: Preallocated 18 of 20 of fileset bigfileset in 3 seconds
+ 3216: 73.963: waiting for fileset pre-allocation to finish
+ 3221: 73.963: Starting 1 filereader instances
+ 3222: 73.964: Starting 1 filereaderthread threads
+ 3216: 74.964: Running...
+ 3216: 194.973: Run took 120 seconds...
+ 3216: 194.973: Per-Operation Breakdown
+statfile1            379ops        3ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          379ops        3ops/s   0.0mb/s      0.5ms/op      686us/op-cpu [0ms - 1ms]
+closefile3           379ops        3ops/s   0.0mb/s     98.9ms/op       53us/op-cpu [0ms - 100ms]
+readfile1            380ops        3ops/s   1.8mb/s      0.1ms/op      105us/op-cpu [0ms - 0ms]
+openfile2            380ops        3ops/s   0.0mb/s      0.0ms/op       26us/op-cpu [0ms - 0ms]
+closefile2           380ops        3ops/s   0.0mb/s     99.3ms/op       26us/op-cpu [0ms - 99ms]
+appendfilerand1      380ops        3ops/s   0.0mb/s      0.4ms/op       53us/op-cpu [0ms - 89ms]
+openfile1            380ops        3ops/s   0.0mb/s      0.0ms/op       53us/op-cpu [0ms - 0ms]
+closefile1           380ops        3ops/s   0.0mb/s     98.0ms/op      184us/op-cpu [10ms - 100ms]
+wrtfile1             380ops        3ops/s   3.0mb/s     18.0ms/op     1211us/op-cpu [0ms - 1649ms]
+createfile1          380ops        3ops/s   0.0mb/s      0.1ms/op      105us/op-cpu [0ms - 0ms]
+ 3216: 194.974: IO Summary:  4177 ops, 34.806 ops/s, (3/6 r/w),   4.8mb/s,   2579us cpu/op, 105.0ms latency
+ 3216: 194.974: Shutting down processes
+root@arpsec04:~# 
+
+
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3156: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3156: 3.481: File-server Version 3.0 personality successfully loaded
+ 3156: 3.481: Usage: set $dir=<dir>
+ 3156: 3.481:        set $meanfilesize=<size>     defaults to 131072
+ 3156: 3.481:        set $nfiles=<value>      defaults to 10000
+ 3156: 3.481:        set $nthreads=<value>    defaults to 50
+ 3156: 3.481:        set $meanappendsize=<value>  defaults to 16384
+ 3156: 3.481:        set $iosize=<size>  defaults to 1048576
+ 3156: 3.481:        set $meandirwidth=<size> defaults to 20
+ 3156: 3.481:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=1024000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3156: 74.724: Creating/pre-allocating files and filesets
+ 3156: 74.728: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 15.927MB
+ 3156: 75.646: Removed any existing fileset bigfileset in 1 seconds
+ 3156: 75.646: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3156: 75.646: Creating fileset bigfileset...
+ 3156: 78.122: Preallocated 18 of 20 of fileset bigfileset in 3 seconds
+ 3156: 78.122: waiting for fileset pre-allocation to finish
+ 3164: 78.122: Starting 1 filereader instances
+ 3165: 78.123: Starting 1 filereaderthread threads
+ 3156: 79.123: Running...
+ 3156: 199.133: Run took 120 seconds...
+ 3156: 199.133: Per-Operation Breakdown
+statfile1            375ops        3ops/s   0.0mb/s      0.0ms/op       53us/op-cpu [0ms - 0ms]
+deletefile1          375ops        3ops/s   0.0mb/s      0.5ms/op      613us/op-cpu [0ms - 1ms]
+closefile3           375ops        3ops/s   0.0mb/s     98.8ms/op      133us/op-cpu [0ms - 99ms]
+readfile1            375ops        3ops/s   1.8mb/s      0.1ms/op      133us/op-cpu [0ms - 0ms]
+openfile2            375ops        3ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile2           375ops        3ops/s   0.0mb/s     99.1ms/op      160us/op-cpu [16ms - 99ms]
+appendfilerand1      375ops        3ops/s   0.0mb/s      3.6ms/op        0us/op-cpu [0ms - 1228ms]
+openfile1            375ops        3ops/s   0.0mb/s      0.0ms/op       53us/op-cpu [0ms - 0ms]
+closefile1           375ops        3ops/s   0.0mb/s     98.3ms/op      107us/op-cpu [55ms - 100ms]
+wrtfile1             376ops        3ops/s   3.0mb/s     18.7ms/op     1277us/op-cpu [0ms - 1904ms]
+createfile1          376ops        3ops/s   0.0mb/s      0.0ms/op       53us/op-cpu [0ms - 0ms]
+ 3156: 199.133: IO Summary:  4127 ops, 34.389 ops/s, (3/6 r/w),   4.8mb/s,    462us cpu/op, 106.3ms latency
+ 3156: 199.133: Shutting down processes
+root@arpsec04:~# 
+
+
+
+# 10M
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3173: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3173: 2.385: File-server Version 3.0 personality successfully loaded
+ 3173: 2.385: Usage: set $dir=<dir>
+ 3173: 2.385:        set $meanfilesize=<size>     defaults to 131072
+ 3173: 2.385:        set $nfiles=<value>      defaults to 10000
+ 3173: 2.385:        set $nthreads=<value>    defaults to 50
+ 3173: 2.385:        set $meanappendsize=<value>  defaults to 16384
+ 3173: 2.385:        set $iosize=<size>  defaults to 1048576
+ 3173: 2.385:        set $meandirwidth=<size> defaults to 20
+ 3173: 2.385:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=10240000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3173: 44.752: Creating/pre-allocating files and filesets
+ 3173: 44.753: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 159.267MB
+ 3173: 44.762: Removed any existing fileset bigfileset in 1 seconds
+ 3173: 44.763: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3173: 44.856: Creating fileset bigfileset...
+ 3173: 70.184: Preallocated 18 of 20 of fileset bigfileset in 26 seconds
+ 3173: 70.184: waiting for fileset pre-allocation to finish
+ 3179: 70.184: Starting 1 filereader instances
+ 3180: 70.185: Starting 1 filereaderthread threads
+ 3173: 71.185: Running...
+ 3173: 191.196: Run took 120 seconds...
+ 3173: 191.196: Per-Operation Breakdown
+statfile1            46ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          46ops        0ops/s   0.0mb/s      5.9ms/op     6304us/op-cpu [0ms - 53ms]
+closefile3           46ops        0ops/s   0.0mb/s     97.0ms/op      217us/op-cpu [22ms - 99ms]
+readfile1            46ops        0ops/s   2.2mb/s      1.1ms/op     1739us/op-cpu [0ms - 2ms]
+openfile2            46ops        0ops/s   0.0mb/s      0.0ms/op      217us/op-cpu [0ms - 0ms]
+closefile2           46ops        0ops/s   0.0mb/s    250.4ms/op        0us/op-cpu [97ms - 2023ms]
+appendfilerand1      46ops        0ops/s   0.0mb/s      6.7ms/op      217us/op-cpu [0ms - 305ms]
+openfile1            46ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           46ops        0ops/s   0.0mb/s    807.6ms/op      435us/op-cpu [96ms - 5081ms]
+wrtfile1             46ops        0ops/s   3.6mb/s   1385.9ms/op     5652us/op-cpu [287ms - 3771ms]
+createfile1          47ops        0ops/s   0.0mb/s      0.1ms/op      213us/op-cpu [0ms - 0ms]
+ 3173: 191.196: IO Summary:   507 ops, 4.225 ops/s, (0/1 r/w),   5.8mb/s,   5580us cpu/op, 851.5ms latency
+ 3173: 191.196: Shutting down processes
+root@arpsec04:~# 
+
+
+# 100M
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3189: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3189: 3.341: File-server Version 3.0 personality successfully loaded
+ 3189: 3.341: Usage: set $dir=<dir>
+ 3189: 3.341:        set $meanfilesize=<size>     defaults to 131072
+ 3189: 3.341:        set $nfiles=<value>      defaults to 10000
+ 3189: 3.341:        set $nthreads=<value>    defaults to 50
+ 3189: 3.341:        set $meanappendsize=<value>  defaults to 16384
+ 3189: 3.341:        set $iosize=<size>  defaults to 1048576
+ 3189: 3.341:        set $meandirwidth=<size> defaults to 20
+ 3189: 3.341:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=102400000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3189: 52.132: Creating/pre-allocating files and filesets
+ 3189: 52.132: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 1592.672MB
+ 3189: 52.175: Removed any existing fileset bigfileset in 1 seconds
+ 3189: 52.175: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3189: 52.175: Creating fileset bigfileset...
+ 3189: 373.602: Preallocated 18 of 20 of fileset bigfileset in 322 seconds
+ 3189: 373.602: waiting for fileset pre-allocation to finish
+ 3201: 373.602: Starting 1 filereader instances
+ 3202: 373.607: Starting 1 filereaderthread threads
+ 3189: 374.607: Running...
+ 3189: 494.617: Run took 120 seconds...
+ 3189: 494.617: Per-Operation Breakdown
+statfile1            5ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          5ops        0ops/s   0.0mb/s     48.3ms/op    28000us/op-cpu [15ms - 108ms]
+closefile3           5ops        0ops/s   0.0mb/s     82.2ms/op     2000us/op-cpu [18ms - 99ms]
+readfile1            5ops        0ops/s   2.4mb/s      9.8ms/op    10000us/op-cpu [4ms - 14ms]
+openfile2            5ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile2           5ops        0ops/s   0.0mb/s    277.4ms/op        0us/op-cpu [12ms - 659ms]
+appendfilerand1      5ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile1            5ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           5ops        0ops/s   0.0mb/s  10663.9ms/op     8000us/op-cpu [52ms - 31280ms]
+wrtfile1             6ops        0ops/s   5.0mb/s   3077.7ms/op    60000us/op-cpu [1523ms - 4415ms]
+createfile1          6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+ 3189: 494.617: IO Summary:    57 ops, 0.475 ops/s, (0/0 r/w),   7.4mb/s, 178750us cpu/op, 4617.2ms latency
+ 3189: 494.617: Shutting down processes
+root@arpsec04:~# 
+
+
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3283: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3283: 3.464: File-server Version 3.0 personality successfully loaded
+ 3283: 3.464: Usage: set $dir=<dir>
+ 3283: 3.464:        set $meanfilesize=<size>     defaults to 131072
+ 3283: 3.464:        set $nfiles=<value>      defaults to 10000
+ 3283: 3.464:        set $nthreads=<value>    defaults to 50
+ 3283: 3.464:        set $meanappendsize=<value>  defaults to 16384
+ 3283: 3.464:        set $iosize=<size>  defaults to 1048576
+ 3283: 3.465:        set $meandirwidth=<size> defaults to 20
+ 3283: 3.465:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=102400000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3283: 50.272: Creating/pre-allocating files and filesets
+ 3283: 50.272: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 1592.672MB
+ 3283: 50.675: Removed any existing fileset bigfileset in 1 seconds
+ 3283: 50.675: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3283: 50.676: Creating fileset bigfileset...
+ 3283: 385.691: Preallocated 18 of 20 of fileset bigfileset in 336 seconds
+ 3283: 385.691: waiting for fileset pre-allocation to finish
+ 3298: 385.691: Starting 1 filereader instances
+ 3299: 385.692: Starting 1 filereaderthread threads
+ 3283: 386.692: Running...
+ 3283: 506.702: Run took 120 seconds...
+ 3283: 506.703: Per-Operation Breakdown
+statfile1            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          6ops        0ops/s   0.0mb/s     61.4ms/op    26667us/op-cpu [9ms - 222ms]
+closefile3           6ops        0ops/s   0.0mb/s     83.0ms/op        0us/op-cpu [7ms - 99ms]
+readfile1            6ops        0ops/s   4.7mb/s     15.1ms/op    15000us/op-cpu [6ms - 38ms]
+openfile2            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile2           6ops        0ops/s   0.0mb/s    532.8ms/op        0us/op-cpu [99ms - 2258ms]
+appendfilerand1      6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile1            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           6ops        0ops/s   0.0mb/s  13458.9ms/op    13333us/op-cpu [4705ms - 37094ms]
+wrtfile1             7ops        0ops/s   4.4mb/s   4396.0ms/op    44286us/op-cpu [2945ms - 6189ms]
+createfile1          7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+ 3283: 506.703: IO Summary:    68 ops, 0.567 ops/s, (0/0 r/w),   9.1mb/s,  44211us cpu/op, 6088.4ms latency
+ 3283: 506.703: Shutting down processes
+root@arpsec04:~# 
+
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+IMPORTANT: Virtual address space randomization is enabled on this machine!
+It is highly recommended to disable randomization to provide stable Filebench runs.
+Echo 0 to /proc/sys/kernel/randomize_va_space file to disable the randomization.
+ 3158: 0.000: Allocated 170MB of shared memory
+filebench> exit
+root@arpsec04:~# echo 0 >/proc/sys/kernel/randomize_va_space
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3160: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3160: 3.103: File-server Version 3.0 personality successfully loaded
+ 3160: 3.103: Usage: set $dir=<dir>
+ 3160: 3.103:        set $meanfilesize=<size>     defaults to 131072
+ 3160: 3.103:        set $nfiles=<value>      defaults to 10000
+ 3160: 3.103:        set $nthreads=<value>    defaults to 50
+ 3160: 3.103:        set $meanappendsize=<value>  defaults to 16384
+ 3160: 3.103:        set $iosize=<size>  defaults to 1048576
+ 3160: 3.103:        set $meandirwidth=<size> defaults to 20
+ 3160: 3.103:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=102400000
+filebench> set $nfiles=1
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3160: 60.328: Creating/pre-allocating files and filesets
+ 3160: 60.332: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 1592.672MB
+ 3160: 60.342: Removed any existing fileset bigfileset in 1 seconds
+ 3160: 60.342: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3160: 60.342: Creating fileset bigfileset...
+ 3160: 381.422: Preallocated 18 of 20 of fileset bigfileset in 322 seconds
+ 3160: 381.422: waiting for fileset pre-allocation to finish
+ 3179: 381.422: Starting 1 filereader instances
+ 3180: 381.423: Starting 1 filereaderthread threads
+ 3160: 382.423: Running...
+ 3160: 502.432: Run took 120 seconds...
+ 3160: 502.433: Per-Operation Breakdown
+statfile1            7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          7ops        0ops/s   0.0mb/s     20.1ms/op    18571us/op-cpu [11ms - 43ms]
+closefile3           7ops        0ops/s   0.0mb/s     98.7ms/op        0us/op-cpu [97ms - 99ms]
+readfile1            7ops        0ops/s   5.5mb/s     15.9ms/op    17143us/op-cpu [8ms - 36ms]
+openfile2            7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile2           7ops        0ops/s   0.0mb/s    350.0ms/op        0us/op-cpu [99ms - 787ms]
+appendfilerand1      7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile1            7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           7ops        0ops/s   0.0mb/s  10720.4ms/op     5714us/op-cpu [4228ms - 26141ms]
+wrtfile1             8ops        0ops/s   4.9mb/s   4597.3ms/op    46250us/op-cpu [2750ms - 6144ms]
+createfile1          8ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+ 3160: 502.433: IO Summary:    79 ops, 0.658 ops/s, (0/0 r/w),  10.4mb/s, 121364us cpu/op, 5237.1ms latency
+ 3160: 502.433: Shutting down processes
+root@arpsec04:~# 
+root@arpsec04:~# 
+root@arpsec04:~# 
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3189: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3189: 4.187: File-server Version 3.0 personality successfully loaded
+ 3189: 4.187: Usage: set $dir=<dir>
+ 3189: 4.187:        set $meanfilesize=<size>     defaults to 131072
+ 3189: 4.187:        set $nfiles=<value>      defaults to 10000
+ 3189: 4.187:        set $nthreads=<value>    defaults to 50
+ 3189: 4.187:        set $meanappendsize=<value>  defaults to 16384
+ 3189: 4.187:        set $iosize=<size>  defaults to 1048576
+ 3189: 4.187:        set $meandirwidth=<size> defaults to 20
+ 3189: 4.187:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=102400000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3189: 46.618: Creating/pre-allocating files and filesets
+ 3189: 46.618: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 1592.672MB
+ 3189: 47.020: Removed any existing fileset bigfileset in 1 seconds
+ 3189: 47.020: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3189: 47.021: Creating fileset bigfileset...
+ 3189: 383.929: Preallocated 18 of 20 of fileset bigfileset in 337 seconds
+ 3189: 383.929: waiting for fileset pre-allocation to finish
+ 3202: 383.929: Starting 1 filereader instances
+ 3203: 383.930: Starting 1 filereaderthread threads
+ 3189: 384.930: Running...
+ 3189: 504.940: Run took 120 seconds...
+ 3189: 504.940: Per-Operation Breakdown
+statfile1            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          6ops        0ops/s   0.0mb/s     27.0ms/op    30000us/op-cpu [13ms - 76ms]
+closefile3           6ops        0ops/s   0.0mb/s     98.6ms/op        0us/op-cpu [97ms - 99ms]
+readfile1            6ops        0ops/s   2.8mb/s      9.9ms/op    10000us/op-cpu [4ms - 17ms]
+openfile2            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile2           6ops        0ops/s   0.0mb/s    276.4ms/op        0us/op-cpu [99ms - 691ms]
+appendfilerand1      6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile1            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           6ops        0ops/s   0.0mb/s   8800.3ms/op     5000us/op-cpu [4676ms - 12810ms]
+wrtfile1             7ops        0ops/s   5.0mb/s   3474.6ms/op    50000us/op-cpu [2135ms - 5023ms]
+createfile1          7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+ 3189: 504.940: IO Summary:    68 ops, 0.567 ops/s, (0/0 r/w),   7.8mb/s,  53684us cpu/op, 4189.2ms latency
+ 3189: 504.940: Shutting down processes
+root@arpsec04:~# 
+
+
+root@arpsec04:~# filebench
+Filebench Version 1.4.9.1
+ 3230: 0.000: Allocated 170MB of shared memory
+filebench> load fileserver
+ 3230: 2.805: File-server Version 3.0 personality successfully loaded
+ 3230: 2.805: Usage: set $dir=<dir>
+ 3230: 2.806:        set $meanfilesize=<size>     defaults to 131072
+ 3230: 2.806:        set $nfiles=<value>      defaults to 10000
+ 3230: 2.806:        set $nthreads=<value>    defaults to 50
+ 3230: 2.806:        set $meanappendsize=<value>  defaults to 16384
+ 3230: 2.806:        set $iosize=<size>  defaults to 1048576
+ 3230: 2.806:        set $meandirwidth=<size> defaults to 20
+ 3230: 2.806:        run runtime (e.g. run 60)
+filebench> set $dir=/media/daveti/E7A1-CD20
+filebench> set $meanfilesize=102400000
+filebench> set $nfiles=20
+filebench> set $nthreads=1
+filebench> run 120
+ 3230: 44.549: Creating/pre-allocating files and filesets
+ 3230: 44.549: Fileset bigfileset: 20 files, 0 leafdirs, avg dir width = 20, avg dir depth = 1.0, 1592.672MB
+ 3230: 44.950: Removed any existing fileset bigfileset in 1 seconds
+ 3230: 44.950: making tree for filset /media/daveti/E7A1-CD20/bigfileset
+ 3230: 44.950: Creating fileset bigfileset...
+ 3230: 409.298: Preallocated 18 of 20 of fileset bigfileset in 365 seconds
+ 3230: 409.298: waiting for fileset pre-allocation to finish
+ 3246: 409.298: Starting 1 filereader instances
+ 3247: 409.299: Starting 1 filereaderthread threads
+ 3230: 410.299: Running...
+ 3230: 530.309: Run took 120 seconds...
+ 3230: 530.309: Per-Operation Breakdown
+statfile1            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+deletefile1          6ops        0ops/s   0.0mb/s    407.7ms/op    28333us/op-cpu [13ms - 2312ms]
+closefile3           6ops        0ops/s   0.0mb/s     98.8ms/op        0us/op-cpu [97ms - 99ms]
+readfile1            6ops        0ops/s   5.0mb/s     17.6ms/op    16667us/op-cpu [8ms - 43ms]
+openfile2            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile2           6ops        0ops/s   0.0mb/s    162.4ms/op     1667us/op-cpu [99ms - 475ms]
+appendfilerand1      6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+openfile1            6ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+closefile1           6ops        0ops/s   0.0mb/s  12647.0ms/op     8333us/op-cpu [5613ms - 38924ms]
+wrtfile1             7ops        0ops/s   4.1mb/s   4085.6ms/op    41429us/op-cpu [2194ms - 7585ms]
+createfile1          7ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+ 3230: 530.309: IO Summary:    68 ops, 0.567 ops/s, (0/0 r/w),   9.1mb/s,  69474us cpu/op, 5715.8ms latency
+ 3230: 530.309: Shutting down processes
+root@arpsec04:~# 
+

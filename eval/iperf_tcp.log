@@ -1,0 +1,65 @@
+# Ubuntu
+
+root@arpsec04:~# iperf -s -i2
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.8.152 port 5001 connected with 10.137.22.83 port 59815
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0- 2.0 sec  1.06 MBytes  4.45 Mbits/sec
+[  4]  2.0- 4.0 sec   982 KBytes  4.02 Mbits/sec
+[  4]  4.0- 6.0 sec   896 KBytes  3.67 Mbits/sec
+[  4]  6.0- 8.0 sec   779 KBytes  3.19 Mbits/sec
+[  4]  8.0-10.0 sec   993 KBytes  4.07 Mbits/sec
+[  4] 10.0-12.0 sec   570 KBytes  2.33 Mbits/sec
+[  4] 12.0-14.0 sec   527 KBytes  2.16 Mbits/sec
+[  4] 14.0-16.0 sec   534 KBytes  2.19 Mbits/sec
+[  4] 16.0-18.0 sec   543 KBytes  2.22 Mbits/sec
+[  4] 18.0-20.0 sec   501 KBytes  2.05 Mbits/sec
+[  4]  0.0-20.4 sec  7.38 MBytes  3.03 Mbits/sec
+^Croot@arpsec04:~# 
+
+
+# usbfilter
+
+root@arpsec04:~# iperf -s -i2
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.8.152 port 5001 connected with 10.137.22.83 port 59685
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0- 2.0 sec   546 KBytes  2.24 Mbits/sec
+[  4]  2.0- 4.0 sec  1.00 MBytes  4.20 Mbits/sec
+[  4]  4.0- 6.0 sec  1.13 MBytes  4.74 Mbits/sec
+[  4]  6.0- 8.0 sec   669 KBytes  2.74 Mbits/sec
+[  4]  8.0-10.0 sec   498 KBytes  2.04 Mbits/sec
+[  4] 10.0-12.0 sec   679 KBytes  2.78 Mbits/sec
+[  4] 12.0-14.0 sec   731 KBytes  2.99 Mbits/sec
+[  4] 14.0-16.0 sec   601 KBytes  2.46 Mbits/sec
+[  4] 16.0-18.0 sec   587 KBytes  2.40 Mbits/sec
+[  4] 18.0-20.0 sec   487 KBytes  2.00 Mbits/sec
+[  4]  0.0-20.2 sec  6.88 MBytes  2.85 Mbits/sec
+^Croot@arpsec04:~# 
+
+root@arpsec04:~# iperf -s -i2
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.8.152 port 5001 connected with 10.137.22.83 port 59772
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0- 2.0 sec  1.00 MBytes  4.21 Mbits/sec
+[  4]  2.0- 4.0 sec  1.01 MBytes  4.24 Mbits/sec
+[  4]  4.0- 6.0 sec  1.03 MBytes  4.32 Mbits/sec
+[  4]  6.0- 8.0 sec   955 KBytes  3.91 Mbits/sec
+[  4]  8.0-10.0 sec   649 KBytes  2.66 Mbits/sec
+[  4] 10.0-12.0 sec   600 KBytes  2.46 Mbits/sec
+[  4] 12.0-14.0 sec   549 KBytes  2.25 Mbits/sec
+[  4] 14.0-16.0 sec   704 KBytes  2.89 Mbits/sec
+[  4] 16.0-18.0 sec   640 KBytes  2.62 Mbits/sec
+[  4] 18.0-20.0 sec   591 KBytes  2.42 Mbits/sec
+[  4]  0.0-20.4 sec  7.75 MBytes  3.18 Mbits/sec
+^Croot@arpsec04:~# 
+

@@ -1,0 +1,2501 @@
+============Scale Testing==============
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2923]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [207] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [4869] us
+==========test 1===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2927]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [297] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6117] us
+==========test 2===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2931]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6099] us
+==========test 3===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2935]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [288] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6758] us
+==========test 4===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2939]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5277] us
+==========test 5===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2943]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [291] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6758] us
+==========test 6===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2948]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6081] us
+==========test 7===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2952]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5218] us
+==========test 8===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2956]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6119] us
+==========test 9===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2960]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [297] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6114] us
+==========test 10===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2964]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5441] us
+==========test 11===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2968]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6089] us
+==========test 12===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2972]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6151] us
+==========test 13===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2976]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [4918] us
+==========test 14===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2980]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6083] us
+==========test 15===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2984]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6071] us
+==========test 16===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2988]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5338] us
+==========test 17===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2992]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [297] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6163] us
+==========test 18===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [2996]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6131] us
+==========test 19===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3000]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5648] us
+==========test 20===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3005]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6108] us
+==========test 21===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3009]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6074] us
+==========test 22===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3013]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6075] us
+==========test 23===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3017]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6080] us
+==========test 24===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3021]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [318] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6130] us
+==========test 25===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3025]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5683] us
+==========test 26===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3029]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6116] us
+==========test 27===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3033]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6149] us
+==========test 28===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3037]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [132] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5415] us
+==========test 29===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3041]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6102] us
+==========test 30===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3045]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [297] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6063] us
+==========test 31===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3049]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5405] us
+==========test 32===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3053]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6057] us
+==========test 33===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3057]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6136] us
+==========test 34===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3061]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5850] us
+==========test 35===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3066]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6137] us
+==========test 36===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3070]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6082] us
+==========test 37===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3074]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5515] us
+==========test 38===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3078]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6082] us
+==========test 39===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3082]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6121] us
+==========test 40===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3086]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5499] us
+==========test 41===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3090]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6099] us
+==========test 42===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3094]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6083] us
+==========test 43===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3098]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5338] us
+==========test 44===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3102]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [297] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6092] us
+==========test 45===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3106]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6117] us
+==========test 46===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3110]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5393] us
+==========test 47===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3114]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6122] us
+==========test 48===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3118]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6076] us
+==========test 49===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3122]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5446] us
+==========test 50===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3127]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6103] us
+==========test 51===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3131]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [296] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6084] us
+==========test 52===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3135]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5048] us
+==========test 53===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3139]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6068] us
+==========test 54===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3143]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6133] us
+==========test 55===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3147]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5344] us
+==========test 56===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3151]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6125] us
+==========test 57===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3155]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6111] us
+==========test 58===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3159]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [136] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5381] us
+==========test 59===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3163]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6099] us
+==========test 60===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3167]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6058] us
+==========test 61===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3171]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5434] us
+==========test 62===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3175]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [297] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6079] us
+==========test 63===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3179]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6145] us
+==========test 64===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3183]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5444] us
+==========test 65===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3188]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [301] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6140] us
+==========test 66===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3192]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6082] us
+==========test 67===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3196]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5442] us
+==========test 68===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3200]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6117] us
+==========test 69===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3204]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6097] us
+==========test 70===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3208]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [135] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5478] us
+==========test 71===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3212]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6108] us
+==========test 72===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3216]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6083] us
+==========test 73===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3220]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5394] us
+==========test 74===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3224]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6153] us
+==========test 75===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3228]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [229] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5068] us
+==========test 76===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3232]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [485] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6255] us
+==========test 77===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3236]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [321] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6162] us
+==========test 78===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3240]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6111] us
+==========test 79===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3244]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5618] us
+==========test 80===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3249]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6127] us
+==========test 81===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3253]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6080] us
+==========test 82===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3257]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [133] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5502] us
+==========test 83===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3261]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6118] us
+==========test 84===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3265]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [301] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6122] us
+==========test 85===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3269]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [134] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5509] us
+==========test 86===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3273]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6127] us
+==========test 87===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3277]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6154] us
+==========test 88===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3281]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [135] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5350] us
+==========test 89===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3285]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6069] us
+==========test 90===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3289]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6091] us
+==========test 91===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3293]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [333] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6088] us
+==========test 92===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3297]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6086] us
+==========test 93===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3301]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [300] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6134] us
+==========test 94===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3305]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [135] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5523] us
+==========test 95===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3310]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [301] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6131] us
+==========test 96===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3314]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [298] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6077] us
+==========test 97===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3318]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [135] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [5183] us
+==========test 98===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3322]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6102] us
+==========test 99===========
+usbtables - Info: add a new rule [perf_rule]
+usbtables - Info: device table
+usbtables - Info: action
+usbtables - Info: one-time rule
+Initializing the logic .. 
+Done
+GPC debug:
+func(usbfilter_rule) = [4449]
+func(asserta) = [14623]
+func(retract) = [14323]
+func(no_conflict) = [30155]
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3326]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables - Info: sending the command
+usbtables-perf: Prolog took [299] us
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Info: operation succeeded
+usbtables - Info: closing the current connection
+Stopping the USBTABLES logic ...
+Done
+usbtables-perf: usbtables took [6099] us
+==========test 100===========

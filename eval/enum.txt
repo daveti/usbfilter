@@ -1,0 +1,56 @@
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh enum_vanilla.stats
+
+enum_vanilla.stats
+
+Average: 34555.9
+Min: 33722
+Max: 36154
+Standard deviation: 511.728
+Median: 34493
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh enum_vanilla2.stat
+
+enum_vanilla2.stat
+
+Average: 33925.5
+Min: 32015
+Max: 34839
+Standard deviation: 669.285
+Median: 34089
+root@arpsec04:~/git/usbfilter/eval# 
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh enum_usbfilter.stats
+
+enum_usbfilter.stats
+
+Average: 34951.7
+Min: 34078
+Max: 36350
+Standard deviation: 654.809
+Median: 34808.5
+root@arpsec04:~/git/usbfilter/eval# 
+
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh enum_usbfilter2.stat
+
+enum_usbfilter2.stat
+
+Average: 34388.8
+Min: 33210
+Max: 35793
+Standard deviation: 766.311
+Median: 34307
+root@arpsec04:~/git/usbfilter/eval# 
+
+
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh enum100.stat
+
+enum100.stat
+
+Average: 34780.9
+Min: 33879
+Max: 35993
+Standard deviation: 531.097
+Median: 34623
+root@arpsec04:~/git/usbfilter/eval# 

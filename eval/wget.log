@@ -1,0 +1,82 @@
+# Ubuntu
+
+daveti@arpsec04:~$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+--2016-02-15 08:55:19--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 23.235.40.69
+Connecting to cdn.kernel.org (cdn.kernel.org)|23.235.40.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 87288980 (83M) [application/x-xz]
+Saving to: ‘linux-4.4.1.tar.xz.5’
+
+100%[======================================================================================================>] 87,288,980  3.96MB/s   in 24s    
+
+2016-02-15 08:55:42 (3.51 MB/s) - ‘linux-4.4.1.tar.xz.5’ saved [87288980/87288980]
+
+daveti@arpsec04:~$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+--2016-02-15 08:55:57--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 23.235.44.69
+Connecting to cdn.kernel.org (cdn.kernel.org)|23.235.44.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 87288980 (83M) [application/x-xz]
+Saving to: ‘linux-4.4.1.tar.xz.6’
+
+100%[======================================================================================================>] 87,288,980  4.02MB/s   in 24s    
+
+2016-02-15 08:56:21 (3.49 MB/s) - ‘linux-4.4.1.tar.xz.6’ saved [87288980/87288980]
+
+
+daveti@arpsec04:~$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+--2016-02-15 08:53:04--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 23.235.44.69
+Connecting to cdn.kernel.org (cdn.kernel.org)|23.235.44.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 87288980 (83M) [application/x-xz]
+Saving to: ‘linux-4.4.1.tar.xz.4’
+
+100%[======================================================================================================>] 87,288,980  3.79MB/s   in 22s    
+
+2016-02-15 08:53:27 (3.73 MB/s) - ‘linux-4.4.1.tar.xz.4’ saved [87288980/87288980]
+
+
+
+# usbfilter
+
+daveti@arpsec04:~$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+--2016-02-15 08:56:31--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 23.235.44.69
+Connecting to cdn.kernel.org (cdn.kernel.org)|23.235.44.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 87288980 (83M) [application/x-xz]
+Saving to: ‘linux-4.4.1.tar.xz.7’
+
+100%[======================================================================================================>] 87,288,980  3.54MB/s   in 21s    
+
+2016-02-15 08:56:53 (3.88 MB/s) - ‘linux-4.4.1.tar.xz.7’ saved [87288980/87288980]
+
+daveti@arpsec04:~$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+--2016-02-15 08:57:00--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 23.235.40.69
+Connecting to cdn.kernel.org (cdn.kernel.org)|23.235.40.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 87288980 (83M) [application/x-xz]
+Saving to: ‘linux-4.4.1.tar.xz.8’
+
+100%[======================================================================================================>] 87,288,980  4.26MB/s   in 23s    
+
+2016-02-15 08:57:23 (3.57 MB/s) - ‘linux-4.4.1.tar.xz.8’ saved [87288980/87288980]
+
+daveti@arpsec04:~$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+--2016-02-15 08:57:46--  https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz
+Resolving cdn.kernel.org (cdn.kernel.org)... 23.235.46.69
+Connecting to cdn.kernel.org (cdn.kernel.org)|23.235.46.69|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 87288980 (83M) [application/x-xz]
+Saving to: ‘linux-4.4.1.tar.xz.9’
+
+100%[======================================================================================================>] 87,288,980  3.45MB/s   in 22s    
+
+2016-02-15 08:58:08 (3.77 MB/s) - ‘linux-4.4.1.tar.xz.9’ saved [87288980/87288980]
+
+
+
+

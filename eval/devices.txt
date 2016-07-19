@@ -1,0 +1,127 @@
+# Logitech USB headset
+T:  Bus=01 Lev=02 Prnt=02 Port=02 Cnt=03 Dev#= 12 Spd=12  MxCh= 0
+D:  Ver= 1.10 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=16 #Cfgs=  1
+P:  Vendor=046d ProdID=0a44 Rev=01.27
+S:  Manufacturer=Logitech
+S:  Product=Logitech USB Headset
+C:  #Ifs= 4 Cfg#= 1 Atr=80 MxPwr=100mA
+I:  If#= 0 Alt= 0 #EPs= 0 Cls=01(audio) Sub=01 Prot=00 Driver=snd-usb-audio
+I:  If#= 1 Alt= 0 #EPs= 0 Cls=01(audio) Sub=02 Prot=00 Driver=snd-usb-audio
+I:  If#= 2 Alt= 0 #EPs= 0 Cls=01(audio) Sub=02 Prot=00 Driver=snd-usb-audio
+I:  If#= 3 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=00 Driver=usbhid
+
+Bus 001 Device 012: ID 046d:0a44 Logitech, Inc. Headset H390
+
+# Teensy
+T:  Bus=01 Lev=02 Prnt=02 Port=03 Cnt=03 Dev#= 11 Spd=12  MxCh= 0
+D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  1
+P:  Vendor=16c0 ProdID=0487 Rev=01.00
+S:  Manufacturer=Teensyduino
+S:  Product=Serial/Keyboard/Mouse/Joystick
+S:  SerialNumber=1509380
+C:  #Ifs= 5 Cfg#= 1 Atr=c0 MxPwr=100mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=02(commc) Sub=02 Prot=01 Driver=cdc_acm
+I:  If#= 1 Alt= 0 #EPs= 2 Cls=0a(data ) Sub=00 Prot=00 Driver=cdc_acm
+I:  If#= 2 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=01 Driver=usbhid
+I:  If#= 3 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=00 Driver=usbhid
+I:  If#= 4 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=00 Driver=usbhid
+
+Bus 001 Device 013: ID 16c0:0487 Van Ooijen Technische Informatica Teensyduino Serial+Keyboard+Mouse+Joystick
+
+# My keyboard and mouse
+T:  Bus=01 Lev=02 Prnt=02 Port=00 Cnt=01 Dev#=  3 Spd=1.5 MxCh= 0
+D:  Ver= 1.10 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
+P:  Vendor=413c ProdID=2107 Rev=01.78
+S:  Manufacturer=DELL
+S:  Product=Dell USB Entry Keyboard
+C:  #Ifs= 1 Cfg#= 1 Atr=a0 MxPwr=100mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=01 Driver=usbhid
+
+T:  Bus=01 Lev=02 Prnt=02 Port=01 Cnt=02 Dev#=  4 Spd=1.5 MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
+P:  Vendor=0461 ProdID=4e22 Rev=01.00
+S:  Manufacturer=PixArt
+S:  Product=USB Optical Mouse
+C:  #Ifs= 1 Cfg#= 1 Atr=a0 MxPwr=100mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=02 Driver=usbhid
+
+Bus 001 Device 004: ID 0461:4e22 Primax Electronics, Ltd 
+Bus 001 Device 003: ID 413c:2107 Dell Computer Corp.
+
+# Rubber Ducky
+T:  Bus=01 Lev=02 Prnt=02 Port=03 Cnt=03 Dev#= 14 Spd=12  MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
+P:  Vendor=03eb ProdID=2401 Rev=02.01
+S:  Manufacturer=ATMEL AVR
+S:  Product=HID Keyboard
+C:  #Ifs= 1 Cfg#= 1 Atr=a0 MxPwr=100mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=01 Driver=usbhid
+
+Bus 001 Device 014: ID 03eb:2401 Atmel Corp.
+
+# USB storage (Kingston 2G)
+T:  Bus=03 Lev=01 Prnt=01 Port=00 Cnt=01 Dev#=  3 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
+P:  Vendor=0951 ProdID=1625 Rev=02.00
+S:  Manufacturer=Kingston
+S:  Product=DT 101 II
+S:  SerialNumber=0014780DE1A1A921752601CB
+C:  #Ifs= 1 Cfg#= 1 Atr=80 MxPwr=200mA
+I:  If#= 0 Alt= 0 #EPs= 2 Cls=08(stor.) Sub=06 Prot=50 Driver=usb-storage
+
+Bus 003 Device 003: ID 0951:1625 Kingston Technology DataTraveler 101 II
+
+# Webcam
+T:  Bus=03 Lev=01 Prnt=01 Port=00 Cnt=01 Dev#=  2 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  1
+P:  Vendor=046d ProdID=081b Rev=00.10
+S:  SerialNumber=B4482A20
+C:  #Ifs= 4 Cfg#= 1 Atr=80 MxPwr=500mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=0e(video) Sub=01 Prot=00 Driver=uvcvideo
+I:  If#= 1 Alt= 0 #EPs= 0 Cls=0e(video) Sub=02 Prot=00 Driver=uvcvideo
+I:  If#= 2 Alt= 0 #EPs= 0 Cls=01(audio) Sub=01 Prot=00 Driver=snd-usb-audio
+I:  If#= 3 Alt= 0 #EPs= 0 Cls=01(audio) Sub=02 Prot=00 Driver=snd-usb-audio
+
+Bus 003 Device 002: ID 046d:081b Logitech, Inc. Webcam C310
+
+# Logitech Mouse
+T:  Bus=01 Lev=02 Prnt=02 Port=02 Cnt=03 Dev#= 33 Spd=1.5 MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
+P:  Vendor=046d ProdID=c077 Rev=72.00
+S:  Manufacturer=Logitech
+S:  Product=USB Optical Mouse
+C:  #Ifs= 1 Cfg#= 1 Atr=a0 MxPwr=100mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=01 Prot=02 Driver=usbhid
+
+Bus 001 Device 033: ID 046d:c077 Logitech, Inc. M105 Optical Mouse
+
+
+# USB wireless adapter
+T:  Bus=03 Lev=01 Prnt=01 Port=01 Cnt=01 Dev#=  3 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
+P:  Vendor=148f ProdID=5372 Rev=01.01
+S:  Manufacturer=Ralink
+S:  Product=802.11 n WLAN
+C:  #Ifs= 1 Cfg#= 1 Atr=80 MxPwr=450mA
+I:  If#= 0 Alt= 0 #EPs= 7 Cls=ff(vend.) Sub=ff Prot=ff Driver=rt2800usb
+
+Bus 003 Device 003: ID 148f:5372 Ralink Technology, Corp. RT5372 Wireless Adapter
+
+# Nexus 4
+
+# USB storage (SanDisk 16G)
+T:  Bus=01 Lev=02 Prnt=02 Port=02 Cnt=03 Dev#=  5 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
+P:  Vendor=0781 ProdID=5571 Rev=01.26
+S:  Manufacturer=SanDisk
+S:  Product=Firebird USB Flash Drive
+S:  SerialNumber=4C532000051023104204
+C:  #Ifs= 1 Cfg#= 1 Atr=80 MxPwr=200mA
+I:  If#= 0 Alt= 0 #EPs= 2 Cls=08(stor.) Sub=06 Prot=50 Driver=usb-storage
+
+Bus 001 Device 005: ID 0781:5571 SanDisk Corp. Cruzer Fit
+
+
+
+
+

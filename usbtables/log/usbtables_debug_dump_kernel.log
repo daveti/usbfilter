@@ -1,0 +1,1969 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.13.11-usbfilter (root@arpsec04) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ) #24 SMP Thu Jul 30 07:29:01 PDT 2015 (Ubuntu 3.13.0-54.91-generic 3.13.11-ckt20)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-3.13.11-usbfilter root=UUID=a26cfdb8-54f3-46ed-bf71-d0736e497078 ro quiet splash intel_iommu=on vfio_iommu_type1.allow_unsafe_interrupts=1 vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009d7ff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009d800-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001fffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000020000000-0x00000000201fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020200000-0x0000000040003fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000040004000-0x0000000040004fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000040005000-0x00000000d66fbfff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000d66fc000-0x00000000d67fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000d6800000-0x00000000d6f16fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000d6f17000-0x00000000d6ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000d7000000-0x00000000d77b3fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000d77b4000-0x00000000d77fffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000d7800000-0x00000000d8f0dfff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000d8f0e000-0x00000000d8ffffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000d9000000-0x00000000da6e0fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000da6e1000-0x00000000da8defff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000da8df000-0x00000000da921fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000da922000-0x00000000daffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000db800000-0x00000000df9fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed00000-0x00000000fed03fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000021e5fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.7 present.
+[    0.000000] DMI: Dell Inc. OptiPlex 7010/0WR7PY, BIOS A13 03/25/2013
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] No AGP bridge found
+[    0.000000] e820: last_pfn = 0x21e600 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-D3FFF write-protect
+[    0.000000]   D4000-E7FFF uncachable
+[    0.000000]   E8000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 000000000 mask E00000000 write-back
+[    0.000000]   1 base 200000000 mask FE0000000 write-back
+[    0.000000]   2 base 0E0000000 mask FE0000000 uncachable
+[    0.000000]   3 base 0DC000000 mask FFC000000 uncachable
+[    0.000000]   4 base 0DB800000 mask FFF800000 uncachable
+[    0.000000]   5 base 21F000000 mask FFF000000 uncachable
+[    0.000000]   6 base 21E800000 mask FFF800000 uncachable
+[    0.000000]   7 base 21E600000 mask FFFE00000 uncachable
+[    0.000000]   8 disabled
+[    0.000000]   9 disabled
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] original variable MTRRs
+[    0.000000] reg 0, base: 0GB, range: 8GB, type WB
+[    0.000000] reg 1, base: 8GB, range: 512MB, type WB
+[    0.000000] reg 2, base: 3584MB, range: 512MB, type UC
+[    0.000000] reg 3, base: 3520MB, range: 64MB, type UC
+[    0.000000] reg 4, base: 3512MB, range: 8MB, type UC
+[    0.000000] reg 5, base: 8688MB, range: 16MB, type UC
+[    0.000000] reg 6, base: 8680MB, range: 8MB, type UC
+[    0.000000] reg 7, base: 8678MB, range: 2MB, type UC
+[    0.000000] total RAM covered: 8094M
+[    0.000000]  gran_size: 64K 	chunk_size: 64K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 128K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 256K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 512K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 1M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 2M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 64K 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 64K 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000] *BAD*gran_size: 64K 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000]  gran_size: 64K 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 64K 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 64K 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 64K 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000] *BAD*gran_size: 64K 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1G
+[    0.000000]  gran_size: 128K 	chunk_size: 128K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 256K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 512K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 1M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 2M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 128K 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 128K 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000] *BAD*gran_size: 128K 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000]  gran_size: 128K 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 128K 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 128K 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 128K 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000] *BAD*gran_size: 128K 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1G
+[    0.000000]  gran_size: 256K 	chunk_size: 256K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 256K 	chunk_size: 512K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 256K 	chunk_size: 1M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 256K 	chunk_size: 2M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 256K 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 256K 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 256K 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 256K 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000] *BAD*gran_size: 256K 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000]  gran_size: 256K 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 256K 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 256K 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 256K 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000] *BAD*gran_size: 256K 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1G
+[    0.000000]  gran_size: 512K 	chunk_size: 512K 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 512K 	chunk_size: 1M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 512K 	chunk_size: 2M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 512K 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 512K 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 512K 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 512K 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000] *BAD*gran_size: 512K 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000]  gran_size: 512K 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 512K 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 512K 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 512K 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000] *BAD*gran_size: 512K 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1G
+[    0.000000]  gran_size: 1M 	chunk_size: 1M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 1M 	chunk_size: 2M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 1M 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 1M 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 1M 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 1M 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000] *BAD*gran_size: 1M 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000]  gran_size: 1M 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 1M 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 1M 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 1M 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000] *BAD*gran_size: 1M 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1G
+[    0.000000]  gran_size: 2M 	chunk_size: 2M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 2M 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 2M 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 2M 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 2M 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000] *BAD*gran_size: 2M 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -16M
+[    0.000000]  gran_size: 2M 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 2M 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 2M 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000]  gran_size: 2M 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 0G
+[    0.000000] *BAD*gran_size: 2M 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1G
+[    0.000000]  gran_size: 4M 	chunk_size: 4M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 4M 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 4M 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000] *BAD*gran_size: 4M 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: -14M
+[    0.000000] *BAD*gran_size: 4M 	chunk_size: 64M 	num_reg: 10  	lose cover RAM: -14M
+[    0.000000]  gran_size: 4M 	chunk_size: 128M 	num_reg: 10  	lose cover RAM: 2M
+[    0.000000]  gran_size: 4M 	chunk_size: 256M 	num_reg: 10  	lose cover RAM: 2M
+[    0.000000]  gran_size: 4M 	chunk_size: 512M 	num_reg: 10  	lose cover RAM: 2M
+[    0.000000]  gran_size: 4M 	chunk_size: 1G 	num_reg: 10  	lose cover RAM: 2M
+[    0.000000] *BAD*gran_size: 4M 	chunk_size: 2G 	num_reg: 10  	lose cover RAM: -1022M
+[    0.000000]  gran_size: 8M 	chunk_size: 8M 	num_reg: 10  	lose cover RAM: 102M
+[    0.000000]  gran_size: 8M 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000]  gran_size: 8M 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: 38M
+[    0.000000]  gran_size: 8M 	chunk_size: 64M 	num_reg: 9  	lose cover RAM: 6M
+[    0.000000]  gran_size: 8M 	chunk_size: 128M 	num_reg: 8  	lose cover RAM: 6M
+[    0.000000]  gran_size: 8M 	chunk_size: 256M 	num_reg: 8  	lose cover RAM: 6M
+[    0.000000]  gran_size: 8M 	chunk_size: 512M 	num_reg: 8  	lose cover RAM: 6M
+[    0.000000]  gran_size: 8M 	chunk_size: 1G 	num_reg: 8  	lose cover RAM: 6M
+[    0.000000]  gran_size: 8M 	chunk_size: 2G 	num_reg: 9  	lose cover RAM: 6M
+[    0.000000]  gran_size: 16M 	chunk_size: 16M 	num_reg: 10  	lose cover RAM: 46M
+[    0.000000]  gran_size: 16M 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: 46M
+[    0.000000]  gran_size: 16M 	chunk_size: 64M 	num_reg: 9  	lose cover RAM: 14M
+[    0.000000]  gran_size: 16M 	chunk_size: 128M 	num_reg: 8  	lose cover RAM: 14M
+[    0.000000]  gran_size: 16M 	chunk_size: 256M 	num_reg: 8  	lose cover RAM: 14M
+[    0.000000]  gran_size: 16M 	chunk_size: 512M 	num_reg: 8  	lose cover RAM: 14M
+[    0.000000]  gran_size: 16M 	chunk_size: 1G 	num_reg: 8  	lose cover RAM: 14M
+[    0.000000]  gran_size: 16M 	chunk_size: 2G 	num_reg: 9  	lose cover RAM: 14M
+[    0.000000]  gran_size: 32M 	chunk_size: 32M 	num_reg: 10  	lose cover RAM: 30M
+[    0.000000]  gran_size: 32M 	chunk_size: 64M 	num_reg: 9  	lose cover RAM: 30M
+[    0.000000]  gran_size: 32M 	chunk_size: 128M 	num_reg: 8  	lose cover RAM: 30M
+[    0.000000]  gran_size: 32M 	chunk_size: 256M 	num_reg: 8  	lose cover RAM: 30M
+[    0.000000]  gran_size: 32M 	chunk_size: 512M 	num_reg: 8  	lose cover RAM: 30M
+[    0.000000]  gran_size: 32M 	chunk_size: 1G 	num_reg: 8  	lose cover RAM: 30M
+[    0.000000]  gran_size: 32M 	chunk_size: 2G 	num_reg: 9  	lose cover RAM: 30M
+[    0.000000]  gran_size: 64M 	chunk_size: 64M 	num_reg: 8  	lose cover RAM: 94M
+[    0.000000]  gran_size: 64M 	chunk_size: 128M 	num_reg: 7  	lose cover RAM: 94M
+[    0.000000]  gran_size: 64M 	chunk_size: 256M 	num_reg: 7  	lose cover RAM: 94M
+[    0.000000]  gran_size: 64M 	chunk_size: 512M 	num_reg: 7  	lose cover RAM: 94M
+[    0.000000]  gran_size: 64M 	chunk_size: 1G 	num_reg: 7  	lose cover RAM: 94M
+[    0.000000]  gran_size: 64M 	chunk_size: 2G 	num_reg: 8  	lose cover RAM: 94M
+[    0.000000]  gran_size: 128M 	chunk_size: 128M 	num_reg: 7  	lose cover RAM: 158M
+[    0.000000]  gran_size: 128M 	chunk_size: 256M 	num_reg: 7  	lose cover RAM: 158M
+[    0.000000]  gran_size: 128M 	chunk_size: 512M 	num_reg: 7  	lose cover RAM: 158M
+[    0.000000]  gran_size: 128M 	chunk_size: 1G 	num_reg: 7  	lose cover RAM: 158M
+[    0.000000]  gran_size: 128M 	chunk_size: 2G 	num_reg: 8  	lose cover RAM: 158M
+[    0.000000]  gran_size: 256M 	chunk_size: 256M 	num_reg: 5  	lose cover RAM: 414M
+[    0.000000]  gran_size: 256M 	chunk_size: 512M 	num_reg: 7  	lose cover RAM: 414M
+[    0.000000]  gran_size: 256M 	chunk_size: 1G 	num_reg: 7  	lose cover RAM: 414M
+[    0.000000]  gran_size: 256M 	chunk_size: 2G 	num_reg: 8  	lose cover RAM: 414M
+[    0.000000]  gran_size: 512M 	chunk_size: 512M 	num_reg: 3  	lose cover RAM: 926M
+[    0.000000]  gran_size: 512M 	chunk_size: 1G 	num_reg: 3  	lose cover RAM: 926M
+[    0.000000]  gran_size: 512M 	chunk_size: 2G 	num_reg: 3  	lose cover RAM: 926M
+[    0.000000]  gran_size: 1G 	chunk_size: 1G 	num_reg: 3  	lose cover RAM: 926M
+[    0.000000]  gran_size: 1G 	chunk_size: 2G 	num_reg: 3  	lose cover RAM: 926M
+[    0.000000]  gran_size: 2G 	chunk_size: 2G 	num_reg: 2  	lose cover RAM: 1950M
+[    0.000000] mtrr_cleanup: can not find optimal value
+[    0.000000] please specify mtrr_gran_size/mtrr_chunk_size
+[    0.000000] e820: update [mem 0xdb800000-0xffffffff] usable ==> reserved
+[    0.000000] e820: last_pfn = 0xdb000 max_arch_pfn = 0x400000000
+[    0.000000] found SMP MP-table at [mem 0x000fd980-0x000fd98f] mapped at [ffff8800000fd980]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] Base memory trampoline at [ffff880000097000] 97000 size 24576
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000]  [mem 0x00000000-0x000fffff] page 4k
+[    0.000000] BRK [0x01fe2000, 0x01fe2fff] PGTABLE
+[    0.000000] BRK [0x01fe3000, 0x01fe3fff] PGTABLE
+[    0.000000] BRK [0x01fe4000, 0x01fe4fff] PGTABLE
+[    0.000000] init_memory_mapping: [mem 0x21e400000-0x21e5fffff]
+[    0.000000]  [mem 0x21e400000-0x21e5fffff] page 2M
+[    0.000000] BRK [0x01fe5000, 0x01fe5fff] PGTABLE
+[    0.000000] init_memory_mapping: [mem 0x21c000000-0x21e3fffff]
+[    0.000000]  [mem 0x21c000000-0x21e3fffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x200000000-0x21bffffff]
+[    0.000000]  [mem 0x200000000-0x21bffffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x1fffffff]
+[    0.000000]  [mem 0x00100000-0x001fffff] page 4k
+[    0.000000]  [mem 0x00200000-0x1fffffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x20200000-0x40003fff]
+[    0.000000]  [mem 0x20200000-0x3fffffff] page 2M
+[    0.000000]  [mem 0x40000000-0x40003fff] page 4k
+[    0.000000] BRK [0x01fe6000, 0x01fe6fff] PGTABLE
+[    0.000000] BRK [0x01fe7000, 0x01fe7fff] PGTABLE
+[    0.000000] init_memory_mapping: [mem 0x40005000-0xd66fbfff]
+[    0.000000]  [mem 0x40005000-0x401fffff] page 4k
+[    0.000000]  [mem 0x40200000-0xd65fffff] page 2M
+[    0.000000]  [mem 0xd6600000-0xd66fbfff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xd6800000-0xd6f16fff]
+[    0.000000]  [mem 0xd6800000-0xd6dfffff] page 2M
+[    0.000000]  [mem 0xd6e00000-0xd6f16fff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xd7000000-0xd77b3fff]
+[    0.000000]  [mem 0xd7000000-0xd75fffff] page 2M
+[    0.000000]  [mem 0xd7600000-0xd77b3fff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xd7800000-0xd8f0dfff]
+[    0.000000]  [mem 0xd7800000-0xd8dfffff] page 2M
+[    0.000000]  [mem 0xd8e00000-0xd8f0dfff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xd9000000-0xda6e0fff]
+[    0.000000]  [mem 0xd9000000-0xda5fffff] page 2M
+[    0.000000]  [mem 0xda600000-0xda6e0fff] page 4k
+[    0.000000] init_memory_mapping: [mem 0xda922000-0xdaffffff]
+[    0.000000]  [mem 0xda922000-0xda9fffff] page 4k
+[    0.000000]  [mem 0xdaa00000-0xdaffffff] page 2M
+[    0.000000] init_memory_mapping: [mem 0x100000000-0x1ffffffff]
+[    0.000000]  [mem 0x100000000-0x1ffffffff] page 2M
+[    0.000000] RAMDISK: [mem 0x34bec000-0x365edfff]
+[    0.000000] ACPI: RSDP 00000000000edfd0 000024 (v02 DELL  )
+[    0.000000] ACPI: XSDT 00000000d77f4078 000074 (v01 DELL    CBX3    01072009 AMI  00010013)
+[    0.000000] ACPI: FACP 00000000d77fd7a8 00010C (v05 DELL    CBX3    01072009 AMI  00010013)
+[    0.000000] ACPI: DSDT 00000000d77f4180 009625 (v02 DELL    CBX3    00000022 INTL 20091112)
+[    0.000000] ACPI: FACS 00000000d8ffe080 000040
+[    0.000000] ACPI: APIC 00000000d77fd8b8 000072 (v03 DELL    CBX3    01072009 AMI  00010013)
+[    0.000000] ACPI: FPDT 00000000d77fd930 000044 (v01 DELL    CBX3    01072009 AMI  00010013)
+[    0.000000] ACPI: MCFG 00000000d77fd978 00003C (v01 DELL    CBX3    01072009 MSFT 00000097)
+[    0.000000] ACPI: HPET 00000000d77fd9b8 000038 (v01 DELL    CBX3    01072009 AMI. 00000005)
+[    0.000000] ACPI: SSDT 00000000d77fd9f0 000415 (v01 SataRe SataTabl 00001000 INTL 20091112)
+[    0.000000] ACPI: SSDT 00000000d77fde08 0009B9 (v01  PmRef  Cpu0Ist 00003000 INTL 20051117)
+[    0.000000] ACPI: SSDT 00000000d77fe7c8 000A92 (v01  PmRef    CpuPm 00003000 INTL 20051117)
+[    0.000000] ACPI: DMAR 00000000d77ff260 0000B8 (v01 INTEL      SNB  00000001 INTL 00000001)
+[    0.000000] ACPI: ASF! 00000000d77ff318 0000A5 (v32 INTEL       HCG 00000001 TFSM 000F4240)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000021e5fffff]
+[    0.000000] Initmem setup node 0 [mem 0x00000000-0x21e5fffff]
+[    0.000000]   NODE_DATA [mem 0x21e5ef000-0x21e5f3fff]
+[    0.000000]  [ffffea0000000000-ffffea00087fffff] PMD -> [ffff880215c00000-ffff88021dbfffff] on node 0
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   DMA32    [mem 0x01000000-0xffffffff]
+[    0.000000]   Normal   [mem 0x100000000-0x21e5fffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x0009cfff]
+[    0.000000]   node   0: [mem 0x00100000-0x1fffffff]
+[    0.000000]   node   0: [mem 0x20200000-0x40003fff]
+[    0.000000]   node   0: [mem 0x40005000-0xd66fbfff]
+[    0.000000]   node   0: [mem 0xd6800000-0xd6f16fff]
+[    0.000000]   node   0: [mem 0xd7000000-0xd77b3fff]
+[    0.000000]   node   0: [mem 0xd7800000-0xd8f0dfff]
+[    0.000000]   node   0: [mem 0xd9000000-0xda6e0fff]
+[    0.000000]   node   0: [mem 0xda922000-0xdaffffff]
+[    0.000000]   node   0: [mem 0x100000000-0x21e5fffff]
+[    0.000000] On node 0 totalpages: 2068015
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 21 pages reserved
+[    0.000000]   DMA zone: 3996 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 13923 pages used for memmap
+[    0.000000]   DMA32 zone: 891027 pages, LIFO batch:31
+[    0.000000]   Normal zone: 18328 pages used for memmap
+[    0.000000]   Normal zone: 1172992 pages, LIFO batch:31
+[    0.000000] ACPI: PM-Timer IO Port: 0x408
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x02] lapic_id[0x02] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x03] lapic_id[0x04] enabled)
+[    0.000000] ACPI: LAPIC (acpi_id[0x04] lapic_id[0x06] enabled)
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+[    0.000000] ACPI: IOAPIC (id[0x02] address[0xfec00000] gsi_base[0])
+[    0.000000] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ2 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a701 base: 0xfed00000
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] nr_irqs_gsi: 40
+[    0.000000] PM: Registered nosave memory: [mem 0x0009d000-0x0009dfff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x20000000-0x201fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x40004000-0x40004fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xd66fc000-0xd67fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xd6f17000-0xd6ffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xd77b4000-0xd77fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xd8f0e000-0xd8ffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xda6e1000-0xda8defff]
+[    0.000000] PM: Registered nosave memory: [mem 0xda8df000-0xda921fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xdb000000-0xdb7fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xdb800000-0xdf9fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xdfa00000-0xf7ffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xf8000000-0xfbffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfc000000-0xfebfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed00000-0xfed03fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed04000-0xfed1bfff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed1c000-0xfed1ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfed20000-0xfedfffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xff000000-0xffffffff]
+[    0.000000] e820: [mem 0xdfa00000-0xf7ffffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 27 pages/cpu @ffff88021e200000 s81536 r8192 d20864 u524288
+[    0.000000] pcpu-alloc: s81536 r8192 d20864 u524288 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 2 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 2035679
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.13.11-usbfilter root=UUID=a26cfdb8-54f3-46ed-bf71-d0736e497078 ro quiet splash intel_iommu=on vfio_iommu_type1.allow_unsafe_interrupts=1 vt.handoff=7
+[    0.000000] Intel-IOMMU: enabled
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] xsave: enabled xstate_bv 0x7, cntxt size 0x340
+[    0.000000] Checking aperture...
+[    0.000000] No AGP bridge found
+[    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.000000] Memory: 8031176K/8272060K available (7408K kernel code, 1146K rwdata, 3392K rodata, 1336K init, 1448K bss, 240884K reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=4.
+[    0.000000] 	Offload RCU callbacks from all CPUs
+[    0.000000] 	Offload RCU callbacks from CPUs: 0-3.
+[    0.000000] NR_IRQS:16640 nr_irqs:712 16
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] allocated 33554432 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] hpet clockevent registered
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.004000] tsc: Detected 3192.735 MHz processor
+[    0.000001] Calibrating delay loop (skipped), value calculated using timer frequency.. 6385.47 BogoMIPS (lpj=12770940)
+[    0.000003] pid_max: default: 32768 minimum: 301
+[    0.000021] Security Framework initialized
+[    0.000034] AppArmor: AppArmor initialized
+[    0.000035] Yama: becoming mindful.
+[    0.000442] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.001987] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.002667] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.002674] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.002828] Initializing cgroup subsys memory
+[    0.002832] Initializing cgroup subsys devices
+[    0.002833] Initializing cgroup subsys freezer
+[    0.002835] Initializing cgroup subsys blkio
+[    0.002836] Initializing cgroup subsys perf_event
+[    0.002837] Initializing cgroup subsys hugetlb
+[    0.002855] CPU: Physical Processor ID: 0
+[    0.002856] CPU: Processor Core ID: 0
+[    0.002859] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.002859] ENERGY_PERF_BIAS: View and update with x86_energy_perf_policy(8)
+[    0.003140] mce: CPU supports 9 MCE banks
+[    0.003150] CPU0: Thermal monitoring enabled (TM1)
+[    0.003157] Last level iTLB entries: 4KB 512, 2MB 0, 4MB 0
+[    0.003157] Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32
+[    0.003157] tlb_flushall_shift: 2
+[    0.003254] Freeing SMP alternatives memory: 32K (ffffffff81e6e000 - ffffffff81e76000)
+[    0.004169] ACPI: Core revision 20131115
+[    0.007762] ACPI: All ACPI Tables successfully acquired
+[    0.007907] ftrace: allocating 28536 entries in 112 pages
+[    0.018346] dmar: Host address width 36
+[    0.018348] dmar: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.018353] dmar: IOMMU 0: reg_base_addr fed90000 ver 1:0 cap c0000020e60262 ecap f0101a
+[    0.018354] dmar: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.018358] dmar: IOMMU 1: reg_base_addr fed91000 ver 1:0 cap c9008020660262 ecap f0105a
+[    0.018359] dmar: RMRR base: 0x000000da857000 end: 0x000000da87dfff
+[    0.018360] dmar: RMRR base: 0x000000db800000 end: 0x000000df9fffff
+[    0.018429] IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.018429] HPET id 0 under DRHD base 0xfed91000
+[    0.018431] dmar: DRHD: handling fault status reg 2
+[    0.018433] dmar: DMAR:[DMA Read] Request device [00:1f.2] fault addr da813000 
+[    0.018433] DMAR:[fault reason 06] PTE Read access is not set
+[    0.018544] Enabled IRQ remapping in x2apic mode
+[    0.018545] Enabling x2apic
+[    0.018546] Enabled x2apic
+[    0.018554] Switched APIC routing to cluster x2apic.
+[    0.018995] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.058711] smpboot: CPU0: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz (fam: 06, model: 3a, stepping: 09)
+[    0.058720] TSC deadline timer enabled
+[    0.058727] Performance Events: PEBS fmt1+, 16-deep LBR, IvyBridge events, full-width counters, Intel PMU driver.
+[    0.058733] ... version:                3
+[    0.058734] ... bit width:              48
+[    0.058734] ... generic registers:      8
+[    0.058735] ... value mask:             0000ffffffffffff
+[    0.058736] ... max period:             0000ffffffffffff
+[    0.058736] ... fixed-purpose events:   3
+[    0.058737] ... event mask:             00000007000000ff
+[    0.059858] x86: Booting SMP configuration:
+[    0.073251] NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[    0.059859] .... node  #0, CPUs:      #1 #2 #3
+[    0.100092] x86: Booted up 1 node, 4 CPUs
+[    0.100094] smpboot: Total of 4 processors activated (25541.88 BogoMIPS)
+[    0.102603] devtmpfs: initialized
+[    0.104513] EVM: security.selinux
+[    0.104514] EVM: security.SMACK64
+[    0.104515] EVM: security.ima
+[    0.104516] EVM: security.capability
+[    0.104557] PM: Registering ACPI NVS region [mem 0xd8f0e000-0xd8ffffff] (991232 bytes)
+[    0.104568] PM: Registering ACPI NVS region [mem 0xda8df000-0xda921fff] (274432 bytes)
+[    0.105133] pinctrl core: initialized pinctrl subsystem
+[    0.105173] regulator-dummy: no parameters
+[    0.105203] RTC time: 15:24:43, date: 11/30/15
+[    0.105225] NET: Registered protocol family 16
+[    0.105308] cpuidle: using governor ladder
+[    0.105309] cpuidle: using governor menu
+[    0.105347] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.105348] ACPI: bus type PCI registered
+[    0.105349] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.105388] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.105390] PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in E820
+[    0.111638] PCI: Using configuration type 1 for base access
+[    0.111643] dmi type 0xB1 record - unknown flag
+[    0.112256] bio: create slab <bio-0> at 0
+[    0.112346] ACPI: Added _OSI(Module Device)
+[    0.112347] ACPI: Added _OSI(Processor Device)
+[    0.112348] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.112349] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.114293] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.116407] ACPI: SSDT 00000000da886018 00083B (v01  PmRef  Cpu0Cst 00003001 INTL 20051117)
+[    0.116636] ACPI: Dynamic OEM Table Load:
+[    0.116637] ACPI: SSDT           (null) 00083B (v01  PmRef  Cpu0Cst 00003001 INTL 20051117)
+[    0.120314] ACPI: SSDT 00000000da887a98 000303 (v01  PmRef    ApIst 00003000 INTL 20051117)
+[    0.120562] ACPI: Dynamic OEM Table Load:
+[    0.120563] ACPI: SSDT           (null) 000303 (v01  PmRef    ApIst 00003000 INTL 20051117)
+[    0.124206] ACPI: SSDT 00000000da88dc18 000119 (v01  PmRef    ApCst 00003000 INTL 20051117)
+[    0.124429] ACPI: Dynamic OEM Table Load:
+[    0.124430] ACPI: SSDT           (null) 000119 (v01  PmRef    ApCst 00003000 INTL 20051117)
+[    0.128498] ACPI: Interpreter enabled
+[    0.128502] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20131115/hwxface-580)
+[    0.128505] ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20131115/hwxface-580)
+[    0.128515] ACPI: (supports S0 S3 S4 S5)
+[    0.128516] ACPI: Using IOAPIC for interrupt routing
+[    0.128535] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.128637] ACPI: No dock devices found.
+[    0.153962] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+[    0.153966] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+[    0.154060] \_SB_.PCI0:_OSC invalid UUID
+[    0.154060] _OSC request data:1 1f 0 
+[    0.154063] acpi PNP0A08:00: _OSC failed (AE_ERROR); disabling ASPM
+[    0.154509] PCI host bridge to bus 0000:00
+[    0.154511] pci_bus 0000:00: root bus resource [bus 00-3e]
+[    0.154512] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7]
+[    0.154513] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff]
+[    0.154515] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+[    0.154516] pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff]
+[    0.154517] pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff]
+[    0.154518] pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff]
+[    0.154519] pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff]
+[    0.154520] pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff]
+[    0.154521] pci_bus 0000:00: root bus resource [mem 0xdfa00000-0xfeafffff]
+[    0.154527] pci 0000:00:00.0: [8086:0150] type 00 class 0x060000
+[    0.154595] pci 0000:00:02.0: [8086:0152] type 00 class 0x030000
+[    0.154603] pci 0000:00:02.0: reg 0x10: [mem 0xf7800000-0xf7bfffff 64bit]
+[    0.154607] pci 0000:00:02.0: reg 0x18: [mem 0xe0000000-0xefffffff 64bit pref]
+[    0.154611] pci 0000:00:02.0: reg 0x20: [io  0xf000-0xf03f]
+[    0.154691] pci 0000:00:14.0: [8086:1e31] type 00 class 0x0c0330
+[    0.154711] pci 0000:00:14.0: reg 0x10: [mem 0xf7d20000-0xf7d2ffff 64bit]
+[    0.154781] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.154818] pci 0000:00:14.0: System wakeup disabled by ACPI
+[    0.154844] pci 0000:00:16.0: [8086:1e3a] type 00 class 0x078000
+[    0.154866] pci 0000:00:16.0: reg 0x10: [mem 0xf7d3c000-0xf7d3c00f 64bit]
+[    0.154937] pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+[    0.154997] pci 0000:00:16.3: [8086:1e3d] type 00 class 0x070002
+[    0.155014] pci 0000:00:16.3: reg 0x10: [io  0xf0e0-0xf0e7]
+[    0.155023] pci 0000:00:16.3: reg 0x14: [mem 0xf7d3a000-0xf7d3afff]
+[    0.155149] pci 0000:00:19.0: [8086:1502] type 00 class 0x020000
+[    0.155166] pci 0000:00:19.0: reg 0x10: [mem 0xf7d00000-0xf7d1ffff]
+[    0.155174] pci 0000:00:19.0: reg 0x14: [mem 0xf7d39000-0xf7d39fff]
+[    0.155182] pci 0000:00:19.0: reg 0x18: [io  0xf080-0xf09f]
+[    0.155239] pci 0000:00:19.0: PME# supported from D0 D3hot D3cold
+[    0.155275] pci 0000:00:19.0: System wakeup disabled by ACPI
+[    0.155304] pci 0000:00:1a.0: [8086:1e2d] type 00 class 0x0c0320
+[    0.155324] pci 0000:00:1a.0: reg 0x10: [mem 0xf7d38000-0xf7d383ff]
+[    0.155406] pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+[    0.155444] pci 0000:00:1a.0: System wakeup disabled by ACPI
+[    0.155468] pci 0000:00:1b.0: [8086:1e20] type 00 class 0x040300
+[    0.155482] pci 0000:00:1b.0: reg 0x10: [mem 0xf7d30000-0xf7d33fff 64bit]
+[    0.155544] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.155583] pci 0000:00:1b.0: System wakeup disabled by ACPI
+[    0.155612] pci 0000:00:1c.0: [8086:1e10] type 01 class 0x060400
+[    0.155741] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.155792] pci 0000:00:1c.0: System wakeup disabled by ACPI
+[    0.155819] pci 0000:00:1c.4: [8086:1e18] type 01 class 0x060400
+[    0.155896] pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+[    0.155937] pci 0000:00:1c.4: System wakeup disabled by ACPI
+[    0.155966] pci 0000:00:1d.0: [8086:1e26] type 00 class 0x0c0320
+[    0.155985] pci 0000:00:1d.0: reg 0x10: [mem 0xf7d37000-0xf7d373ff]
+[    0.156069] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.156107] pci 0000:00:1d.0: System wakeup disabled by ACPI
+[    0.156131] pci 0000:00:1f.0: [8086:1e47] type 00 class 0x060100
+[    0.156283] pci 0000:00:1f.2: [8086:1e02] type 00 class 0x010601
+[    0.156299] pci 0000:00:1f.2: reg 0x10: [io  0xf0d0-0xf0d7]
+[    0.156306] pci 0000:00:1f.2: reg 0x14: [io  0xf0c0-0xf0c3]
+[    0.156314] pci 0000:00:1f.2: reg 0x18: [io  0xf0b0-0xf0b7]
+[    0.156321] pci 0000:00:1f.2: reg 0x1c: [io  0xf0a0-0xf0a3]
+[    0.156328] pci 0000:00:1f.2: reg 0x20: [io  0xf060-0xf07f]
+[    0.156335] pci 0000:00:1f.2: reg 0x24: [mem 0xf7d36000-0xf7d367ff]
+[    0.156376] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.156431] pci 0000:00:1f.3: [8086:1e22] type 00 class 0x0c0500
+[    0.156445] pci 0000:00:1f.3: reg 0x10: [mem 0xf7d35000-0xf7d350ff 64bit]
+[    0.156464] pci 0000:00:1f.3: reg 0x20: [io  0xf040-0xf05f]
+[    0.156606] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.156751] pci 0000:02:00.0: [14e4:165a] type 00 class 0x020000
+[    0.156818] pci 0000:02:00.0: reg 0x10: [mem 0xf7c40000-0xf7c4ffff 64bit]
+[    0.156984] pci 0000:02:00.0: reg 0x30: [mem 0xf7c00000-0xf7c3ffff pref]
+[    0.157229] pci 0000:02:00.0: PME# supported from D3hot D3cold
+[    0.157306] pci 0000:02:00.0: System wakeup disabled by ACPI
+[    0.166799] pci 0000:00:1c.4: PCI bridge to [bus 02]
+[    0.166807] pci 0000:00:1c.4:   bridge window [mem 0xf7c00000-0xf7cfffff]
+[    0.167198] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.167239] ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.167279] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 *10 11 12 14 15)
+[    0.167324] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 *10 11 12 14 15)
+[    0.167361] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 *5 6 10 11 12 14 15)
+[    0.167400] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+[    0.167442] ACPI: PCI Interrupt Link [LNKG] (IRQs *3 4 5 6 10 11 12 14 15)
+[    0.167484] ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.167637] ACPI: Enabled 4 GPEs in block 00 to 3F
+[    0.167641] ACPI: \_SB_.PCI0: notify handler is installed
+[    0.167678] Found 1 acpi root devices
+[    0.167743] vgaarb: setting as boot device: PCI:0000:00:02.0
+[    0.167745] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.167746] vgaarb: loaded
+[    0.167747] vgaarb: bridge control possible 0000:00:02.0
+[    0.167846] SCSI subsystem initialized
+[    0.167875] libata version 3.00 loaded.
+[    0.167892] ACPI: bus type USB registered
+[    0.167903] usbcore: registered new interface driver usbfs
+[    0.167908] usbcore: registered new interface driver hub
+[    0.167924] usbfilter - Debug: usbfilter_rdb_load_default_rules done
+[    0.167924] usbfilter - Debug: usbfilter inited
+[    0.167927] usbcore: registered new device driver usb
+[    0.167993] PCI: Using ACPI for IRQ routing
+[    0.169416] PCI: pci_cache_line_size set to 64 bytes
+[    0.169463] e820: reserve RAM buffer [mem 0x0009d800-0x0009ffff]
+[    0.169465] e820: reserve RAM buffer [mem 0x40004000-0x43ffffff]
+[    0.169466] e820: reserve RAM buffer [mem 0xd66fc000-0xd7ffffff]
+[    0.169467] e820: reserve RAM buffer [mem 0xd6f17000-0xd7ffffff]
+[    0.169468] e820: reserve RAM buffer [mem 0xd77b4000-0xd7ffffff]
+[    0.169469] e820: reserve RAM buffer [mem 0xd8f0e000-0xdbffffff]
+[    0.169470] e820: reserve RAM buffer [mem 0xda6e1000-0xdbffffff]
+[    0.169471] e820: reserve RAM buffer [mem 0xdb000000-0xdbffffff]
+[    0.169472] e820: reserve RAM buffer [mem 0x21e600000-0x21fffffff]
+[    0.169524] NetLabel: Initializing
+[    0.169525] NetLabel:  domain hash size = 128
+[    0.169526] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.169534] NetLabel:  unlabeled traffic allowed by default
+[    0.169588] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.169591] hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+[    0.171619] Switched to clocksource hpet
+[    0.174538] AppArmor: AppArmor Filesystem Enabled
+[    0.174554] pnp: PnP ACPI init
+[    0.174562] ACPI: bus type PNP registered
+[    0.174617] system 00:00: [mem 0xfed40000-0xfed44fff] has been reserved
+[    0.174619] system 00:00: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.174628] pnp 00:01: [dma 4]
+[    0.174637] pnp 00:01: Plug and Play ACPI device, IDs PNP0200 (active)
+[    0.174648] pnp 00:02: Plug and Play ACPI device, IDs INT0800 (active)
+[    0.174722] pnp 00:03: Plug and Play ACPI device, IDs PNP0103 (active)
+[    0.174746] system 00:04: [io  0x0680-0x069f] has been reserved
+[    0.174748] system 00:04: [io  0x1000-0x100f] has been reserved
+[    0.174749] system 00:04: [io  0xffff] has been reserved
+[    0.174750] system 00:04: [io  0xffff] has been reserved
+[    0.174751] system 00:04: [io  0x0400-0x0453] could not be reserved
+[    0.174753] system 00:04: [io  0x0458-0x047f] has been reserved
+[    0.174754] system 00:04: [io  0x0500-0x057f] has been reserved
+[    0.174755] system 00:04: [io  0x164e-0x164f] has been reserved
+[    0.174756] system 00:04: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.174780] pnp 00:05: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.174810] system 00:06: [io  0x0454-0x0457] has been reserved
+[    0.174811] system 00:06: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+[    0.174873] system 00:07: [io  0x0a40-0x0a4f] has been reserved
+[    0.174874] system 00:07: [io  0x0a00-0x0a3f] has been reserved
+[    0.174876] system 00:07: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.174905] system 00:08: [io  0x04d0-0x04d1] has been reserved
+[    0.174907] system 00:08: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.174926] pnp 00:09: Plug and Play ACPI device, IDs PNP0c04 (active)
+[    0.175431] pnp 00:0a: [dma 0 disabled]
+[    0.175459] pnp 00:0a: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.175608] system 00:0b: [mem 0xfed1c000-0xfed1ffff] has been reserved
+[    0.175609] system 00:0b: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.175611] system 00:0b: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.175612] system 00:0b: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.175613] system 00:0b: [mem 0xf8000000-0xfbffffff] has been reserved
+[    0.175614] system 00:0b: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.175616] system 00:0b: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.175617] system 00:0b: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.175618] system 00:0b: [mem 0xff000000-0xffffffff] has been reserved
+[    0.175620] system 00:0b: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.175621] system 00:0b: [mem 0xdfa00000-0xdfa00fff] has been reserved
+[    0.175633] system 00:0b: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.175752] system 00:0c: [mem 0x20000000-0x201fffff] has been reserved
+[    0.175754] system 00:0c: [mem 0x40004000-0x40004fff] has been reserved
+[    0.175755] system 00:0c: Plug and Play ACPI device, IDs PNP0c01 (active)
+[    0.175765] pnp: PnP ACPI: found 13 devices
+[    0.175765] ACPI: bus type PNP unregistered
+[    0.181787] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.181804] pci 0000:00:1c.4: PCI bridge to [bus 02]
+[    0.181809] pci 0000:00:1c.4:   bridge window [mem 0xf7c00000-0xf7cfffff]
+[    0.181817] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7]
+[    0.181818] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff]
+[    0.181820] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff]
+[    0.181821] pci_bus 0000:00: resource 7 [mem 0x000d4000-0x000d7fff]
+[    0.181822] pci_bus 0000:00: resource 8 [mem 0x000d8000-0x000dbfff]
+[    0.181823] pci_bus 0000:00: resource 9 [mem 0x000dc000-0x000dffff]
+[    0.181824] pci_bus 0000:00: resource 10 [mem 0x000e0000-0x000e3fff]
+[    0.181825] pci_bus 0000:00: resource 11 [mem 0x000e4000-0x000e7fff]
+[    0.181826] pci_bus 0000:00: resource 12 [mem 0xdfa00000-0xfeafffff]
+[    0.181828] pci_bus 0000:02: resource 1 [mem 0xf7c00000-0xf7cfffff]
+[    0.181845] NET: Registered protocol family 2
+[    0.181986] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.182096] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.182209] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.182219] TCP: reno registered
+[    0.182227] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.182250] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[    0.182289] NET: Registered protocol family 1
+[    0.182715] pci 0000:00:02.0: BIOS left Intel GPU interrupts enabled; disabling
+[    0.182726] pci 0000:00:02.0: Video device with shadowed ROM
+[    0.184008] pci 0000:00:14.0: Configurable ports to enable SuperSpeed: 0xf
+[    0.184012] pci 0000:00:14.0: USB 3.0 ports that are now enabled under xHCI: 0xf
+[    0.184014] pci 0000:00:14.0: Configurable USB 2.0 ports to hand over to xCHI: 0xf
+[    0.184018] pci 0000:00:14.0: USB 2.0 ports that are now switched over to xHCI: 0xf
+[    0.184138] pci 0000:00:1a.0: EHCI: BIOS handoff
+[    0.203807] pci 0000:00:1d.0: EHCI: BIOS handoff
+[    0.223770] PCI: CLS 64 bytes, default 64
+[    0.223809] Trying to unpack rootfs image as initramfs...
+[    0.528519] Freeing initrd memory: 26632K (ffff880034bec000 - ffff8800365ee000)
+[    0.528548] DMAR: No ATSR found
+[    0.528571] IOMMU 0 0xfed90000: using Queued invalidation
+[    0.528572] IOMMU 1 0xfed91000: using Queued invalidation
+[    0.528573] IOMMU: Setting RMRR:
+[    0.528583] IOMMU: Setting identity map for device 0000:00:02.0 [0xdb800000 - 0xdf9fffff]
+[    0.528886] IOMMU: Setting identity map for device 0000:00:1d.0 [0xda857000 - 0xda87dfff]
+[    0.528902] IOMMU: Setting identity map for device 0000:00:1a.0 [0xda857000 - 0xda87dfff]
+[    0.528914] IOMMU: Setting identity map for device 0000:00:14.0 [0xda857000 - 0xda87dfff]
+[    0.528923] IOMMU: Prepare 0-16MiB unity mapping for LPC
+[    0.528928] IOMMU: Setting identity map for device 0000:00:1f.0 [0x0 - 0xffffff]
+[    0.529310] PCI-DMA: Intel(R) Virtualization Technology for Directed I/O
+[    0.530877] microcode: CPU0 sig=0x306a9, pf=0x2, revision=0x16
+[    0.530886] microcode: CPU1 sig=0x306a9, pf=0x2, revision=0x16
+[    0.530890] microcode: CPU2 sig=0x306a9, pf=0x2, revision=0x16
+[    0.530895] microcode: CPU3 sig=0x306a9, pf=0x2, revision=0x16
+[    0.530936] microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+[    0.530937] Scanning for low memory corruption every 60 seconds
+[    0.531108] Initialise system trusted keyring
+[    0.531137] audit: initializing netlink socket (disabled)
+[    0.531145] type=2000 audit(1448897083.524:1): initialized
+[    0.550681] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.551381] zbud: loaded
+[    0.551488] VFS: Disk quotas dquot_6.5.2
+[    0.551512] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.551767] fuse init (API version 7.22)
+[    0.551817] msgmni has been set to 15866
+[    0.551848] Key type big_key registered
+[    0.552206] Key type asymmetric registered
+[    0.552208] Asymmetric key parser 'x509' registered
+[    0.552225] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.552253] io scheduler noop registered
+[    0.552254] io scheduler deadline registered (default)
+[    0.552267] io scheduler cfq registered
+[    0.552553] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    0.552562] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    0.552584] vesafb: mode is 1024x768x32, linelength=4096, pages=0
+[    0.552585] vesafb: scrolling: redraw
+[    0.552586] vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.552590] mtrr: type mismatch for e0000000,400000 old: write-back new: write-combining
+[    0.552591] mtrr: type mismatch for e0000000,200000 old: write-back new: write-combining
+[    0.552592] mtrr: type mismatch for e0000000,100000 old: write-back new: write-combining
+[    0.552593] mtrr: type mismatch for e0000000,80000 old: write-back new: write-combining
+[    0.552594] mtrr: type mismatch for e0000000,40000 old: write-back new: write-combining
+[    0.552595] mtrr: type mismatch for e0000000,20000 old: write-back new: write-combining
+[    0.552596] mtrr: type mismatch for e0000000,10000 old: write-back new: write-combining
+[    0.552597] mtrr: type mismatch for e0000000,8000 old: write-back new: write-combining
+[    0.552598] mtrr: type mismatch for e0000000,4000 old: write-back new: write-combining
+[    0.552599] mtrr: type mismatch for e0000000,2000 old: write-back new: write-combining
+[    0.552600] mtrr: type mismatch for e0000000,1000 old: write-back new: write-combining
+[    0.552918] vesafb: framebuffer at 0xe0000000, mapped to 0xffffc90004e80000, using 3072k, total 3072k
+[    0.554300] Console: switching to colour frame buffer device 128x48
+[    0.555626] fb0: VESA VGA frame buffer device
+[    0.555635] intel_idle: MWAIT substates: 0x1120
+[    0.555636] intel_idle: v0.4 model 0x3A
+[    0.555637] intel_idle: lapic_timer_reliable_states 0xffffffff
+[    0.555697] ipmi message handler version 39.2
+[    0.555742] input: Power Button as /devices/LNXSYSTM:00/device:00/PNP0C0C:00/input/input0
+[    0.555746] ACPI: Power Button [PWRB]
+[    0.555765] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+[    0.555767] ACPI: Power Button [PWRF]
+[    0.555909] ACPI: Invalid active0 threshold
+[    0.555973] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.555974] ACPI: Thermal Zone [TZ00] (28 C)
+[    0.556100] thermal LNXTHERM:01: registered as thermal_zone1
+[    0.556101] ACPI: Thermal Zone [TZ01] (30 C)
+[    0.556116] GHES: HEST is not enabled!
+[    0.556170] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.576896] 00:0a: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.598133] 0000:00:16.3: ttyS4 at I/O 0xf0e0 (irq = 19, base_baud = 115200) is a 16550A
+[    0.598363] Linux agpgart interface v0.103
+[    0.599312] brd: module loaded
+[    0.599701] loop: module loaded
+[    0.599894] libphy: Fixed MDIO Bus: probed
+[    0.599940] tun: Universal TUN/TAP device driver, 1.6
+[    0.599941] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.599974] PPP generic driver version 2.4.2
+[    0.600011] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.600012] ehci_hcd: block sizes: qh 136 qtd 96 itd 192 sitd 96
+[    0.600015] ehci-pci: EHCI PCI platform driver
+[    0.600097] ehci-pci 0000:00:1a.0: EHCI Host Controller
+[    0.600101] ehci-pci 0000:00:1a.0: new USB bus registered, assigned bus number 1
+[    0.600116] ehci-pci 0000:00:1a.0: debug port 2
+[    0.600120] ehci-pci 0000:00:1a.0: reset hcs_params 0x200003 dbg=2 cc=0 pcc=0 ordered !ppc ports=3
+[    0.600123] ehci-pci 0000:00:1a.0: reset hcc_params 36881 caching frame 1024 64 bit addr
+[    0.600143] ehci-pci 0000:00:1a.0: reset command 0080002 (park)=0 ithresh=8 period=1024 Reset HALT
+[    0.604019] ehci-pci 0000:00:1a.0: cache line size of 64 is not supported
+[    0.604020] ehci-pci 0000:00:1a.0: supports USB remote wakeup
+[    0.604032] ehci-pci 0000:00:1a.0: irq 16, io mem 0xf7d38000
+[    0.604038] ehci-pci 0000:00:1a.0: init command 0010001 (park)=0 ithresh=1 period=1024 RUN
+[    0.616013] ehci-pci 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+[    0.616021] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1fe800]
+[    0.616022] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1fe800] rule [ffff880212714c08]
+[    0.616029] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1fe800]
+[    0.616030] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1fe800] rule [ffff880212714c08]
+[    0.616032] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1fe800]
+[    0.616033] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1fe800] rule [ffff880212714c08]
+[    0.616037] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.616038] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.616041] usb usb1: default language 0x0409
+[    0.616042] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.616043] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.616046] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3100]
+[    0.616046] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3100] rule [ffff880212714c08]
+[    0.616049] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3100]
+[    0.616050] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3100] rule [ffff880212714c08]
+[    0.616053] usb usb1: udev 1, busnum 1, minor = 0
+[    0.616055] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.616056] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.616057] usb usb1: Product: EHCI Host Controller
+[    0.616058] usb usb1: Manufacturer: Linux 3.13.11-usbfilter ehci_hcd
+[    0.616059] usb usb1: SerialNumber: 0000:00:1a.0
+[    0.616141] usb usb1: usb_probe_device
+[    0.616143] usb usb1: configuration #1 chosen from 1 choice
+[    0.616147] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.616148] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.616152] usb usb1: adding 1-0:1.0 (config #1, interface 0)
+[    0.616164] hub 1-0:1.0: usb_probe_interface
+[    0.616165] hub 1-0:1.0: usb_probe_interface - got id
+[    0.616167] hub 1-0:1.0: USB hub found
+[    0.616168] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.616169] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.616173] hub 1-0:1.0: 3 ports detected
+[    0.616174] hub 1-0:1.0: standalone hub
+[    0.616175] hub 1-0:1.0: no power switching (usb 1.0)
+[    0.616176] hub 1-0:1.0: individual port over-current protection
+[    0.616177] hub 1-0:1.0: power on to power good time: 20ms
+[    0.616178] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.616179] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.616181] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.616182] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.616185] hub 1-0:1.0: local power source is good
+[    0.616228] usb usb1: usb port1's DeviceRemovable is changed to 1 according to platform information.
+[    0.616229] hub 1-0:1.0: trying to enable port power on non-switchable hub
+[    0.616230] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3100]
+[    0.616231] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3100] rule [ffff880212714c08]
+[    0.616240] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3100]
+[    0.616241] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3100] rule [ffff880212714c08]
+[    0.616247] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3100]
+[    0.616248] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3100] rule [ffff880212714c08]
+[    0.616344] ehci-pci 0000:00:1d.0: EHCI Host Controller
+[    0.616348] ehci-pci 0000:00:1d.0: new USB bus registered, assigned bus number 2
+[    0.616358] ehci-pci 0000:00:1d.0: debug port 2
+[    0.616362] ehci-pci 0000:00:1d.0: reset hcs_params 0x200003 dbg=2 cc=0 pcc=0 ordered !ppc ports=3
+[    0.616365] ehci-pci 0000:00:1d.0: reset hcc_params 36881 caching frame 1024 64 bit addr
+[    0.616383] ehci-pci 0000:00:1d.0: reset command 0080002 (park)=0 ithresh=8 period=1024 Reset HALT
+[    0.620269] ehci-pci 0000:00:1d.0: cache line size of 64 is not supported
+[    0.620270] ehci-pci 0000:00:1d.0: supports USB remote wakeup
+[    0.620280] ehci-pci 0000:00:1d.0: irq 23, io mem 0xf7d37000
+[    0.620283] ehci-pci 0000:00:1d.0: init command 0010001 (park)=0 ithresh=1 period=1024 RUN
+[    0.632026] ehci-pci 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+[    0.632042] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632043] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632047] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632048] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632050] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632051] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632054] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632055] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632057] usb usb2: default language 0x0409
+[    0.632058] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632059] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632062] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632063] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632065] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632066] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632069] usb usb2: udev 1, busnum 2, minor = 128
+[    0.632070] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.632071] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.632072] usb usb2: Product: EHCI Host Controller
+[    0.632073] usb usb2: Manufacturer: Linux 3.13.11-usbfilter ehci_hcd
+[    0.632074] usb usb2: SerialNumber: 0000:00:1d.0
+[    0.632150] usb usb2: usb_probe_device
+[    0.632151] usb usb2: configuration #1 chosen from 1 choice
+[    0.632154] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632155] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632158] usb usb2: adding 2-0:1.0 (config #1, interface 0)
+[    0.632168] hub 2-0:1.0: usb_probe_interface
+[    0.632169] hub 2-0:1.0: usb_probe_interface - got id
+[    0.632170] hub 2-0:1.0: USB hub found
+[    0.632172] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632172] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632176] hub 2-0:1.0: 3 ports detected
+[    0.632177] hub 2-0:1.0: standalone hub
+[    0.632177] hub 2-0:1.0: no power switching (usb 1.0)
+[    0.632178] hub 2-0:1.0: individual port over-current protection
+[    0.632179] hub 2-0:1.0: power on to power good time: 20ms
+[    0.632180] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632181] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632184] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.632184] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.632187] hub 2-0:1.0: local power source is good
+[    0.632227] usb usb2: usb port1's DeviceRemovable is changed to 1 according to platform information.
+[    0.632228] hub 2-0:1.0: trying to enable port power on non-switchable hub
+[    0.632229] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632230] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632238] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632239] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632244] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3300]
+[    0.632244] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3300] rule [ffff880212714c08]
+[    0.632271] ehci-platform: EHCI generic platform driver
+[    0.632275] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.632276] ohci_hcd: block sizes: ed 80 td 96
+[    0.632279] ohci-pci: OHCI PCI platform driver
+[    0.632283] ohci-platform: OHCI generic platform driver
+[    0.632286] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.632378] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.632381] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+[    0.632392] xhci_hcd 0000:00:14.0: xHCI capability registers at ffffc90004e60000:
+[    0.632395] xhci_hcd 0000:00:14.0: CAPLENGTH AND HCIVERSION 0x1000080:
+[    0.632396] xhci_hcd 0000:00:14.0: CAPLENGTH: 0x80
+[    0.632397] xhci_hcd 0000:00:14.0: HCIVERSION: 0x100
+[    0.632399] xhci_hcd 0000:00:14.0: HCSPARAMS 1: 0x8000820
+[    0.632400] xhci_hcd 0000:00:14.0:   Max device slots: 32
+[    0.632401] xhci_hcd 0000:00:14.0:   Max interrupters: 8
+[    0.632402] xhci_hcd 0000:00:14.0:   Max ports: 8
+[    0.632404] xhci_hcd 0000:00:14.0: HCSPARAMS 2: 0x84000054
+[    0.632405] xhci_hcd 0000:00:14.0:   Isoc scheduling threshold: 4
+[    0.632406] xhci_hcd 0000:00:14.0:   Maximum allowed segments in event ring: 5
+[    0.632409] xhci_hcd 0000:00:14.0: HCSPARAMS 3 0x200000a:
+[    0.632410] xhci_hcd 0000:00:14.0:   Worst case U1 device exit latency: 10
+[    0.632411] xhci_hcd 0000:00:14.0:   Worst case U2 device exit latency: 512
+[    0.632413] xhci_hcd 0000:00:14.0: HCC PARAMS 0x20007181:
+[    0.632414] xhci_hcd 0000:00:14.0:   HC generates 64 bit addresses
+[    0.632415] xhci_hcd 0000:00:14.0:   FIXME: more HCCPARAMS debugging
+[    0.632417] xhci_hcd 0000:00:14.0: RTSOFF 0x2000:
+[    0.632418] xhci_hcd 0000:00:14.0: xHCI operational registers at ffffc90004e60080:
+[    0.632420] xhci_hcd 0000:00:14.0: USBCMD 0x0:
+[    0.632421] xhci_hcd 0000:00:14.0:   HC is being stopped
+[    0.632422] xhci_hcd 0000:00:14.0:   HC has finished hard reset
+[    0.632423] xhci_hcd 0000:00:14.0:   Event Interrupts disabled
+[    0.632424] xhci_hcd 0000:00:14.0:   Host System Error Interrupts disabled
+[    0.632425] xhci_hcd 0000:00:14.0:   HC has finished light reset
+[    0.632429] xhci_hcd 0000:00:14.0: USBSTS 0x1:
+[    0.632430] xhci_hcd 0000:00:14.0:   Event ring is empty
+[    0.632431] xhci_hcd 0000:00:14.0:   No Host System Error
+[    0.632432] xhci_hcd 0000:00:14.0:   HC is halted
+[    0.632434] xhci_hcd 0000:00:14.0: ffffc90004e60480 port status reg = 0x2a0
+[    0.632437] xhci_hcd 0000:00:14.0: ffffc90004e60484 port power reg = 0x0
+[    0.632440] xhci_hcd 0000:00:14.0: ffffc90004e60488 port link reg = 0x0
+[    0.632444] xhci_hcd 0000:00:14.0: ffffc90004e6048c port reserved reg = 0x0
+[    0.632446] xhci_hcd 0000:00:14.0: ffffc90004e60490 port status reg = 0x2a0
+[    0.632449] xhci_hcd 0000:00:14.0: ffffc90004e60494 port power reg = 0x0
+[    0.632452] xhci_hcd 0000:00:14.0: ffffc90004e60498 port link reg = 0x0
+[    0.632455] xhci_hcd 0000:00:14.0: ffffc90004e6049c port reserved reg = 0x0
+[    0.632458] xhci_hcd 0000:00:14.0: ffffc90004e604a0 port status reg = 0x2a0
+[    0.632460] xhci_hcd 0000:00:14.0: ffffc90004e604a4 port power reg = 0x0
+[    0.632463] xhci_hcd 0000:00:14.0: ffffc90004e604a8 port link reg = 0x0
+[    0.632467] xhci_hcd 0000:00:14.0: ffffc90004e604ac port reserved reg = 0x0
+[    0.632469] xhci_hcd 0000:00:14.0: ffffc90004e604b0 port status reg = 0x2a0
+[    0.632472] xhci_hcd 0000:00:14.0: ffffc90004e604b4 port power reg = 0x0
+[    0.632475] xhci_hcd 0000:00:14.0: ffffc90004e604b8 port link reg = 0x0
+[    0.632478] xhci_hcd 0000:00:14.0: ffffc90004e604bc port reserved reg = 0x0
+[    0.632481] xhci_hcd 0000:00:14.0: ffffc90004e604c0 port status reg = 0x2a0
+[    0.632483] xhci_hcd 0000:00:14.0: ffffc90004e604c4 port power reg = 0x0
+[    0.632486] xhci_hcd 0000:00:14.0: ffffc90004e604c8 port link reg = 0x0
+[    0.632489] xhci_hcd 0000:00:14.0: ffffc90004e604cc port reserved reg = 0x0
+[    0.632492] xhci_hcd 0000:00:14.0: ffffc90004e604d0 port status reg = 0x2a0
+[    0.632494] xhci_hcd 0000:00:14.0: ffffc90004e604d4 port power reg = 0x0
+[    0.632497] xhci_hcd 0000:00:14.0: ffffc90004e604d8 port link reg = 0x0
+[    0.632500] xhci_hcd 0000:00:14.0: ffffc90004e604dc port reserved reg = 0x0
+[    0.632503] xhci_hcd 0000:00:14.0: ffffc90004e604e0 port status reg = 0x2a0
+[    0.632505] xhci_hcd 0000:00:14.0: ffffc90004e604e4 port power reg = 0x0
+[    0.632507] xhci_hcd 0000:00:14.0: ffffc90004e604e8 port link reg = 0x0
+[    0.632511] xhci_hcd 0000:00:14.0: ffffc90004e604ec port reserved reg = 0x0
+[    0.632513] xhci_hcd 0000:00:14.0: ffffc90004e604f0 port status reg = 0x2a0
+[    0.632516] xhci_hcd 0000:00:14.0: ffffc90004e604f4 port power reg = 0x0
+[    0.632518] xhci_hcd 0000:00:14.0: ffffc90004e604f8 port link reg = 0x0
+[    0.632521] xhci_hcd 0000:00:14.0: ffffc90004e604fc port reserved reg = 0x0
+[    0.632523] xhci_hcd 0000:00:14.0: // Halt the HC
+[    0.632527] xhci_hcd 0000:00:14.0: Resetting HCD
+[    0.632530] xhci_hcd 0000:00:14.0: // Reset the HC
+[    0.632536] xhci_hcd 0000:00:14.0: Wait for controller to be ready for doorbell rings
+[    0.632538] xhci_hcd 0000:00:14.0: Reset complete
+[    0.632540] xhci_hcd 0000:00:14.0: Enabling 64-bit DMA addresses.
+[    0.632541] xhci_hcd 0000:00:14.0: Calling HCD init
+[    0.632541] xhci_hcd 0000:00:14.0: xhci_init
+[    0.632542] xhci_hcd 0000:00:14.0: xHCI doesn't need link TRB QUIRK
+[    0.632546] xhci_hcd 0000:00:14.0: Supported page size register = 0x1
+[    0.632548] xhci_hcd 0000:00:14.0: Supported page size of 4K
+[    0.632549] xhci_hcd 0000:00:14.0: HCD page size set to 4K
+[    0.632551] xhci_hcd 0000:00:14.0: // xHC can handle at most 32 device slots.
+[    0.632554] xhci_hcd 0000:00:14.0: // Setting Max device slots reg = 0x20.
+[    0.632559] xhci_hcd 0000:00:14.0: // Device context base array address = 0xfffff000 (DMA), ffff88020d73c000 (virt)
+[    0.632563] xhci_hcd 0000:00:14.0: Allocated command ring at ffff88020d72c900
+[    0.632564] xhci_hcd 0000:00:14.0: First segment DMA is 0xffffe000
+[    0.632569] xhci_hcd 0000:00:14.0: // Setting command ring address to 0x20
+[    0.632573] xhci_hcd 0000:00:14.0: // xHC command ring deq ptr low bits + flags = @00000000
+[    0.632574] xhci_hcd 0000:00:14.0: // xHC command ring deq ptr high bits = @00000000
+[    0.632578] xhci_hcd 0000:00:14.0: // Doorbell array is located at offset 0x3000 from cap regs base addr
+[    0.632579] xhci_hcd 0000:00:14.0: // xHCI capability registers at ffffc90004e60000:
+[    0.632582] xhci_hcd 0000:00:14.0: // @ffffc90004e60000 = 0x1000080 (CAPLENGTH AND HCIVERSION)
+[    0.632583] xhci_hcd 0000:00:14.0: //   CAPLENGTH: 0x80
+[    0.632584] xhci_hcd 0000:00:14.0: // xHCI operational registers at ffffc90004e60080:
+[    0.632586] xhci_hcd 0000:00:14.0: // @ffffc90004e60018 = 0x2000 RTSOFF
+[    0.632587] xhci_hcd 0000:00:14.0: // xHCI runtime registers at ffffc90004e62000:
+[    0.632590] xhci_hcd 0000:00:14.0: // @ffffc90004e60014 = 0x3000 DBOFF
+[    0.632591] xhci_hcd 0000:00:14.0: // Doorbell array at ffffc90004e63000:
+[    0.632592] xhci_hcd 0000:00:14.0: xHCI runtime registers at ffffc90004e62000:
+[    0.632594] xhci_hcd 0000:00:14.0:   ffffc90004e62000: Microframe index = 0x0
+[    0.632612] xhci_hcd 0000:00:14.0: // Allocating event ring
+[    0.632614] xhci_hcd 0000:00:14.0: TRB math tests passed.
+[    0.632616] xhci_hcd 0000:00:14.0: // Allocated event ring segment table at 0xffffc000
+[    0.632617] xhci_hcd 0000:00:14.0: Set ERST to 0; private num segs = 1, virt addr = ffff88020d740000, dma addr = 0xffffc000
+[    0.632620] xhci_hcd 0000:00:14.0: // Write ERST size = 1 to ir_set 0 (some bits preserved)
+[    0.632621] xhci_hcd 0000:00:14.0: // Set ERST entries to point to event ring.
+[    0.632622] xhci_hcd 0000:00:14.0: // Set ERST base address for ir_set 0 = 0xffffc000
+[    0.632627] xhci_hcd 0000:00:14.0: // Write event ring dequeue pointer, preserving EHB bit
+[    0.632628] xhci_hcd 0000:00:14.0: Wrote ERST address to ir_set 0.
+[    0.632630] xhci_hcd 0000:00:14.0: Allocating 16 scratchpad buffers
+[    0.632653] xhci_hcd 0000:00:14.0: Ext Cap ffffc90004e68000, port offset = 1, count = 4, revision = 0x2
+[    0.632654] xhci_hcd 0000:00:14.0: xHCI 1.0: support USB2 software lpm
+[    0.632658] xhci_hcd 0000:00:14.0: Ext Cap ffffc90004e68020, port offset = 5, count = 4, revision = 0x3
+[    0.632659] xhci_hcd 0000:00:14.0: Found 4 USB 2.0 ports and 4 USB 3.0 ports.
+[    0.632660] xhci_hcd 0000:00:14.0: USB 2.0 port at index 0, addr = ffffc90004e60480
+[    0.632661] xhci_hcd 0000:00:14.0: USB 2.0 port at index 1, addr = ffffc90004e60490
+[    0.632662] xhci_hcd 0000:00:14.0: USB 2.0 port at index 2, addr = ffffc90004e604a0
+[    0.632663] xhci_hcd 0000:00:14.0: USB 2.0 port at index 3, addr = ffffc90004e604b0
+[    0.632664] xhci_hcd 0000:00:14.0: USB 3.0 port at index 4, addr = ffffc90004e604c0
+[    0.632666] xhci_hcd 0000:00:14.0: USB 3.0 port at index 5, addr = ffffc90004e604d0
+[    0.632667] xhci_hcd 0000:00:14.0: USB 3.0 port at index 6, addr = ffffc90004e604e0
+[    0.632668] xhci_hcd 0000:00:14.0: USB 3.0 port at index 7, addr = ffffc90004e604f0
+[    0.632673] xhci_hcd 0000:00:14.0: Finished xhci_init
+[    0.632674] xhci_hcd 0000:00:14.0: Called HCD init
+[    0.632676] xhci_hcd 0000:00:14.0: Got SBRN 48
+[    0.632681] xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+[    0.632682] xhci_hcd 0000:00:14.0: Finished xhci_pci_reinit
+[    0.632683] xhci_hcd 0000:00:14.0: supports USB remote wakeup
+[    0.632684] xhci_hcd 0000:00:14.0: xhci_run
+[    0.632685] xhci_hcd 0000:00:14.0: Failed to enable MSI-X
+[    0.632705] xhci_hcd 0000:00:14.0: irq 42 for MSI/MSI-X
+[    0.632718] xhci_hcd 0000:00:14.0: Command ring memory map follows:
+[    0.632720] xhci_hcd 0000:00:14.0: @00000000ffffe000 00000000 00000000 00000000 00000000
+[    0.632721] xhci_hcd 0000:00:14.0: @00000000ffffe010 00000000 00000000 00000000 00000000
+[    0.632722] xhci_hcd 0000:00:14.0: @00000000ffffe020 00000000 00000000 00000000 00000000
+[    0.632723] xhci_hcd 0000:00:14.0: @00000000ffffe030 00000000 00000000 00000000 00000000
+[    0.632725] xhci_hcd 0000:00:14.0: @00000000ffffe040 00000000 00000000 00000000 00000000
+[    0.632726] xhci_hcd 0000:00:14.0: @00000000ffffe050 00000000 00000000 00000000 00000000
+[    0.632727] xhci_hcd 0000:00:14.0: @00000000ffffe060 00000000 00000000 00000000 00000000
+[    0.632728] xhci_hcd 0000:00:14.0: @00000000ffffe070 00000000 00000000 00000000 00000000
+[    0.632729] xhci_hcd 0000:00:14.0: @00000000ffffe080 00000000 00000000 00000000 00000000
+[    0.632730] xhci_hcd 0000:00:14.0: @00000000ffffe090 00000000 00000000 00000000 00000000
+[    0.632731] xhci_hcd 0000:00:14.0: @00000000ffffe0a0 00000000 00000000 00000000 00000000
+[    0.632733] xhci_hcd 0000:00:14.0: @00000000ffffe0b0 00000000 00000000 00000000 00000000
+[    0.632734] xhci_hcd 0000:00:14.0: @00000000ffffe0c0 00000000 00000000 00000000 00000000
+[    0.632735] xhci_hcd 0000:00:14.0: @00000000ffffe0d0 00000000 00000000 00000000 00000000
+[    0.632736] xhci_hcd 0000:00:14.0: @00000000ffffe0e0 00000000 00000000 00000000 00000000
+[    0.632737] xhci_hcd 0000:00:14.0: @00000000ffffe0f0 00000000 00000000 00000000 00000000
+[    0.632738] xhci_hcd 0000:00:14.0: @00000000ffffe100 00000000 00000000 00000000 00000000
+[    0.632739] xhci_hcd 0000:00:14.0: @00000000ffffe110 00000000 00000000 00000000 00000000
+[    0.632741] xhci_hcd 0000:00:14.0: @00000000ffffe120 00000000 00000000 00000000 00000000
+[    0.632742] xhci_hcd 0000:00:14.0: @00000000ffffe130 00000000 00000000 00000000 00000000
+[    0.632743] xhci_hcd 0000:00:14.0: @00000000ffffe140 00000000 00000000 00000000 00000000
+[    0.632744] xhci_hcd 0000:00:14.0: @00000000ffffe150 00000000 00000000 00000000 00000000
+[    0.632745] xhci_hcd 0000:00:14.0: @00000000ffffe160 00000000 00000000 00000000 00000000
+[    0.632746] xhci_hcd 0000:00:14.0: @00000000ffffe170 00000000 00000000 00000000 00000000
+[    0.632747] xhci_hcd 0000:00:14.0: @00000000ffffe180 00000000 00000000 00000000 00000000
+[    0.632749] xhci_hcd 0000:00:14.0: @00000000ffffe190 00000000 00000000 00000000 00000000
+[    0.632750] xhci_hcd 0000:00:14.0: @00000000ffffe1a0 00000000 00000000 00000000 00000000
+[    0.632751] xhci_hcd 0000:00:14.0: @00000000ffffe1b0 00000000 00000000 00000000 00000000
+[    0.632752] xhci_hcd 0000:00:14.0: @00000000ffffe1c0 00000000 00000000 00000000 00000000
+[    0.632753] xhci_hcd 0000:00:14.0: @00000000ffffe1d0 00000000 00000000 00000000 00000000
+[    0.632754] xhci_hcd 0000:00:14.0: @00000000ffffe1e0 00000000 00000000 00000000 00000000
+[    0.632755] xhci_hcd 0000:00:14.0: @00000000ffffe1f0 00000000 00000000 00000000 00000000
+[    0.632757] xhci_hcd 0000:00:14.0: @00000000ffffe200 00000000 00000000 00000000 00000000
+[    0.632758] xhci_hcd 0000:00:14.0: @00000000ffffe210 00000000 00000000 00000000 00000000
+[    0.632759] xhci_hcd 0000:00:14.0: @00000000ffffe220 00000000 00000000 00000000 00000000
+[    0.632760] xhci_hcd 0000:00:14.0: @00000000ffffe230 00000000 00000000 00000000 00000000
+[    0.632761] xhci_hcd 0000:00:14.0: @00000000ffffe240 00000000 00000000 00000000 00000000
+[    0.632762] xhci_hcd 0000:00:14.0: @00000000ffffe250 00000000 00000000 00000000 00000000
+[    0.632763] xhci_hcd 0000:00:14.0: @00000000ffffe260 00000000 00000000 00000000 00000000
+[    0.632765] xhci_hcd 0000:00:14.0: @00000000ffffe270 00000000 00000000 00000000 00000000
+[    0.632766] xhci_hcd 0000:00:14.0: @00000000ffffe280 00000000 00000000 00000000 00000000
+[    0.632767] xhci_hcd 0000:00:14.0: @00000000ffffe290 00000000 00000000 00000000 00000000
+[    0.632768] xhci_hcd 0000:00:14.0: @00000000ffffe2a0 00000000 00000000 00000000 00000000
+[    0.632769] xhci_hcd 0000:00:14.0: @00000000ffffe2b0 00000000 00000000 00000000 00000000
+[    0.632770] xhci_hcd 0000:00:14.0: @00000000ffffe2c0 00000000 00000000 00000000 00000000
+[    0.632771] xhci_hcd 0000:00:14.0: @00000000ffffe2d0 00000000 00000000 00000000 00000000
+[    0.632773] xhci_hcd 0000:00:14.0: @00000000ffffe2e0 00000000 00000000 00000000 00000000
+[    0.632774] xhci_hcd 0000:00:14.0: @00000000ffffe2f0 00000000 00000000 00000000 00000000
+[    0.632775] xhci_hcd 0000:00:14.0: @00000000ffffe300 00000000 00000000 00000000 00000000
+[    0.632776] xhci_hcd 0000:00:14.0: @00000000ffffe310 00000000 00000000 00000000 00000000
+[    0.632777] xhci_hcd 0000:00:14.0: @00000000ffffe320 00000000 00000000 00000000 00000000
+[    0.632778] xhci_hcd 0000:00:14.0: @00000000ffffe330 00000000 00000000 00000000 00000000
+[    0.632779] xhci_hcd 0000:00:14.0: @00000000ffffe340 00000000 00000000 00000000 00000000
+[    0.632781] xhci_hcd 0000:00:14.0: @00000000ffffe350 00000000 00000000 00000000 00000000
+[    0.632782] xhci_hcd 0000:00:14.0: @00000000ffffe360 00000000 00000000 00000000 00000000
+[    0.632783] xhci_hcd 0000:00:14.0: @00000000ffffe370 00000000 00000000 00000000 00000000
+[    0.632784] xhci_hcd 0000:00:14.0: @00000000ffffe380 00000000 00000000 00000000 00000000
+[    0.632785] xhci_hcd 0000:00:14.0: @00000000ffffe390 00000000 00000000 00000000 00000000
+[    0.632786] xhci_hcd 0000:00:14.0: @00000000ffffe3a0 00000000 00000000 00000000 00000000
+[    0.632787] xhci_hcd 0000:00:14.0: @00000000ffffe3b0 00000000 00000000 00000000 00000000
+[    0.632788] xhci_hcd 0000:00:14.0: @00000000ffffe3c0 00000000 00000000 00000000 00000000
+[    0.632790] xhci_hcd 0000:00:14.0: @00000000ffffe3d0 00000000 00000000 00000000 00000000
+[    0.632791] xhci_hcd 0000:00:14.0: @00000000ffffe3e0 00000000 00000000 00000000 00000000
+[    0.632792] xhci_hcd 0000:00:14.0: @00000000ffffe3f0 ffffe000 00000000 00000000 00001802
+[    0.632793] xhci_hcd 0000:00:14.0:   Ring has not been updated
+[    0.632794] xhci_hcd 0000:00:14.0: Ring deq = ffff88020d73e000 (virt), 0xffffe000 (dma)
+[    0.632795] xhci_hcd 0000:00:14.0: Ring deq updated 0 times
+[    0.632796] xhci_hcd 0000:00:14.0: Ring enq = ffff88020d73e000 (virt), 0xffffe000 (dma)
+[    0.632797] xhci_hcd 0000:00:14.0: Ring enq updated 0 times
+[    0.632803] xhci_hcd 0000:00:14.0: // xHC command ring deq ptr low bits + flags = @00000000
+[    0.632804] xhci_hcd 0000:00:14.0: // xHC command ring deq ptr high bits = @00000000
+[    0.632805] xhci_hcd 0000:00:14.0: ERST memory map follows:
+[    0.632806] xhci_hcd 0000:00:14.0: @00000000ffffc000 ffffe400 00000000 00000040 00000000
+[    0.632807] xhci_hcd 0000:00:14.0: Event ring:
+[    0.632808] xhci_hcd 0000:00:14.0: @00000000ffffe400 00000000 00000000 00000000 00000000
+[    0.632809] xhci_hcd 0000:00:14.0: @00000000ffffe410 00000000 00000000 00000000 00000000
+[    0.632810] xhci_hcd 0000:00:14.0: @00000000ffffe420 00000000 00000000 00000000 00000000
+[    0.632812] xhci_hcd 0000:00:14.0: @00000000ffffe430 00000000 00000000 00000000 00000000
+[    0.632813] xhci_hcd 0000:00:14.0: @00000000ffffe440 00000000 00000000 00000000 00000000
+[    0.632814] xhci_hcd 0000:00:14.0: @00000000ffffe450 00000000 00000000 00000000 00000000
+[    0.632815] xhci_hcd 0000:00:14.0: @00000000ffffe460 00000000 00000000 00000000 00000000
+[    0.632816] xhci_hcd 0000:00:14.0: @00000000ffffe470 00000000 00000000 00000000 00000000
+[    0.632817] xhci_hcd 0000:00:14.0: @00000000ffffe480 00000000 00000000 00000000 00000000
+[    0.632818] xhci_hcd 0000:00:14.0: @00000000ffffe490 00000000 00000000 00000000 00000000
+[    0.632820] xhci_hcd 0000:00:14.0: @00000000ffffe4a0 00000000 00000000 00000000 00000000
+[    0.632821] xhci_hcd 0000:00:14.0: @00000000ffffe4b0 00000000 00000000 00000000 00000000
+[    0.632822] xhci_hcd 0000:00:14.0: @00000000ffffe4c0 00000000 00000000 00000000 00000000
+[    0.632823] xhci_hcd 0000:00:14.0: @00000000ffffe4d0 00000000 00000000 00000000 00000000
+[    0.632824] xhci_hcd 0000:00:14.0: @00000000ffffe4e0 00000000 00000000 00000000 00000000
+[    0.632825] xhci_hcd 0000:00:14.0: @00000000ffffe4f0 00000000 00000000 00000000 00000000
+[    0.632826] xhci_hcd 0000:00:14.0: @00000000ffffe500 00000000 00000000 00000000 00000000
+[    0.632828] xhci_hcd 0000:00:14.0: @00000000ffffe510 00000000 00000000 00000000 00000000
+[    0.632829] xhci_hcd 0000:00:14.0: @00000000ffffe520 00000000 00000000 00000000 00000000
+[    0.632830] xhci_hcd 0000:00:14.0: @00000000ffffe530 00000000 00000000 00000000 00000000
+[    0.632831] xhci_hcd 0000:00:14.0: @00000000ffffe540 00000000 00000000 00000000 00000000
+[    0.632832] xhci_hcd 0000:00:14.0: @00000000ffffe550 00000000 00000000 00000000 00000000
+[    0.632833] xhci_hcd 0000:00:14.0: @00000000ffffe560 00000000 00000000 00000000 00000000
+[    0.632834] xhci_hcd 0000:00:14.0: @00000000ffffe570 00000000 00000000 00000000 00000000
+[    0.632836] xhci_hcd 0000:00:14.0: @00000000ffffe580 00000000 00000000 00000000 00000000
+[    0.632837] xhci_hcd 0000:00:14.0: @00000000ffffe590 00000000 00000000 00000000 00000000
+[    0.632838] xhci_hcd 0000:00:14.0: @00000000ffffe5a0 00000000 00000000 00000000 00000000
+[    0.632839] xhci_hcd 0000:00:14.0: @00000000ffffe5b0 00000000 00000000 00000000 00000000
+[    0.632840] xhci_hcd 0000:00:14.0: @00000000ffffe5c0 00000000 00000000 00000000 00000000
+[    0.632841] xhci_hcd 0000:00:14.0: @00000000ffffe5d0 00000000 00000000 00000000 00000000
+[    0.632842] xhci_hcd 0000:00:14.0: @00000000ffffe5e0 00000000 00000000 00000000 00000000
+[    0.632844] xhci_hcd 0000:00:14.0: @00000000ffffe5f0 00000000 00000000 00000000 00000000
+[    0.632845] xhci_hcd 0000:00:14.0: @00000000ffffe600 00000000 00000000 00000000 00000000
+[    0.632846] xhci_hcd 0000:00:14.0: @00000000ffffe610 00000000 00000000 00000000 00000000
+[    0.632847] xhci_hcd 0000:00:14.0: @00000000ffffe620 00000000 00000000 00000000 00000000
+[    0.632848] xhci_hcd 0000:00:14.0: @00000000ffffe630 00000000 00000000 00000000 00000000
+[    0.632849] xhci_hcd 0000:00:14.0: @00000000ffffe640 00000000 00000000 00000000 00000000
+[    0.632850] xhci_hcd 0000:00:14.0: @00000000ffffe650 00000000 00000000 00000000 00000000
+[    0.632852] xhci_hcd 0000:00:14.0: @00000000ffffe660 00000000 00000000 00000000 00000000
+[    0.632853] xhci_hcd 0000:00:14.0: @00000000ffffe670 00000000 00000000 00000000 00000000
+[    0.632854] xhci_hcd 0000:00:14.0: @00000000ffffe680 00000000 00000000 00000000 00000000
+[    0.632855] xhci_hcd 0000:00:14.0: @00000000ffffe690 00000000 00000000 00000000 00000000
+[    0.632856] xhci_hcd 0000:00:14.0: @00000000ffffe6a0 00000000 00000000 00000000 00000000
+[    0.632857] xhci_hcd 0000:00:14.0: @00000000ffffe6b0 00000000 00000000 00000000 00000000
+[    0.632858] xhci_hcd 0000:00:14.0: @00000000ffffe6c0 00000000 00000000 00000000 00000000
+[    0.632860] xhci_hcd 0000:00:14.0: @00000000ffffe6d0 00000000 00000000 00000000 00000000
+[    0.632861] xhci_hcd 0000:00:14.0: @00000000ffffe6e0 00000000 00000000 00000000 00000000
+[    0.632862] xhci_hcd 0000:00:14.0: @00000000ffffe6f0 00000000 00000000 00000000 00000000
+[    0.632863] xhci_hcd 0000:00:14.0: @00000000ffffe700 00000000 00000000 00000000 00000000
+[    0.632864] xhci_hcd 0000:00:14.0: @00000000ffffe710 00000000 00000000 00000000 00000000
+[    0.632865] xhci_hcd 0000:00:14.0: @00000000ffffe720 00000000 00000000 00000000 00000000
+[    0.632866] xhci_hcd 0000:00:14.0: @00000000ffffe730 00000000 00000000 00000000 00000000
+[    0.632868] xhci_hcd 0000:00:14.0: @00000000ffffe740 00000000 00000000 00000000 00000000
+[    0.632869] xhci_hcd 0000:00:14.0: @00000000ffffe750 00000000 00000000 00000000 00000000
+[    0.632870] xhci_hcd 0000:00:14.0: @00000000ffffe760 00000000 00000000 00000000 00000000
+[    0.632871] xhci_hcd 0000:00:14.0: @00000000ffffe770 00000000 00000000 00000000 00000000
+[    0.632872] xhci_hcd 0000:00:14.0: @00000000ffffe780 00000000 00000000 00000000 00000000
+[    0.632873] xhci_hcd 0000:00:14.0: @00000000ffffe790 00000000 00000000 00000000 00000000
+[    0.632874] xhci_hcd 0000:00:14.0: @00000000ffffe7a0 00000000 00000000 00000000 00000000
+[    0.632876] xhci_hcd 0000:00:14.0: @00000000ffffe7b0 00000000 00000000 00000000 00000000
+[    0.632877] xhci_hcd 0000:00:14.0: @00000000ffffe7c0 00000000 00000000 00000000 00000000
+[    0.632878] xhci_hcd 0000:00:14.0: @00000000ffffe7d0 00000000 00000000 00000000 00000000
+[    0.632879] xhci_hcd 0000:00:14.0: @00000000ffffe7e0 00000000 00000000 00000000 00000000
+[    0.632880] xhci_hcd 0000:00:14.0: @00000000ffffe7f0 00000000 00000000 00000000 00000000
+[    0.632881] xhci_hcd 0000:00:14.0:   Ring has not been updated
+[    0.632882] xhci_hcd 0000:00:14.0: Ring deq = ffff88020d73e400 (virt), 0xffffe400 (dma)
+[    0.632883] xhci_hcd 0000:00:14.0: Ring deq updated 0 times
+[    0.632884] xhci_hcd 0000:00:14.0: Ring enq = ffff88020d73e400 (virt), 0xffffe400 (dma)
+[    0.632885] xhci_hcd 0000:00:14.0: Ring enq updated 0 times
+[    0.632891] xhci_hcd 0000:00:14.0: ERST deq = 64'hffffe400
+[    0.632892] xhci_hcd 0000:00:14.0: // Set the interrupt modulation register
+[    0.632896] xhci_hcd 0000:00:14.0: // Enable interrupts, cmd = 0x4.
+[    0.632899] xhci_hcd 0000:00:14.0: // Enabling event ring interrupter ffffc90004e62020 by writing 0x2 to irq_pending
+[    0.632902] xhci_hcd 0000:00:14.0:   ffffc90004e62020: ir_set[0]
+[    0.632903] xhci_hcd 0000:00:14.0:   ffffc90004e62020: ir_set.pending = 0x2
+[    0.632906] xhci_hcd 0000:00:14.0:   ffffc90004e62024: ir_set.control = 0xa0
+[    0.632908] xhci_hcd 0000:00:14.0:   ffffc90004e62028: ir_set.erst_size = 0x1
+[    0.632913] xhci_hcd 0000:00:14.0:   ffffc90004e62030: ir_set.erst_base = @ffffc000
+[    0.632916] xhci_hcd 0000:00:14.0:   ffffc90004e62038: ir_set.erst_dequeue = @ffffe400
+[    0.632917] xhci_hcd 0000:00:14.0: Finished xhci_run for USB2 roothub
+[    0.632918] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.632919] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.632927] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.632928] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.632930] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.632931] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.632934] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.632935] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.632938] usb usb3: default language 0x0409
+[    0.632939] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.632940] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.632942] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.632943] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.632946] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.632947] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.632949] usb usb3: udev 1, busnum 3, minor = 256
+[    0.632951] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.632952] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.632953] usb usb3: Product: xHCI Host Controller
+[    0.632954] usb usb3: Manufacturer: Linux 3.13.11-usbfilter xhci_hcd
+[    0.632955] usb usb3: SerialNumber: 0000:00:14.0
+[    0.633028] usb usb3: usb_probe_device
+[    0.633030] usb usb3: configuration #1 chosen from 1 choice
+[    0.633032] xHCI xhci_add_endpoint called for root hub
+[    0.633033] xHCI xhci_check_bandwidth called for root hub
+[    0.633034] xhci_hcd 0000:00:14.0: Endpoint 0x81 ep reset callback called
+[    0.633036] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.633037] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.633041] usb usb3: adding 3-0:1.0 (config #1, interface 0)
+[    0.633050] hub 3-0:1.0: usb_probe_interface
+[    0.633051] hub 3-0:1.0: usb_probe_interface - got id
+[    0.633053] hub 3-0:1.0: USB hub found
+[    0.633054] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.633055] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.633065] hub 3-0:1.0: 4 ports detected
+[    0.633066] hub 3-0:1.0: standalone hub
+[    0.633067] hub 3-0:1.0: no power switching (usb 1.0)
+[    0.633067] hub 3-0:1.0: individual port over-current protection
+[    0.633068] hub 3-0:1.0: Single TT
+[    0.633069] hub 3-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[    0.633070] hub 3-0:1.0: power on to power good time: 20ms
+[    0.633071] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.633072] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.633075] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.633076] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.633078] hub 3-0:1.0: local power source is good
+[    0.633257] hub 3-0:1.0: trying to enable port power on non-switchable hub
+[    0.633258] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.633259] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.633266] xhci_hcd 0000:00:14.0: set port power, actual port 0 status  = 0x2a0
+[    0.633271] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.633272] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.633277] xhci_hcd 0000:00:14.0: set port power, actual port 1 status  = 0x2a0
+[    0.633281] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.633282] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.633286] xhci_hcd 0000:00:14.0: set port power, actual port 2 status  = 0x2a0
+[    0.633290] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3500]
+[    0.633291] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3500] rule [ffff880212714c08]
+[    0.633294] xhci_hcd 0000:00:14.0: set port power, actual port 3 status  = 0x2a0
+[    0.633318] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.633320] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 4
+[    0.633322] xhci_hcd 0000:00:14.0: supports USB remote wakeup
+[    0.633325] xhci_hcd 0000:00:14.0: // Turn on HC, cmd = 0x5.
+[    0.633327] xhci_hcd 0000:00:14.0: Finished xhci_run for USB3 roothub
+[    0.633328] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633329] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633332] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633333] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633341] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633342] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633347] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633348] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633350] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633351] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633354] usb usb4: skipped 1 descriptor after endpoint
+[    0.633355] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633356] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633359] usb usb4: default language 0x0409
+[    0.633360] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633360] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633363] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633364] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633368] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633369] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633371] usb usb4: udev 1, busnum 4, minor = 384
+[    0.633373] usb usb4: New USB device found, idVendor=1d6b, idProduct=0003
+[    0.633374] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.633375] usb usb4: Product: xHCI Host Controller
+[    0.633376] usb usb4: Manufacturer: Linux 3.13.11-usbfilter xhci_hcd
+[    0.633377] usb usb4: SerialNumber: 0000:00:14.0
+[    0.633450] usb usb4: usb_probe_device
+[    0.633452] usb usb4: configuration #1 chosen from 1 choice
+[    0.633453] xHCI xhci_add_endpoint called for root hub
+[    0.633454] xHCI xhci_check_bandwidth called for root hub
+[    0.633455] xhci_hcd 0000:00:14.0: Endpoint 0x81 ep reset callback called
+[    0.633457] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633457] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633461] usb usb4: adding 4-0:1.0 (config #1, interface 0)
+[    0.633471] hub 4-0:1.0: usb_probe_interface
+[    0.633472] hub 4-0:1.0: usb_probe_interface - got id
+[    0.633473] hub 4-0:1.0: USB hub found
+[    0.633475] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633475] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633485] hub 4-0:1.0: 4 ports detected
+[    0.633485] hub 4-0:1.0: standalone hub
+[    0.633486] hub 4-0:1.0: no power switching (usb 1.0)
+[    0.633487] hub 4-0:1.0: individual port over-current protection
+[    0.633488] hub 4-0:1.0: TT requires at most 8 FS bit times (666 ns)
+[    0.633489] hub 4-0:1.0: power on to power good time: 20ms
+[    0.633490] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633491] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633493] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.633494] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.633497] hub 4-0:1.0: local power source is good
+[    0.633668] hub 4-0:1.0: trying to enable port power on non-switchable hub
+[    0.633669] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633670] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633677] xhci_hcd 0000:00:14.0: set port power, actual port 0 status  = 0x802a0
+[    0.633682] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633683] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633689] xhci_hcd 0000:00:14.0: set port power, actual port 1 status  = 0x802a0
+[    0.633693] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633694] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633698] xhci_hcd 0000:00:14.0: set port power, actual port 2 status  = 0x802a0
+[    0.633701] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3700]
+[    0.633702] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3700] rule [ffff880212714c08]
+[    0.633706] xhci_hcd 0000:00:14.0: set port power, actual port 3 status  = 0x802a0
+[    0.640130] i8042: PNP: No PS/2 controller found. Probing ports directly.
+[    0.643064] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.643069] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.643259] mousedev: PS/2 mouse device common for all mice
+[    0.643535] rtc_cmos 00:05: RTC can wake from S4
+[    0.643689] rtc_cmos 00:05: rtc core: registered rtc_cmos as rtc0
+[    0.643722] rtc_cmos 00:05: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+[    0.643756] device-mapper: uevent: version 1.0.3
+[    0.643826] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    0.643830] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.643889] TCP: cubic registered
+[    0.643931] NET: Registered protocol family 10
+[    0.644048] NET: Registered protocol family 17
+[    0.644062] Key type dns_resolver registered
+[    0.644329] Loading compiled-in X.509 certificates
+[    0.644962] Loaded X.509 cert 'Magrathea: Glacier signing key: e385e041cc396329055a4e42559c8a9c49b0f51b'
+[    0.644969] registered taskstats version 1
+[    0.646625] Key type trusted registered
+[    0.649524] Key type encrypted registered
+[    0.649528] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.649529] IMA: No TPM chip found, activating TPM-bypass!
+[    0.649797] regulator-dummy: disabling
+[    0.649887]   Magic number: 7:252:438
+[    0.649984] rtc_cmos 00:05: setting system clock to 2015-11-30 15:24:44 UTC (1448897084)
+[    0.650489] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    0.650490] EDD information not available.
+[    0.650527] PM: Hibernation image not present or could not be loaded.
+[    0.651154] Freeing unused kernel memory: 1336K (ffffffff81d20000 - ffffffff81e6e000)
+[    0.651155] Write protecting the kernel read-only data: 12288k
+[    0.652485] Freeing unused kernel memory: 772K (ffff88000173f000 - ffff880001800000)
+[    0.653666] Freeing unused kernel memory: 704K (ffff880001b50000 - ffff880001c00000)
+[    0.661894] systemd-udevd[115]: starting version 204
+[    0.669150] video: module verification failed: signature and/or  required key missing - tainting kernel
+[    0.672350] pps_core: LinuxPPS API ver. 1 registered
+[    0.672352] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.672815] PTP clock support registered
+[    0.673358] tg3.c:v3.134 (Sep 16, 2013)
+[    0.673798] [drm] Initialized drm 1.1.0 20060810
+[    0.674423] e1000e: Intel(R) PRO/1000 Network Driver - 2.3.2-k
+[    0.674426] e1000e: Copyright(c) 1999 - 2013 Intel Corporation.
+[    0.674561] e1000e 0000:00:19.0: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+[    0.674584] e1000e 0000:00:19.0: irq 43 for MSI/MSI-X
+[    0.707806] tg3 0000:02:00.0 eth0: Tigon3 [partno(BCM95722) rev a200] (PCI Express) MAC address 00:0a:f7:0e:fd:51
+[    0.707810] tg3 0000:02:00.0 eth0: attached PHY is 5722/5756 (10/100/1000Base-T Ethernet) (WireSpeed[1], EEE[0])
+[    0.707811] tg3 0000:02:00.0 eth0: RXcsums[1] LinkChgREG[0] MIirq[0] ASF[0] TSOcap[1]
+[    0.707812] tg3 0000:02:00.0 eth0: dma_rwctrl[76180000] dma_mask[64-bit]
+[    0.716125] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.716129] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.716140] ehci-pci 0000:00:1a.0: GetStatus port:1 status 001803 0  ACK POWER sig=j CSC CONNECT
+[    0.716161] hub 1-0:1.0: port 1: status 0501 change 0001
+[    0.716162] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.716163] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.716172] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.716173] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.716177] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.716178] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732129] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732131] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732136] ehci-pci 0000:00:1d.0: GetStatus port:1 status 001803 0  ACK POWER sig=j CSC CONNECT
+[    0.732148] hub 2-0:1.0: port 1: status 0501 change 0001
+[    0.732149] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732150] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732156] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732157] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732162] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732163] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732168] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732177] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732184] xhci_hcd 0000:00:14.0: get port status, actual port 0 status  = 0x2a0
+[    0.732185] xhci_hcd 0000:00:14.0: Get port status returned 0x100
+[    0.732196] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732197] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732202] xhci_hcd 0000:00:14.0: get port status, actual port 1 status  = 0x2a0
+[    0.732202] xhci_hcd 0000:00:14.0: Get port status returned 0x100
+[    0.732205] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732206] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732208] xhci_hcd 0000:00:14.0: get port status, actual port 2 status  = 0x2a0
+[    0.732209] xhci_hcd 0000:00:14.0: Get port status returned 0x100
+[    0.732214] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732215] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732217] xhci_hcd 0000:00:14.0: get port status, actual port 0 status  = 0x802a0
+[    0.732218] xhci_hcd 0000:00:14.0: Get port status returned 0x2002a0
+[    0.732230] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732231] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732247] xhci_hcd 0000:00:14.0: clear port warm(BH) reset change, actual port 0 status  = 0x2a0
+[    0.732249] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732250] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732255] xhci_hcd 0000:00:14.0: get port status, actual port 1 status  = 0x802a0
+[    0.732256] xhci_hcd 0000:00:14.0: Get port status returned 0x2002a0
+[    0.732258] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732259] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732265] xhci_hcd 0000:00:14.0: clear port warm(BH) reset change, actual port 1 status  = 0x2a0
+[    0.732267] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732268] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732270] xhci_hcd 0000:00:14.0: get port status, actual port 2 status  = 0x802a0
+[    0.732271] xhci_hcd 0000:00:14.0: Get port status returned 0x2002a0
+[    0.732273] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732274] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732280] xhci_hcd 0000:00:14.0: clear port warm(BH) reset change, actual port 2 status  = 0x2a0
+[    0.732282] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732283] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732285] xhci_hcd 0000:00:14.0: get port status, actual port 3 status  = 0x802a0
+[    0.732286] xhci_hcd 0000:00:14.0: Get port status returned 0x2002a0
+[    0.732288] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    0.732289] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    0.732295] xhci_hcd 0000:00:14.0: clear port warm(BH) reset change, actual port 3 status  = 0x2a0
+[    0.732298] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178900]
+[    0.732298] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178900] rule [ffff880212714c08]
+[    0.732301] xhci_hcd 0000:00:14.0: get port status, actual port 3 status  = 0x2a0
+[    0.732302] xhci_hcd 0000:00:14.0: Get port status returned 0x100
+[    0.732305] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3400]
+[    0.732305] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3400] rule [ffff880212714c08]
+[    0.732337] hub 3-0:1.0: state 7 ports 4 chg 0000 evt 0000
+[    0.732484] hub 3-0:1.0: hub_suspend
+[    0.732493] usb usb3: bus auto-suspend, wakeup 1
+[    0.732506] xhci_hcd 0000:00:14.0: xhci_hub_status_data: stopping port polling.
+[    0.816212] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3000]
+[    0.816217] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3000] rule [ffff880212714c08]
+[    0.816262] hub 1-0:1.0: state 7 ports 3 chg 0002 evt 0000
+[    0.816265] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012b00]
+[    0.816266] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012b00] rule [ffff880212714c08]
+[    0.816303] hub 1-0:1.0: port 1, status 0501, change 0000, 480 Mb/s
+[    0.816309] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d61f5100]
+[    0.816310] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d61f5100] rule [ffff880212714c08]
+[    0.832224] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3200]
+[    0.832228] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3200] rule [ffff880212714c08]
+[    0.832233] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020f1a3600]
+[    0.832234] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020f1a3600] rule [ffff880212714c08]
+[    0.872235] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6324500]
+[    0.872237] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6324500] rule [ffff880212714c08]
+[    0.872543] ehci-pci 0000:00:1a.0: port 1 reset complete, port enabled
+[    0.872545] ehci-pci 0000:00:1a.0: GetStatus port:1 status 001005 0  ACK POWER sig=se0 PE CONNECT
+[    0.879830] e1000e 0000:00:19.0 eth1: registered PHC clock
+[    0.879833] e1000e 0000:00:19.0 eth1: (PCI Express:2.5GT/s:Width x1) b8:ca:3a:8e:39:b3
+[    0.879834] e1000e 0000:00:19.0 eth1: Intel(R) PRO/1000 Network Connection
+[    0.879869] e1000e 0000:00:19.0 eth1: MAC: 10, PHY: 11, PBA No: 1011FF-0FF
+[    0.879924] ahci 0000:00:1f.2: version 3.0
+[    0.880074] ahci 0000:00:1f.2: irq 44 for MSI/MSI-X
+[    0.880126] ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 6 ports 6 Gbps 0x3 impl SATA mode
+[    0.880128] ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part ems apst 
+[    0.884652] scsi0 : ahci
+[    0.884795] scsi1 : ahci
+[    0.884925] scsi2 : ahci
+[    0.885061] scsi3 : ahci
+[    0.885200] scsi4 : ahci
+[    0.885327] scsi5 : ahci
+[    0.885393] ata1: SATA max UDMA/133 abar m2048@0xf7d36000 port 0xf7d36100 irq 44
+[    0.885396] ata2: SATA max UDMA/133 abar m2048@0xf7d36000 port 0xf7d36180 irq 44
+[    0.885396] ata3: DUMMY
+[    0.885397] ata4: DUMMY
+[    0.885398] ata5: DUMMY
+[    0.885398] ata6: DUMMY
+[    0.886432] [drm] Memory usable by graphics device = 2048M
+[    0.886434] checking generic (e0000000 300000) vs hw (e0000000 10000000)
+[    0.886435] fb: conflicting fb hw usage inteldrmfb vs VESA VGA - removing generic driver
+[    0.886445] Console: switching to colour dummy device 80x25
+[    0.928307] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178800]
+[    0.928312] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178800] rule [ffff880212714c08]
+[    0.928349] usb 1-1: new high-speed USB device number 2 using ehci-pci
+[    0.928352] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0aca00]
+[    0.928353] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0aca00] rule [ffff880212714c08]
+[    0.928531] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0aca00]
+[    0.928536] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0aca00] rule [ffff880212714c08]
+[    0.932349] i915 0000:00:02.0: irq 45 for MSI/MSI-X
+[    0.932355] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    0.932356] [drm] Driver supports precise vblank timestamp query.
+[    0.932390] [drm] DMAR active, disabling use of stolen memory
+[    0.932423] vgaarb: device changed decodes: PCI:0000:00:02.0,olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    0.984337] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178b00]
+[    0.984339] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178b00] rule [ffff880212714c08]
+[    0.984636] ehci-pci 0000:00:1a.0: port 1 reset complete, port enabled
+[    0.984639] ehci-pci 0000:00:1a.0: GetStatus port:1 status 001005 0  ACK POWER sig=se0 PE CONNECT
+[    0.985270] fbcon: inteldrmfb (fb0) is primary device
+[    1.040397] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012600]
+[    1.040398] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012600] rule [ffff880212714c08]
+[    1.040455] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d61f6e00]
+[    1.040456] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d61f6e00] rule [ffff880212714c08]
+[    1.060406] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6c00]
+[    1.060408] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6c00] rule [ffff880212714c08]
+[    1.060504] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6c00]
+[    1.060506] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6c00] rule [ffff880212714c08]
+[    1.060617] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6c00]
+[    1.060618] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6c00] rule [ffff880212714c08]
+[    1.060758] usb 1-1: udev 2, busnum 1, minor = 1
+[    1.060761] usb 1-1: New USB device found, idVendor=8087, idProduct=0024
+[    1.060762] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    1.060882] usb 1-1: usb_probe_device
+[    1.060884] usb 1-1: configuration #1 chosen from 1 choice
+[    1.060887] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6500]
+[    1.060888] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6500] rule [ffff880212714c08]
+[    1.060993] usb 1-1: adding 1-1:1.0 (config #1, interface 0)
+[    1.061021] hub 1-1:1.0: usb_probe_interface
+[    1.061022] hub 1-1:1.0: usb_probe_interface - got id
+[    1.061024] hub 1-1:1.0: USB hub found
+[    1.061034] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    1.061035] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    1.061120] hub 1-1:1.0: 6 ports detected
+[    1.061121] hub 1-1:1.0: standalone hub
+[    1.061121] hub 1-1:1.0: individual port power switching
+[    1.061122] hub 1-1:1.0: individual port over-current protection
+[    1.061122] hub 1-1:1.0: Single TT
+[    1.061123] hub 1-1:1.0: TT requires at most 8 FS bit times (666 ns)
+[    1.061123] hub 1-1:1.0: power on to power good time: 100ms
+[    1.061125] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178d00]
+[    1.061125] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178d00] rule [ffff880212714c08]
+[    1.061252] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6300]
+[    1.061253] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6300] rule [ffff880212714c08]
+[    1.061367] hub 1-1:1.0: local power source is good
+[    1.061545] hub 1-1:1.0: enabling power on all ports
+[    1.061546] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.061546] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.061591] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.061592] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.061709] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.061710] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.061834] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.061835] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.062008] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.062009] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.062115] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.062116] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.062302] hub 2-0:1.0: state 7 ports 3 chg 0002 evt 0000
+[    1.062304] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6000]
+[    1.062304] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6000] rule [ffff880212714c08]
+[    1.062339] hub 2-0:1.0: port 1, status 0501, change 0000, 480 Mb/s
+[    1.062351] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d61f6c00]
+[    1.062351] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d61f6c00] rule [ffff880212714c08]
+[    1.116453] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6600]
+[    1.116455] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6600] rule [ffff880212714c08]
+[    1.116749] ehci-pci 0000:00:1d.0: port 1 reset complete, port enabled
+[    1.116751] ehci-pci 0000:00:1d.0: GetStatus port:1 status 001005 0  ACK POWER sig=se0 PE CONNECT
+[    1.160505] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.160507] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.160556] hub 1-1:1.0: port 1: status 0101 change 0001
+[    1.160557] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.160558] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.160719] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.160720] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.160832] hub 1-1:1.0: port 2: status 0101 change 0001
+[    1.160835] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.160836] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.160956] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.160957] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.161079] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.161080] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.161206] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.161208] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.161329] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.161330] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.172506] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d178e00]
+[    1.172507] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d178e00] rule [ffff880212714c08]
+[    1.172570] usb 2-1: new high-speed USB device number 2 using ehci-pci
+[    1.172571] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012c00]
+[    1.172572] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012c00] rule [ffff880212714c08]
+[    1.172698] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6200]
+[    1.172699] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6200] rule [ffff880212714c08]
+[    1.176558] Console: switching to colour frame buffer device 180x56
+[    1.178577] i915 0000:00:02.0: fb0: inteldrmfb frame buffer device
+[    1.178578] i915 0000:00:02.0: registered panic notifier
+[    1.184763] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    1.184897] acpi device:4a: registered as cooling_device4
+[    1.184940] input: Video Bus as /devices/LNXSYSTM:00/device:00/PNP0A08:00/LNXVIDEO:00/input/input5
+[    1.185020] [drm] Initialized i915 1.6.0 20080730 for 0000:00:02.0 on minor 0
+[    1.204556] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[    1.204593] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[    1.205345] ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.205350] ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.205353] ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.205508] ata1.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+[    1.206141] ata1.00: ATA-8: ST1000DM003-1CH162, CC44, max UDMA/133
+[    1.206145] ata1.00: 1953525168 sectors, multi 16: LBA48 NCQ (depth 31/32), AA
+[    1.206909] ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.206915] ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.206918] ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.207029] ata1.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+[    1.207566] ata1.00: configured for UDMA/133
+[    1.209498] ata2.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.209501] ata2.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.209504] ata2.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.209899] ata2.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+[    1.210237] ata2.00: ATAPI: PLDS DVD+/-RW DS-8A9SH, ED11, max UDMA/100
+[    1.212710] scsi 0:0:0:0: Direct-Access     ATA      ST1000DM003-1CH1 CC44 PQ: 0 ANSI: 5
+[    1.212826] sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/931 GiB)
+[    1.212828] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    1.212832] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.212860] sd 0:0:0:0: [sda] Write Protect is off
+[    1.212861] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.212870] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.217861] ata2.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.217865] ata2.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.217868] ata2.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.218200] ata2.00: ACPI cmd 00/00:00:00:00:00:a0 (NOP) rejected by device (Stat=0x51 Err=0x04)
+[    1.218553] ata2.00: configured for UDMA/100
+[    1.226948]  sda: sda1 sda2 sda3
+[    1.227308] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.228535] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6010300]
+[    1.228537] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6010300] rule [ffff880212714c08]
+[    1.228844] ehci-pci 0000:00:1d.0: port 1 reset complete, port enabled
+[    1.228846] ehci-pci 0000:00:1d.0: GetStatus port:1 status 001005 0  ACK POWER sig=se0 PE CONNECT
+[    1.228903] scsi 1:0:0:0: CD-ROM            PLDS     DVD+-RW DS-8A9SH ED11 PQ: 0 ANSI: 5
+[    1.243370] sr0: scsi3-mmc drive: 24x/24x writer dvd-ram cd/rw xa/form2 cdda tray
+[    1.243374] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    1.243551] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[    1.243599] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[    1.260580] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6300]
+[    1.260584] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6300] rule [ffff880212714c08]
+[    1.260598] usb 1-1: ep 81: reserve intr @ 8+64 (1.0+256) [1/0 us] mask 0001
+[    1.260602] usb 1-1: link qh256-0001/ffff880212511000 start 1 [1/0 us]
+[    1.284582] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d14b500]
+[    1.284586] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d14b500] rule [ffff880212714c08]
+[    1.284666] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f700]
+[    1.284668] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f700] rule [ffff880212714c08]
+[    1.304596] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f700]
+[    1.304598] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f700] rule [ffff880212714c08]
+[    1.304739] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f700]
+[    1.304741] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f700] rule [ffff880212714c08]
+[    1.304855] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f700]
+[    1.304860] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f700] rule [ffff880212714c08]
+[    1.304981] usb 2-1: udev 2, busnum 2, minor = 129
+[    1.304986] usb 2-1: New USB device found, idVendor=8087, idProduct=0024
+[    1.304989] usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    1.305142] usb 2-1: usb_probe_device
+[    1.305144] usb 2-1: configuration #1 chosen from 1 choice
+[    1.305148] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fa00]
+[    1.305149] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fa00] rule [ffff880212714c08]
+[    1.305330] usb 2-1: adding 2-1:1.0 (config #1, interface 0)
+[    1.305350] hub 2-1:1.0: usb_probe_interface
+[    1.305352] hub 2-1:1.0: usb_probe_interface - got id
+[    1.305353] hub 2-1:1.0: USB hub found
+[    1.305355] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f200]
+[    1.305356] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f200] rule [ffff880212714c08]
+[    1.305469] hub 2-1:1.0: 8 ports detected
+[    1.305475] hub 2-1:1.0: standalone hub
+[    1.305477] hub 2-1:1.0: individual port power switching
+[    1.305479] hub 2-1:1.0: individual port over-current protection
+[    1.305480] hub 2-1:1.0: Single TT
+[    1.305483] hub 2-1:1.0: TT requires at most 8 FS bit times (666 ns)
+[    1.305485] hub 2-1:1.0: power on to power good time: 100ms
+[    1.305488] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f200]
+[    1.305490] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f200] rule [ffff880212714c08]
+[    1.305576] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f200]
+[    1.305577] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f200] rule [ffff880212714c08]
+[    1.305670] hub 2-1:1.0: local power source is good
+[    1.305942] hub 2-1:1.0: enabling power on all ports
+[    1.305944] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.305945] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306044] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306045] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306170] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306171] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306291] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306292] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306419] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306420] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306569] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306571] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306693] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306695] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306807] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306808] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306954] hub 4-0:1.0: state 7 ports 4 chg 0000 evt 0000
+[    1.306958] hub 1-1:1.0: state 7 ports 6 chg 0006 evt 0000
+[    1.306962] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306963] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306969] xhci_hcd 0000:00:14.0: set port remote wake mask, actual port 0 status  = 0xe0002a0
+[    1.306975] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306976] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306981] xhci_hcd 0000:00:14.0: set port remote wake mask, actual port 1 status  = 0xe0002a0
+[    1.306993] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.306994] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.306999] xhci_hcd 0000:00:14.0: set port remote wake mask, actual port 2 status  = 0xe0002a0
+[    1.307003] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.307004] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.307009] xhci_hcd 0000:00:14.0: set port remote wake mask, actual port 3 status  = 0xe0002a0
+[    1.307013] hub 4-0:1.0: hub_suspend
+[    1.307017] usb usb4: bus auto-suspend, wakeup 1
+[    1.307031] xhci_hcd 0000:00:14.0: xhci_hub_status_data: stopping port polling.
+[    1.307033] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.307034] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.307179] hub 1-1:1.0: port 1, status 0101, change 0000, 12 Mb/s
+[    1.307182] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.307183] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.320607] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.320609] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.373791] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d0a6300]
+[    1.373795] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d0a6300] rule [ffff880212714c08]
+[    1.376681] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.376685] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.376732] usb 1-1.1: new low-speed USB device number 3 using ehci-pci
+[    1.376733] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.376734] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.377685] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.377687] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.392690] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.392695] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.404704] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.404708] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.404757] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.404758] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.404956] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.404958] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.405058] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.405060] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.405148] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.405150] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.405273] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.405275] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.405399] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.405401] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.405523] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.405525] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.405648] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f200]
+[    1.405650] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f200] rule [ffff880212714c08]
+[    1.405656] usb 2-1: ep 81: reserve intr @ 8+64 (1.0+256) [1/0 us] mask 0001
+[    1.405657] usb 2-1: link qh256-0001/ffff88020d16d840 start 1 [1/0 us]
+[    1.448749] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.448754] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.448928] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.448930] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.468759] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.468763] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.469632] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.469634] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.470552] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fd00]
+[    1.470554] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fd00] rule [ffff880212714c08]
+[    1.471719] usb 1-1.1: skipped 1 descriptor after interface
+[    1.471726] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fb00]
+[    1.471729] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fb00] rule [ffff880212714c08]
+[    1.472226] usb 1-1.1: default language 0x0409
+[    1.472229] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fb00]
+[    1.472230] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fb00] rule [ffff880212714c08]
+[    1.473599] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fb00]
+[    1.473603] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fb00] rule [ffff880212714c08]
+[    1.474470] usb 1-1.1: udev 3, busnum 1, minor = 2
+[    1.474475] usb 1-1.1: New USB device found, idVendor=413c, idProduct=2107
+[    1.474477] usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.474480] usb 1-1.1: Product: Dell USB Entry Keyboard
+[    1.474482] usb 1-1.1: Manufacturer: DELL
+[    1.474625] usb 1-1.1: usb_probe_device
+[    1.474628] usb 1-1.1: configuration #1 chosen from 1 choice
+[    1.474632] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09fb00]
+[    1.474633] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09fb00] rule [ffff880212714c08]
+[    1.475087] usb 1-1.1: adding 1-1.1:1.0 (config #1, interface 0)
+[    1.475143] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f900]
+[    1.475144] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f900] rule [ffff880212714c08]
+[    1.475342] hub 1-1:1.0: port 2, status 0101, change 0000, 12 Mb/s
+[    1.475346] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d09f900]
+[    1.475347] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d09f900] rule [ffff880212714c08]
+[    1.475765] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.476051] usbhid 1-1.1:1.0: usb_probe_interface
+[    1.476053] usbhid 1-1.1:1.0: usb_probe_interface - got id
+[    1.476060] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6006900]
+[    1.476070] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6006900] rule [ffff880212714c08]
+[    1.476434] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6006900]
+[    1.476435] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6006900] rule [ffff880212714c08]
+[    1.478613] usbcore: registered new interface driver usbhid
+[    1.478614] usbhid: USB HID core driver
+[    1.479008] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d05af00]
+[    1.479010] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d05af00] rule [ffff880212714c08]
+[    1.479063] input: DELL Dell USB Entry Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input6
+[    1.479066] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d05ae00]
+[    1.479067] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d05ae00] rule [ffff880212714c08]
+[    1.479071] usb 1-1.1: ep 81: reserve intr @ 16+64 (2.0+8) [1/3 us] mask 1c01
+[    1.479073] usb 1-1.1: link qh8-1c01/ffff880212511c00 start 2 [1/3 us]
+[    1.479162] hid-generic 0003:413C:2107.0001: input,hidraw0: USB HID v1.10 Keyboard [DELL Dell USB Entry Keyboard] on usb-0000:00:1a.0-1.1/input0
+[    1.488767] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012c00]
+[    1.488772] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012c00] rule [ffff880212714c08]
+[    1.528796] tsc: Refined TSC clocksource calibration: 3192.753 MHz
+[    1.544828] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012200]
+[    1.544832] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012200] rule [ffff880212714c08]
+[    1.545077] usb 1-1.2: new low-speed USB device number 4 using ehci-pci
+[    1.545079] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012200]
+[    1.545080] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012200] rule [ffff880212714c08]
+[    1.545779] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012200]
+[    1.545783] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012200] rule [ffff880212714c08]
+[    1.560838] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012200]
+[    1.560842] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012200] rule [ffff880212714c08]
+[    1.616873] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012200]
+[    1.616875] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012200] rule [ffff880212714c08]
+[    1.616958] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6012200]
+[    1.616960] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6012200] rule [ffff880212714c08]
+[    1.640885] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6005300]
+[    1.640888] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6005300] rule [ffff880212714c08]
+[    1.641618] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6005300]
+[    1.641619] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6005300] rule [ffff880212714c08]
+[    1.642217] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6005300]
+[    1.642219] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6005300] rule [ffff880212714c08]
+[    1.643219] usb 1-1.2: skipped 1 descriptor after interface
+[    1.643222] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011900]
+[    1.643223] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011900] rule [ffff880212714c08]
+[    1.643582] usb 1-1.2: default language 0x0409
+[    1.643585] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d119c00]
+[    1.643586] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d119c00] rule [ffff880212714c08]
+[    1.644594] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011500]
+[    1.644595] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011500] rule [ffff880212714c08]
+[    1.645217] usb 1-1.2: udev 4, busnum 1, minor = 3
+[    1.645219] usb 1-1.2: New USB device found, idVendor=0461, idProduct=4e22
+[    1.645220] usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.645221] usb 1-1.2: Product: USB Optical Mouse
+[    1.645222] usb 1-1.2: Manufacturer: PixArt
+[    1.645315] usb 1-1.2: usb_probe_device
+[    1.645317] usb 1-1.2: configuration #1 chosen from 1 choice
+[    1.645321] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011500]
+[    1.645322] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011500] rule [ffff880212714c08]
+[    1.645597] usb 1-1.2: adding 1-1.2:1.0 (config #1, interface 0)
+[    1.645614] usbhid 1-1.2:1.0: usb_probe_interface
+[    1.645615] usbhid 1-1.2:1.0: usb_probe_interface - got id
+[    1.645623] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011400]
+[    1.645624] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011400] rule [ffff880212714c08]
+[    1.645967] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011400]
+[    1.645968] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011400] rule [ffff880212714c08]
+[    1.647197] input: PixArt USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input7
+[    1.647447] hid-generic 0003:0461:4E22.0002: input,hidraw1: USB HID v1.11 Mouse [PixArt USB Optical Mouse] on usb-0000:00:1a.0-1.2/input0
+[    1.647480] hub 1-1:1.0: state 7 ports 6 chg 0000 evt 0002
+[    1.647482] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011900]
+[    1.647483] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011900] rule [ffff880212714c08]
+[    1.647582] hub 2-1:1.0: state 7 ports 8 chg 0000 evt 0000
+[    1.647598] hub 2-1:1.0: hub_suspend
+[    1.647601] usb 2-1: unlink qh256-0001/ffff88020d16d840 start 1 [1/0 us]
+[    1.649742] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6001000]
+[    1.649744] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6001000] rule [ffff880212714c08]
+[    1.649850] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6001000]
+[    1.649851] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6001000] rule [ffff880212714c08]
+[    1.649861] usb 2-1: usb auto-suspend, wakeup 1
+[    1.664921] hub 2-0:1.0: hub_suspend
+[    1.664930] usb usb2: bus auto-suspend, wakeup 1
+[    1.664940] ehci-pci 0000:00:1d.0: suspend root hub
+[    1.776405] EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+[    2.529868] Switched to clocksource tsc
+[    2.635258] random: nonblocking pool is initialized
+[    2.822277] [drm] Enabling RC6 states: RC6 on, RC6p on, RC6pp off
+[    9.167761] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    9.167766] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[    9.208405] systemd-udevd[379]: starting version 204
+[    9.276909] lp: driver loaded but no devices found
+[    9.281214] VFIO - User Level meta-driver version: 0.3
+[    9.286260] ppdev: user-space parallel port driver
+[    9.377650] mei_me 0000:00:16.0: irq 46 for MSI/MSI-X
+[    9.390052] ACPI Warning: 0x0000000000000428-0x000000000000042f SystemIO conflicts with Region \PMIO 1 (20131115/utaddress-251)
+[    9.390057] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[    9.390063] ACPI Warning: 0x0000000000000530-0x000000000000053f SystemIO conflicts with Region \GPIO 1 (20131115/utaddress-251)
+[    9.390065] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[    9.390065] ACPI Warning: 0x0000000000000500-0x000000000000052f SystemIO conflicts with Region \GPIO 1 (20131115/utaddress-251)
+[    9.390067] ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+[    9.390068] lpc_ich: Resource conflict(s) found affecting gpio_ich
+[    9.390115] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    9.430527] device-mapper: multipath: version 1.6.0 loaded
+[    9.439428] snd_hda_intel 0000:00:1b.0: irq 47 for MSI/MSI-X
+[    9.449150] hda_codec: ALC269VB: SKU not ready 0x411111f0
+[    9.449709] autoconfig: line_outs=1 (0x1b/0x0/0x0/0x0/0x0) type:line
+[    9.449710]    speaker_outs=1 (0x14/0x0/0x0/0x0/0x0)
+[    9.449711]    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[    9.449711]    mono: mono_out=0x0
+[    9.449712]    inputs:
+[    9.449713]      Rear Mic=0x19
+[    9.449713]      Front Mic=0x18
+[    9.449714] realtek: No valid SSID, checking pincfg 0x411111f0 for NID 0x1d
+[    9.449715] realtek: Enable default setup for auto mode as fallback
+[    9.457254] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1b.0/sound/card0/input13
+[    9.457330] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1b.0/sound/card0/input12
+[    9.457362] input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1b.0/sound/card0/input11
+[    9.457390] input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1b.0/sound/card0/input10
+[    9.457435] input: HDA Intel PCH Front Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input9
+[    9.457463] input: HDA Intel PCH Rear Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input8
+[    9.478877] dcdbas dcdbas: Dell Systems Management Base Driver (version 5.6.0-3.2)
+[    9.539610] intel_rapl: domain uncore energy ctr 51325:51325 not working, skip
+[    9.640182] EXT4-fs (sda3): re-mounted. Opts: errors=remount-ro
+[    9.640422] type=1400 audit(1448897093.479:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=557 comm="apparmor_parser"
+[    9.640426] type=1400 audit(1448897093.479:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=557 comm="apparmor_parser"
+[    9.640429] type=1400 audit(1448897093.479:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=557 comm="apparmor_parser"
+[    9.640436] type=1400 audit(1448897093.479:5): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/sbin/dhclient" pid=555 comm="apparmor_parser"
+[    9.640441] type=1400 audit(1448897093.479:6): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=555 comm="apparmor_parser"
+[    9.640443] type=1400 audit(1448897093.479:7): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=555 comm="apparmor_parser"
+[    9.640450] type=1400 audit(1448897093.479:8): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/sbin/dhclient" pid=556 comm="apparmor_parser"
+[    9.640454] type=1400 audit(1448897093.479:9): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=556 comm="apparmor_parser"
+[    9.640457] type=1400 audit(1448897093.479:10): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=556 comm="apparmor_parser"
+[    9.640708] type=1400 audit(1448897093.479:11): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=557 comm="apparmor_parser"
+[   10.366169] e1000e 0000:00:19.0: irq 43 for MSI/MSI-X
+[   10.468476] e1000e 0000:00:19.0: irq 43 for MSI/MSI-X
+[   10.468711] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   10.640639] Bluetooth: Core ver 2.17
+[   10.640652] NET: Registered protocol family 31
+[   10.640653] Bluetooth: HCI device and connection manager initialized
+[   10.640658] Bluetooth: HCI socket layer initialized
+[   10.640660] Bluetooth: L2CAP socket layer initialized
+[   10.640662] Bluetooth: SCO socket layer initialized
+[   10.642084] Bluetooth: RFCOMM TTY layer initialized
+[   10.642091] Bluetooth: RFCOMM socket layer initialized
+[   10.642095] Bluetooth: RFCOMM ver 1.11
+[   10.642828] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   10.642830] Bluetooth: BNEP filters: protocol multicast
+[   10.642835] Bluetooth: BNEP socket layer initialized
+[   10.854575] init: cups main process (837) killed by HUP signal
+[   10.854583] init: cups main process ended, respawning
+[   12.027994] e1000e: eth1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: None
+[   12.027998] e1000e 0000:00:19.0 eth1: 10/100 speed: disabling TSO
+[   12.028032] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+[   12.298537] init: samba-ad-dc main process (978) terminated with status 1
+[   13.008687] init: failsafe main process (679) killed by TERM signal
+[   13.555626] init: Failed to spawn hybrid-gfx main process: unable to execute: No such file or directory
+[   13.592338] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[   13.592341] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[   13.592349] usb 1-1.2: ep 81: reserve intr @ 24+64 (3.0+8) [1/3 us] mask 1c01
+[   13.592352] usb 1-1.2: link qh8-1c01/ffff880210043840 start 3 [1/3 us]
+[   13.610716] tg3 0000:02:00.0: irq 48 for MSI/MSI-X
+[   13.645321] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   13.645672] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   13.658979] usb 1-1.2: unlink qh8-1c01/ffff880210043840 start 3 [1/3 us]
+[   13.764603] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   13.767701] Bridge firewalling registered
+[   13.776972] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[   15.226984] Ebtables v2.0 registered
+[   15.232317] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[   16.986791] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[   16.986794] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[   16.986799] ehci-pci 0000:00:1a.0: reused qh ffff880210043840 schedule
+[   16.986801] usb 1-1.2: link qh8-1c01/ffff880210043840 start 3 [1/3 us]
+[   17.012507] init: plymouth-upstart-bridge main process ended, respawning
+[   17.015851] init: plymouth-upstart-bridge main process (1643) terminated with status 1
+[   17.015860] init: plymouth-upstart-bridge main process ended, respawning
+[   17.666752] IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+[   40.752757] audit_printk_skb: 234 callbacks suppressed
+[   40.752760] type=1400 audit(1448897124.563:90): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=2081 comm="apparmor_parser"
+[   40.752764] type=1400 audit(1448897124.563:91): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2081 comm="apparmor_parser"
+[   40.753030] type=1400 audit(1448897124.563:92): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2081 comm="apparmor_parser"
+[ 1799.797414] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 1799.797420] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 1799.805406] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 1799.805411] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 1799.813409] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 1799.813414] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 1799.821416] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 1799.821421] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 1894.539224] type=1400 audit(1448898976.771:93): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=2468 comm="apparmor_parser"
+[ 1894.539232] type=1400 audit(1448898976.771:94): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2468 comm="apparmor_parser"
+[ 1894.539587] type=1400 audit(1448898976.771:95): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=2468 comm="apparmor_parser"
+[ 6834.701445] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 6834.701450] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 6929.309271] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 6929.309277] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 6929.357319] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 6929.357325] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 6930.077921] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[ 6930.077927] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[ 7051.499377] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d05ae00]
+[ 7051.499382] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d05ae00] rule [ffff880212714c08]
+[ 7051.603465] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff88020d05ae00]
+[ 7051.603471] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff88020d05ae00] rule [ffff880212714c08]
+[12592.743616] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[12592.743621] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[12592.751602] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[12592.751606] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[13435.126342] usbfilter - Debug: into [usbfilter_filter_urb] with urb [ffff8800d6011800]
+[13435.126348] usbfilter - Debug: into [usbfilter_match_rule] with urb [ffff8800d6011800] rule [ffff880212714c08]
+[18063.012034] usbfilter - Debug: usbfilter_nl_handler got a netlink msg with opcode 0
+[18063.012039] usbfilter - Debug: into usbfilter_nl_handle_init
+[18063.012041] usbfilter - Debug: usbtables pid [3335], msg [__usbtables_init__]
+[18063.012045] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18063.012223] usbfilter - Debug: usbfilter_nl_handler got a netlink msg with opcode 7
+[18063.012225] usbfilter - Debug: into usbfilter_nl_handle_dmp
+[18063.012227] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18063.012230] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18063.012232] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18063.012235] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18964.953131] usbfilter - Debug: usbfilter_nl_handler got a netlink msg with opcode 0
+[18964.953135] usbfilter - Debug: into usbfilter_nl_handle_init
+[18964.953138] usbfilter - Debug: usbtables pid [3366], msg [__usbtables_init__]
+[18964.953142] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18964.953320] usbfilter - Debug: usbfilter_nl_handler got a netlink msg with opcode 7
+[18964.953322] usbfilter - Debug: into usbfilter_nl_handle_dmp
+[18964.953325] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18964.953327] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18964.953329] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[18964.953331] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[19063.833157] usbfilter - Debug: usbfilter_nl_handler got a netlink msg with opcode 0
+[19063.833162] usbfilter - Debug: into usbfilter_nl_handle_init
+[19063.833164] usbfilter - Debug: usbtables pid [3370], msg [__usbtables_init__]
+[19063.833168] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[19063.833192] usbfilter - Debug: usbfilter_nl_handler got a netlink msg with opcode 7
+[19063.833194] usbfilter - Debug: into usbfilter_nl_handle_dmp
+[19063.833196] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[19063.833198] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[19063.833200] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables
+[19063.833202] usbfilter - Debug: usbfilter_nl_send sent a nlmsg to usbtables

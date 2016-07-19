@@ -1,0 +1,71 @@
+# Ubuntu
+
+root@arpsec04:~# iperf -s -u -i2
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 10.137.8.152 port 5001 connected with 10.137.22.83 port 51317
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0- 2.0 sec   284 KBytes  1.16 Mbits/sec   5.531 ms 1127/ 1325 (85%)
+[  3]  2.0- 4.0 sec   926 KBytes  3.79 Mbits/sec   1.622 ms 1358/ 2003 (68%)
+[  3]  4.0- 6.0 sec   870 KBytes  3.56 Mbits/sec   5.431 ms  927/ 1533 (60%)
+[  3]  6.0- 8.0 sec   541 KBytes  2.22 Mbits/sec   8.344 ms 1159/ 1536 (75%)
+[  3]  8.0-10.0 sec   550 KBytes  2.25 Mbits/sec   4.758 ms 1188/ 1571 (76%)
+[  3] 10.0-12.0 sec   576 KBytes  2.36 Mbits/sec  11.665 ms 1445/ 1846 (78%)
+[  3] 12.0-14.0 sec   497 KBytes  2.03 Mbits/sec   8.694 ms 1270/ 1616 (79%)
+[  3] 14.0-16.0 sec   448 KBytes  1.83 Mbits/sec   9.002 ms 1133/ 1445 (78%)
+[  3] 16.0-18.0 sec   434 KBytes  1.78 Mbits/sec   5.693 ms 1555/ 1857 (84%)
+[  3] 18.0-20.0 sec   373 KBytes  1.53 Mbits/sec   9.580 ms 1277/ 1537 (83%)
+[  3]  0.0-20.9 sec  5.51 MBytes  2.22 Mbits/sec  10.773 ms 13074/17005 (77%)
+read failed: Connection refused
+
+^Croot@arpsec04:~# iperf -s -u -i2
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 10.137.8.152 port 5001 connected with 10.137.22.83 port 53558
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0- 2.0 sec   512 KBytes  2.10 Mbits/sec   7.704 ms  841/ 1198 (70%)
+[  3]  2.0- 4.0 sec   373 KBytes  1.53 Mbits/sec  11.519 ms  934/ 1194 (78%)
+[  3]  4.0- 6.0 sec   380 KBytes  1.56 Mbits/sec   7.812 ms 1998/ 2263 (88%)
+[  3]  6.0- 8.0 sec   461 KBytes  1.89 Mbits/sec   9.839 ms 1329/ 1650 (81%)
+[  3]  8.0-10.0 sec   725 KBytes  2.97 Mbits/sec   5.117 ms 1413/ 1918 (74%)
+[  3] 10.0-12.0 sec   745 KBytes  3.05 Mbits/sec   8.883 ms 1056/ 1575 (67%)
+[  3] 12.0-14.0 sec   705 KBytes  2.89 Mbits/sec   5.103 ms 1237/ 1728 (72%)
+[  3] 14.0-16.0 sec   831 KBytes  3.40 Mbits/sec   2.111 ms 1250/ 1829 (68%)
+[  3] 16.0-18.0 sec   761 KBytes  3.12 Mbits/sec   8.635 ms  971/ 1501 (65%)
+[  3] 18.0-20.0 sec   662 KBytes  2.71 Mbits/sec   6.845 ms 1239/ 1700 (73%)
+[  3]  0.0-20.5 sec  6.18 MBytes  2.53 Mbits/sec   8.519 ms 12594/17001 (74%)
+read failed: Connection refused
+^Croot@arpsec04:~# 
+
+
+# usbfilter
+
+root@arpsec04:~# iperf -s -u -i2
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 10.137.8.152 port 5001 connected with 10.137.22.83 port 53497
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0- 2.0 sec   481 KBytes  1.97 Mbits/sec   6.993 ms  841/ 1176 (72%)
+[  3]  2.0- 4.0 sec   571 KBytes  2.34 Mbits/sec   9.811 ms 1314/ 1712 (77%)
+[  3]  4.0- 6.0 sec   759 KBytes  3.11 Mbits/sec   7.797 ms 1238/ 1767 (70%)
+[  3]  6.0- 8.0 sec   808 KBytes  3.31 Mbits/sec   6.370 ms 1314/ 1877 (70%)
+[  3]  8.0-10.0 sec   744 KBytes  3.05 Mbits/sec  12.229 ms 1106/ 1624 (68%)
+[  3] 10.0-12.0 sec   613 KBytes  2.51 Mbits/sec   6.421 ms 1180/ 1607 (73%)
+[  3] 12.0-14.0 sec   701 KBytes  2.87 Mbits/sec  13.380 ms 1296/ 1784 (73%)
+[  3] 14.0-16.0 sec   586 KBytes  2.40 Mbits/sec  12.471 ms 1172/ 1580 (74%)
+[  3] 16.0-18.0 sec   421 KBytes  1.72 Mbits/sec   8.486 ms  855/ 1148 (74%)
+[  3] 18.0-20.0 sec   662 KBytes  2.71 Mbits/sec   5.714 ms 1947/ 2408 (81%)
+[  3]  0.0-20.4 sec  6.36 MBytes  2.62 Mbits/sec   9.468 ms 12467/17005 (73%)
+read failed: Connection refused
+^Croot@arpsec04:~# 
+
+

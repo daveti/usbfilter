@@ -1,0 +1,47 @@
+#
+# File		: Makefile
+# Description	: Build file for usbtables
+# Created	: Thu Jul 23 07:26:30 PDT 2015
+# By		: Dave Tian
+#
+
+#
+# Environment Setup
+#
+LIBDIRS=
+DEPFILE=Makefile.dep
+CC=gcc
+CFLAGS=-c $(INCLUDES) -g -Wall 
+LINK=gcc
+LINKFLAGS=-g
+LIBS=
+
+#
+# Setup builds
+#
+USBTABLESOBJS= usbtables.o \
+	nlm.o \
+	utils.o
+
+TARGETS	= usbtables
+
+#
+# Project Builds
+#
+usbtables : $(USBTABLESOBJS)
+	$(LINK) $(LINKFLAGS) $(USBTABLESOBJS) $(LIBS) -o $@
+
+# Various maintenance stuff
+clean : 
+	rm -f $(TARGETS) $(USBTABLESOBJS) $(DEPFILE) 2>&1
+
+install:
+	install -C $(USBTABLESOBJS) $(TARGETDIR)
+
+
+# Do dependency generation
+depend : $(DEPFILE)
+
+$(DEPFILE) : $(USBTABLESOBJS:.o=.c)
+	gcc -MM $(CFLAGS) $(USBTABLESOBJS:.o=.c) > $(DEPFILE)
+

@@ -1,0 +1,13 @@
+#
+# USB Filter configuration
+#
+
+config USB_FILTER
+	bool "USB Filter"
+	default Y
+	help
+	  If you select this option, a component which captures and filters the USB traffic
+	  between peripheral-specific drivers and HC drivers based on rules will be built.
+	  For more information, see <http://davejingtian.org>.
+
+	  If unsure, say Y, if allowed, otherwise N.

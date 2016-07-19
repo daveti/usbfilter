@@ -1,0 +1,165 @@
+# vanilla
+root@arpsec04:~# iperf -s -i10
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 59908
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  3.47 MBytes  2.91 Mbits/sec
+[  4] 10.0-20.0 sec  2.92 MBytes  2.45 Mbits/sec
+[  4] 20.0-30.0 sec  2.98 MBytes  2.50 Mbits/sec
+[  4] 30.0-40.0 sec  3.11 MBytes  2.61 Mbits/sec
+[  4] 40.0-50.0 sec  3.07 MBytes  2.57 Mbits/sec
+[  4] 50.0-60.0 sec  3.41 MBytes  2.86 Mbits/sec
+[  4] 60.0-70.0 sec  2.69 MBytes  2.26 Mbits/sec
+[  4] 70.0-80.0 sec  2.56 MBytes  2.15 Mbits/sec
+[  4] 80.0-90.0 sec  3.02 MBytes  2.53 Mbits/sec
+[  4] 90.0-100.0 sec  3.06 MBytes  2.57 Mbits/sec
+[  4] 100.0-110.0 sec  2.98 MBytes  2.50 Mbits/sec
+[  4] 110.0-120.0 sec  4.36 MBytes  3.66 Mbits/sec
+[  4] 120.0-130.0 sec  4.16 MBytes  3.49 Mbits/sec
+[  4] 130.0-140.0 sec  3.82 MBytes  3.21 Mbits/sec
+[  4] 140.0-150.0 sec  4.15 MBytes  3.48 Mbits/sec
+[  4] 150.0-160.0 sec  3.39 MBytes  2.84 Mbits/sec
+[  4] 160.0-170.0 sec  3.61 MBytes  3.03 Mbits/sec
+[  4] 170.0-180.0 sec  3.17 MBytes  2.66 Mbits/sec
+[  4] 180.0-190.0 sec  2.97 MBytes  2.49 Mbits/sec
+[  4] 190.0-200.0 sec  3.19 MBytes  2.68 Mbits/sec
+[  4] 200.0-210.0 sec  3.34 MBytes  2.80 Mbits/sec
+[  4] 210.0-220.0 sec  3.07 MBytes  2.58 Mbits/sec
+[  4] 220.0-230.0 sec  3.21 MBytes  2.69 Mbits/sec
+[  4] 230.0-240.0 sec  3.17 MBytes  2.66 Mbits/sec
+[  4] 240.0-250.0 sec  2.88 MBytes  2.42 Mbits/sec
+[  4] 250.0-260.0 sec  3.27 MBytes  2.74 Mbits/sec
+[  4] 260.0-270.0 sec  3.58 MBytes  3.00 Mbits/sec
+[  4] 270.0-280.0 sec  3.28 MBytes  2.75 Mbits/sec
+[  4] 280.0-290.0 sec  3.08 MBytes  2.58 Mbits/sec
+[  4] 290.0-300.0 sec  3.29 MBytes  2.76 Mbits/sec
+[  4]  0.0-300.2 sec  98.4 MBytes  2.75 Mbits/sec
+^Croot@arpsec04:~# 
+
+
+# usbfilter
+root@arpsec04:~# iperf -s -i10
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 60124
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  3.00 MBytes  2.51 Mbits/sec
+[  4] 10.0-20.0 sec  3.34 MBytes  2.80 Mbits/sec
+[  4] 20.0-30.0 sec  3.80 MBytes  3.19 Mbits/sec
+[  4] 30.0-40.0 sec  3.66 MBytes  3.07 Mbits/sec
+[  4] 40.0-50.0 sec  3.72 MBytes  3.12 Mbits/sec
+[  4] 50.0-60.0 sec  4.09 MBytes  3.43 Mbits/sec
+[  4] 60.0-70.0 sec  3.74 MBytes  3.14 Mbits/sec
+[  4] 70.0-80.0 sec  3.54 MBytes  2.97 Mbits/sec
+[  4] 80.0-90.0 sec  3.18 MBytes  2.67 Mbits/sec
+[  4] 90.0-100.0 sec  3.69 MBytes  3.10 Mbits/sec
+[  4] 100.0-110.0 sec  3.46 MBytes  2.90 Mbits/sec
+[  4] 110.0-120.0 sec  3.89 MBytes  3.26 Mbits/sec
+[  4] 120.0-130.0 sec  3.41 MBytes  2.86 Mbits/sec
+[  4] 130.0-140.0 sec  3.51 MBytes  2.95 Mbits/sec
+[  4] 140.0-150.0 sec  3.45 MBytes  2.90 Mbits/sec
+[  4] 150.0-160.0 sec  3.36 MBytes  2.82 Mbits/sec
+[  4] 160.0-170.0 sec  3.71 MBytes  3.12 Mbits/sec
+[  4] 170.0-180.0 sec  3.23 MBytes  2.71 Mbits/sec
+[  4] 180.0-190.0 sec  3.55 MBytes  2.98 Mbits/sec
+[  4] 190.0-200.0 sec  3.35 MBytes  2.81 Mbits/sec
+[  4] 200.0-210.0 sec  3.52 MBytes  2.95 Mbits/sec
+[  4] 210.0-220.0 sec  3.17 MBytes  2.66 Mbits/sec
+[  4] 220.0-230.0 sec  3.55 MBytes  2.98 Mbits/sec
+[  4] 230.0-240.0 sec  3.33 MBytes  2.80 Mbits/sec
+[  4] 240.0-250.0 sec  2.62 MBytes  2.20 Mbits/sec
+[  4] 250.0-260.0 sec  3.51 MBytes  2.94 Mbits/sec
+[  4] 260.0-270.0 sec  3.34 MBytes  2.80 Mbits/sec
+[  4] 270.0-280.0 sec  3.17 MBytes  2.66 Mbits/sec
+[  4] 280.0-290.0 sec  2.60 MBytes  2.18 Mbits/sec
+[  4] 290.0-300.0 sec  1.79 MBytes  1.50 Mbits/sec
+[  4]  0.0-300.5 sec   101 MBytes  2.83 Mbits/sec
+^Croot@arpsec04:~# 
+
+
+root@arpsec04:~# iperf -s -i10
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 60315
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  2.84 MBytes  2.39 Mbits/sec
+[  4] 10.0-20.0 sec  2.88 MBytes  2.41 Mbits/sec
+[  4] 20.0-30.0 sec  2.78 MBytes  2.33 Mbits/sec
+[  4] 30.0-40.0 sec  3.03 MBytes  2.54 Mbits/sec
+[  4] 40.0-50.0 sec  2.89 MBytes  2.42 Mbits/sec
+[  4] 50.0-60.0 sec  3.05 MBytes  2.56 Mbits/sec
+[  4] 60.0-70.0 sec  3.42 MBytes  2.87 Mbits/sec
+[  4] 70.0-80.0 sec  3.29 MBytes  2.76 Mbits/sec
+[  4] 80.0-90.0 sec  3.19 MBytes  2.68 Mbits/sec
+[  4] 90.0-100.0 sec  3.27 MBytes  2.74 Mbits/sec
+[  4] 100.0-110.0 sec  3.39 MBytes  2.84 Mbits/sec
+[  4] 110.0-120.0 sec  2.96 MBytes  2.48 Mbits/sec
+[  4] 120.0-130.0 sec  2.98 MBytes  2.50 Mbits/sec
+[  4] 130.0-140.0 sec  2.80 MBytes  2.35 Mbits/sec
+[  4] 140.0-150.0 sec  2.47 MBytes  2.07 Mbits/sec
+[  4] 150.0-160.0 sec  3.27 MBytes  2.74 Mbits/sec
+[  4] 160.0-170.0 sec  2.74 MBytes  2.30 Mbits/sec
+[  4] 170.0-180.0 sec  3.14 MBytes  2.64 Mbits/sec
+[  4] 180.0-190.0 sec  3.11 MBytes  2.61 Mbits/sec
+[  4] 190.0-200.0 sec  3.06 MBytes  2.57 Mbits/sec
+[  4] 200.0-210.0 sec  2.95 MBytes  2.48 Mbits/sec
+[  4] 210.0-220.0 sec  3.05 MBytes  2.56 Mbits/sec
+[  4] 220.0-230.0 sec  2.92 MBytes  2.45 Mbits/sec
+[  4] 230.0-240.0 sec  3.69 MBytes  3.09 Mbits/sec
+[  4] 240.0-250.0 sec  3.07 MBytes  2.58 Mbits/sec
+[  4] 250.0-260.0 sec  3.00 MBytes  2.52 Mbits/sec
+[  4] 260.0-270.0 sec  2.57 MBytes  2.16 Mbits/sec
+[  4] 270.0-280.0 sec  2.73 MBytes  2.29 Mbits/sec
+[  4] 280.0-290.0 sec  2.68 MBytes  2.25 Mbits/sec
+[  4] 290.0-300.0 sec  2.91 MBytes  2.44 Mbits/sec
+[  4]  0.0-300.2 sec  90.2 MBytes  2.52 Mbits/sec
+^Croot@arpsec04:~# 
+
+
+^Croot@arpsec04:~# iperf -s -i10
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 60757
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-10.0 sec  2.96 MBytes  2.48 Mbits/sec
+[  4] 10.0-20.0 sec  2.89 MBytes  2.43 Mbits/sec
+[  4] 20.0-30.0 sec  2.39 MBytes  2.00 Mbits/sec
+[  4] 30.0-40.0 sec  2.96 MBytes  2.49 Mbits/sec
+[  4] 40.0-50.0 sec  2.81 MBytes  2.35 Mbits/sec
+[  4] 50.0-60.0 sec  3.83 MBytes  3.21 Mbits/sec
+[  4] 60.0-70.0 sec  3.38 MBytes  2.84 Mbits/sec
+[  4] 70.0-80.0 sec  3.62 MBytes  3.04 Mbits/sec
+[  4] 80.0-90.0 sec  4.02 MBytes  3.38 Mbits/sec
+[  4] 90.0-100.0 sec  3.27 MBytes  2.74 Mbits/sec
+[  4] 100.0-110.0 sec  3.64 MBytes  3.06 Mbits/sec
+[  4] 110.0-120.0 sec  3.93 MBytes  3.30 Mbits/sec
+[  4] 120.0-130.0 sec  3.87 MBytes  3.25 Mbits/sec
+[  4] 130.0-140.0 sec  4.06 MBytes  3.40 Mbits/sec
+[  4] 140.0-150.0 sec  3.75 MBytes  3.15 Mbits/sec
+[  4] 150.0-160.0 sec  3.88 MBytes  3.26 Mbits/sec
+[  4] 160.0-170.0 sec  3.37 MBytes  2.82 Mbits/sec
+[  4] 170.0-180.0 sec  3.86 MBytes  3.24 Mbits/sec
+[  4] 180.0-190.0 sec  3.30 MBytes  2.77 Mbits/sec
+[  4] 190.0-200.0 sec  3.64 MBytes  3.05 Mbits/sec
+[  4] 200.0-210.0 sec  3.80 MBytes  3.19 Mbits/sec
+[  4] 210.0-220.0 sec  3.45 MBytes  2.89 Mbits/sec
+[  4] 220.0-230.0 sec  4.02 MBytes  3.37 Mbits/sec
+[  4] 230.0-240.0 sec  3.72 MBytes  3.12 Mbits/sec
+[  4] 240.0-250.0 sec  3.62 MBytes  3.03 Mbits/sec
+[  4] 250.0-260.0 sec  3.28 MBytes  2.75 Mbits/sec
+[  4] 260.0-270.0 sec  3.56 MBytes  2.99 Mbits/sec
+[  4] 270.0-280.0 sec  3.49 MBytes  2.93 Mbits/sec
+[  4] 280.0-290.0 sec  3.58 MBytes  3.00 Mbits/sec
+[  4] 290.0-300.0 sec  3.10 MBytes  2.60 Mbits/sec
+[  4]  0.0-300.6 sec   105 MBytes  2.94 Mbits/sec
+^Croot@arpsec04:~# 
+

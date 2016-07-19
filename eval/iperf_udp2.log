@@ -1,0 +1,131 @@
+# vanilla
+root@arpsec04:~# iperf -s -u -i10
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 57080
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0-10.0 sec  11.9 MBytes  10.0 Mbits/sec   0.656 ms    7/ 8521 (0.082%)
+[  3] 10.0-20.0 sec  11.9 MBytes  10.0 Mbits/sec   0.838 ms    1/ 8505 (0.012%)
+[  3] 20.0-30.0 sec  11.5 MBytes  9.62 Mbits/sec   3.857 ms    2/ 8185 (0.024%)
+[  3] 30.0-40.0 sec  12.1 MBytes  10.1 Mbits/sec   0.822 ms  217/ 8821 (2.5%)
+[  3] 40.0-50.0 sec  11.9 MBytes  9.99 Mbits/sec   1.120 ms    0/ 8498 (0%)
+[  3] 50.0-60.0 sec  11.9 MBytes  10.0 Mbits/sec   0.865 ms    0/ 8508 (0%)
+[  3] 60.0-70.0 sec  11.9 MBytes  10.0 Mbits/sec   0.705 ms    0/ 8504 (0%)
+[  3] 70.0-80.0 sec  11.9 MBytes  9.99 Mbits/sec   0.654 ms    6/ 8503 (0.071%)
+[  3] 80.0-90.0 sec  11.9 MBytes  10.0 Mbits/sec   0.722 ms    1/ 8503 (0.012%)
+[  3] 90.0-100.0 sec  11.9 MBytes  9.99 Mbits/sec   0.689 ms    0/ 8492 (0%)
+[  3] 100.0-110.0 sec  11.9 MBytes  9.95 Mbits/sec   0.967 ms   47/ 8511 (0.55%)
+[  3] 110.0-120.0 sec  11.9 MBytes  9.99 Mbits/sec   1.358 ms    2/ 8496 (0.024%)
+[  3] 120.0-130.0 sec  11.9 MBytes  10.0 Mbits/sec   0.727 ms    1/ 8514 (0.012%)
+[  3] 130.0-140.0 sec  11.9 MBytes  10.0 Mbits/sec   0.728 ms    1/ 8504 (0.012%)
+[  3] 140.0-150.0 sec  11.8 MBytes  9.93 Mbits/sec   1.717 ms    0/ 8447 (0%)
+[  3] 150.0-160.0 sec  12.0 MBytes  10.1 Mbits/sec   0.885 ms    3/ 8559 (0.035%)
+[  3] 160.0-170.0 sec  11.9 MBytes  10.0 Mbits/sec   0.837 ms    1/ 8503 (0.012%)
+[  3] 170.0-180.0 sec  11.9 MBytes  10.0 Mbits/sec   0.912 ms    1/ 8502 (0.012%)
+[  3] 180.0-190.0 sec  11.9 MBytes  9.96 Mbits/sec   1.232 ms    0/ 8473 (0%)
+[  3] 190.0-200.0 sec  12.0 MBytes  10.0 Mbits/sec   0.737 ms    4/ 8533 (0.047%)
+[  3] 200.0-210.0 sec  11.9 MBytes  10.0 Mbits/sec   1.164 ms    0/ 8504 (0%)
+[  3] 210.0-220.0 sec  11.9 MBytes  10.0 Mbits/sec   0.837 ms    1/ 8505 (0.012%)
+[  3] 220.0-230.0 sec  11.9 MBytes  10.0 Mbits/sec   0.812 ms    0/ 8503 (0%)
+[  3] 230.0-240.0 sec  11.9 MBytes  10.0 Mbits/sec   0.736 ms    3/ 8503 (0.035%)
+[  3] 240.0-250.0 sec  11.9 MBytes  10.0 Mbits/sec   0.889 ms    0/ 8502 (0%)
+[  3] 250.0-260.0 sec  11.9 MBytes  10.0 Mbits/sec   0.843 ms    1/ 8502 (0.012%)
+[  3] 260.0-270.0 sec  11.9 MBytes  10.0 Mbits/sec   0.688 ms    0/ 8504 (0%)
+[  3] 270.0-280.0 sec  11.9 MBytes  9.99 Mbits/sec   1.062 ms    2/ 8499 (0.024%)
+[  3] 280.0-290.0 sec  11.9 MBytes  10.0 Mbits/sec   0.867 ms    0/ 8507 (0%)
+[  3]  0.0-300.0 sec   357 MBytes  9.99 Mbits/sec   0.931 ms  300/255101 (0.12%)
+[  3]  0.0-300.0 sec  1 datagrams received out-of-order
+^Croot@arpsec04:~# 
+
+
+root@arpsec04:~# iperf -s -u -i10
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 49417
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0-10.0 sec  2.91 MBytes  2.44 Mbits/sec   7.398 ms 5890/ 7963 (74%)
+[  3] 10.0-20.0 sec  3.16 MBytes  2.65 Mbits/sec   3.647 ms 6571/ 8826 (74%)
+[  3] 20.0-30.0 sec  3.34 MBytes  2.80 Mbits/sec   8.168 ms 6217/ 8602 (72%)
+[  3] 30.0-40.0 sec  3.42 MBytes  2.87 Mbits/sec   7.761 ms 5907/ 8345 (71%)
+[  3] 40.0-50.0 sec  3.08 MBytes  2.59 Mbits/sec   7.347 ms 6118/ 8318 (74%)
+[  3] 50.0-60.0 sec  4.52 MBytes  3.79 Mbits/sec   2.311 ms 5707/ 8931 (64%)
+[  3] 60.0-70.0 sec  5.34 MBytes  4.48 Mbits/sec   5.805 ms 4665/ 8472 (55%)
+[  3] 70.0-80.0 sec  4.61 MBytes  3.87 Mbits/sec   5.671 ms 5211/ 8499 (61%)
+[  3] 80.0-90.0 sec  4.58 MBytes  3.84 Mbits/sec   3.243 ms 5292/ 8557 (62%)
+[  3] 90.0-100.0 sec  4.66 MBytes  3.91 Mbits/sec   4.940 ms 5203/ 8529 (61%)
+[  3] 100.0-110.0 sec  5.48 MBytes  4.60 Mbits/sec   2.646 ms 4543/ 8455 (54%)
+[  3] 110.0-120.0 sec  4.42 MBytes  3.70 Mbits/sec   2.465 ms 5455/ 8605 (63%)
+[  3] 120.0-130.0 sec  4.97 MBytes  4.17 Mbits/sec   4.121 ms 4795/ 8338 (58%)
+[  3] 130.0-140.0 sec  4.40 MBytes  3.69 Mbits/sec   4.130 ms 5343/ 8483 (63%)
+[  3] 140.0-150.0 sec  3.95 MBytes  3.31 Mbits/sec  10.857 ms 5632/ 8448 (67%)
+[  3] 150.0-160.0 sec  4.32 MBytes  3.62 Mbits/sec   3.919 ms 5405/ 8483 (64%)
+[  3] 160.0-170.0 sec  4.30 MBytes  3.61 Mbits/sec   6.886 ms 5487/ 8554 (64%)
+[  3] 170.0-180.0 sec  4.57 MBytes  3.83 Mbits/sec   2.650 ms 5356/ 8617 (62%)
+[  3] 180.0-190.0 sec  5.05 MBytes  4.24 Mbits/sec   2.506 ms 4836/ 8438 (57%)
+[  3] 190.0-200.0 sec  3.19 MBytes  2.68 Mbits/sec   3.924 ms 6233/ 8509 (73%)
+[  3] 200.0-210.0 sec  3.51 MBytes  2.95 Mbits/sec   3.646 ms 5322/ 7829 (68%)
+[  3] 210.0-220.0 sec  4.39 MBytes  3.68 Mbits/sec   6.023 ms 5945/ 9073 (66%)
+[  3] 220.0-230.0 sec  3.69 MBytes  3.10 Mbits/sec   2.072 ms 5834/ 8469 (69%)
+[  3] 230.0-240.0 sec  3.99 MBytes  3.35 Mbits/sec   3.936 ms 5858/ 8707 (67%)
+[  3] 240.0-250.0 sec  3.64 MBytes  3.05 Mbits/sec   6.321 ms 5953/ 8546 (70%)
+[  3] 250.0-260.0 sec  4.04 MBytes  3.39 Mbits/sec   5.691 ms 5406/ 8286 (65%)
+[  3] 260.0-270.0 sec  3.79 MBytes  3.18 Mbits/sec   2.504 ms 5905/ 8608 (69%)
+[  3] 270.0-280.0 sec  3.50 MBytes  2.94 Mbits/sec   5.325 ms 5897/ 8395 (70%)
+[  3] 280.0-290.0 sec  4.93 MBytes  4.14 Mbits/sec   3.744 ms 5205/ 8723 (60%)
+[  3] 290.0-300.0 sec  4.77 MBytes  4.00 Mbits/sec   6.495 ms 4633/ 8033 (58%)
+[  3]  0.0-300.5 sec   125 MBytes  3.48 Mbits/sec  12.867 ms 166210/255101 (65%)
+read failed: Connection refused
+^Croot@arpsec04:~# 
+
+
+
+# usbfilter
+root@arpsec04:~# iperf -s -u -i10
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 10.137.11.77 port 5001 connected with 10.137.0.134 port 58949
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0-10.0 sec  3.56 MBytes  2.99 Mbits/sec   5.042 ms 5653/ 8192 (69%)
+[  3] 10.0-20.0 sec  3.20 MBytes  2.68 Mbits/sec  12.191 ms 6111/ 8394 (73%)
+[  3] 20.0-30.0 sec  3.61 MBytes  3.03 Mbits/sec   4.083 ms 5964/ 8539 (70%)
+[  3] 30.0-40.0 sec  4.06 MBytes  3.41 Mbits/sec   4.671 ms 5586/ 8484 (66%)
+[  3] 40.0-50.0 sec  3.99 MBytes  3.35 Mbits/sec   4.276 ms 5661/ 8509 (67%)
+[  3] 50.0-60.0 sec  3.71 MBytes  3.11 Mbits/sec   7.258 ms 5955/ 8602 (69%)
+[  3] 60.0-70.0 sec  4.11 MBytes  3.45 Mbits/sec   2.730 ms 5725/ 8656 (66%)
+[  3] 70.0-80.0 sec  4.69 MBytes  3.93 Mbits/sec   4.046 ms 4949/ 8292 (60%)
+[  3] 80.0-90.0 sec  3.64 MBytes  3.05 Mbits/sec   1.539 ms 6056/ 8651 (70%)
+[  3] 90.0-100.0 sec  4.24 MBytes  3.55 Mbits/sec   3.155 ms 5593/ 8615 (65%)
+[  3] 100.0-110.0 sec  4.31 MBytes  3.62 Mbits/sec   6.328 ms 5096/ 8171 (62%)
+[  3] 110.0-120.0 sec  3.93 MBytes  3.30 Mbits/sec   7.167 ms 5880/ 8686 (68%)
+[  3] 120.0-130.0 sec  3.97 MBytes  3.33 Mbits/sec   2.954 ms 5603/ 8432 (66%)
+[  3] 130.0-140.0 sec  4.19 MBytes  3.52 Mbits/sec   3.811 ms 5414/ 8406 (64%)
+[  3] 140.0-150.0 sec  3.79 MBytes  3.18 Mbits/sec   7.829 ms 5725/ 8430 (68%)
+[  3] 150.0-160.0 sec  4.43 MBytes  3.72 Mbits/sec   2.224 ms 5675/ 8837 (64%)
+[  3] 160.0-170.0 sec  3.85 MBytes  3.23 Mbits/sec   4.488 ms 5398/ 8147 (66%)
+[  3] 170.0-180.0 sec  3.39 MBytes  2.85 Mbits/sec   7.617 ms 6381/ 8801 (73%)
+[  3] 180.0-190.0 sec  3.45 MBytes  2.90 Mbits/sec   5.154 ms 5958/ 8421 (71%)
+[  3] 190.0-200.0 sec  4.09 MBytes  3.43 Mbits/sec   8.025 ms 5570/ 8484 (66%)
+[  3] 200.0-210.0 sec  4.25 MBytes  3.57 Mbits/sec   9.429 ms 5365/ 8399 (64%)
+[  3] 210.0-220.0 sec  3.50 MBytes  2.94 Mbits/sec  16.527 ms 6159/ 8655 (71%)
+[  3] 220.0-230.0 sec  3.43 MBytes  2.88 Mbits/sec   1.328 ms 6019/ 8464 (71%)
+[  3] 230.0-240.0 sec  3.90 MBytes  3.27 Mbits/sec   7.168 ms 5753/ 8533 (67%)
+[  3] 240.0-250.0 sec  4.25 MBytes  3.57 Mbits/sec   2.464 ms 5455/ 8489 (64%)
+[  3] 250.0-260.0 sec  3.98 MBytes  3.34 Mbits/sec   4.773 ms 5432/ 8268 (66%)
+[  3] 260.0-270.0 sec  4.24 MBytes  3.56 Mbits/sec   3.556 ms 5589/ 8612 (65%)
+[  3] 270.0-280.0 sec  4.00 MBytes  3.36 Mbits/sec   6.131 ms 5697/ 8552 (67%)
+[  3] 280.0-290.0 sec  3.99 MBytes  3.35 Mbits/sec   3.637 ms 5802/ 8647 (67%)
+[  3] 290.0-300.0 sec  3.27 MBytes  2.74 Mbits/sec   2.590 ms 6039/ 8368 (72%)
+[  3]  0.0-300.5 sec   117 MBytes  3.27 Mbits/sec   9.304 ms 171542/255102 (67%)
+^Croot@arpsec04:~# 
+
+
+

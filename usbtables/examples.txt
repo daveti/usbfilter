@@ -1,0 +1,23 @@
+# -i: ignore
+# -d: debug
+# -u: UT
+
+# Shutdown the microphone in the USB headset
+./usbtables -a logitech-headset -v ifnum=2,product="Logitech USB Headset",manufacturer=Logitech -k direction=1 -t drop
+
+# Customize your Teensy
+./usbtables -a teensy1 -v ifnum=2,manufacturer=Teensyduino,serial=1509380 -t drop
+./usbtables -a teensy2 -v ifnum=3,manufacturer=Teensyduino,serial=1509380 -t drop
+./usbtables -a teensy3 -v ifnum=4,manufacturer=Teensyduino,serial=1509380 -t drop
+
+# Only my keyboard can type
+./usbtables -a mymouse -v busnum=1,devnum=4,portnum=2,devpath=1.2,product="USB Optical Mouse",manufacturer=PixArt -k type=1 -t allow
+./usbtables -a mykeyboard -v busnum=1,devnum=3,portnum=1,devpath=1.1,product="Dell USB Entry Keyboard",manufacturer=DELL -k type=1 -t allow
+./usbtables -a noducky -k type=1 -t drop
+
+# Stop data exfiltration from host
+./usbtables -a nodataexfil -v manufacturer=Kingston -l name=block_scsi_write -t drop
+
+# Only Dave's Skype can use Webcam! (yeah, bite me!)
+./usbtables -a daveskype -o uid=1001,comm=skype -v serial=B4482A20 -t allow
+./usbtables -a nowebcam -v serial=B4482A20 -t drop

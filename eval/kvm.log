@@ -1,0 +1,11 @@
+# Config
+fallocate -l 8192M /var/lib/libvirt/images/provusb.img
+umount /media/daveti/whatever
+mount -t vfat /dev/sdb1 /mnt/iso -o umask=000
+virt-install -r 1024 --accelerate -n ProvUbuntu -f /var/lib/libvirt/images/provusb.img --cdrom /mnt/iso/ubuntu-1404-server-amd64-provusb.iso
+
+# Ubuntu
+daveti: total time: 463.254624 seconds
+
+# usbfilter
+daveti: total time: 441.925580 seconds

@@ -1,0 +1,47 @@
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh prolog.stats
+
+prolog.stats
+
+Average: 239.78
+Min: 128
+Max: 329
+Standard deviation: 73.1579
+Median: 288
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh usbtables.stats
+
+usbtables.stats
+
+Average: 5907.94
+Min: 5059
+Max: 6563
+Standard deviation: 339.348
+Median: 6092
+root@arpsec04:~/git/usbfilter/eval# 
+
+
+prolog100.stat
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh ./prolog100.stat
+
+./prolog100.stat
+
+Average: 251.69
+Min: 132
+Max: 485
+Standard deviation: 78.587
+Median: 298
+root@arpsec04:~/git/usbfilter/eval# 
+
+usbtables100.stats
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh usbtables100.stat
+
+usbtables100.stat
+
+Average: 5897.24
+Min: 4869
+Max: 6758
+Standard deviation: 373.42
+Median: 6083
+root@arpsec04:~/git/usbfilter/eval# 
+

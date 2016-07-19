@@ -1,0 +1,22 @@
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh filter.stats
+
+filter.stats
+
+Average: 2.55867
+Min: 2
+Max: 5
+Standard deviation: 0.508486
+Median: 3
+root@arpsec04:~/git/usbfilter/eval# 
+
+
+root@arpsec04:~/git/usbfilter/eval# ./stats.sh filter100.stat
+
+filter100.stat
+
+Average: 9.74142
+Min: 2
+Max: 15
+Standard deviation: 1.00089
+Median: 10
+root@arpsec04:~/git/usbfilter/eval# 

@@ -1,0 +1,13 @@
+# Mean thru
+
+# TCP
+
+ubuntu: 3.03
+usbfilter: 3.19
+usbfilter2: 2.86
+
+# UDP
+
+ubuntu2: 2.25
+ubuntu: 2.52
+usbfilter: 2.60

@@ -1,0 +1,14 @@
+# Make sure the Prolog engine work right
+# before we integrate it into usbtables!
+# Dec 30, 2015
+# daveti
+
+# Add a new rule
+asserta(usbfilter_rule(davetiTest,[-1,-1,-1,-1,-1,-1,-1],daveti,[-1,-1,-1],na,daveti,daveti,daveti,[-1,-1,-1,-1],daveti,1)).
+usbfilter_rule(X,_,_,_,_,_,_,_,_,_,_).
+
+# Check for conflict - false
+no_conflict(davetiTest2,[-1,-1,-1,-1,-1,-1,-1],daveti2,[-1,-1,-1],na,daveti,daveti,daveti,[-1,-1,-1,-1],daveti,1).
+
+# Check for conflict - true
+no_conflict(davetiTest3,[-1,-1,-1,-1,-1,-1,-1],daveti,[-1,-1,-1],daveti,daveti,daveti,daveti,[-1,-1,-1,-1],daveti,0).

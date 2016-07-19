@@ -1,0 +1,19 @@
+# arch	version		flavour		installedname			suffix	bdep
+amd64	3.13.0-54	generic		3.13.0-54-generic		-	
+
+i386	3.13.0-54	generic		3.13.0-54-generic		-	
+
+armhf	3.13.0-54	generic		3.13.0-54-generic		-
+
+armhf	3.13.0-54	generic-lpae		3.13.0-54-generic-lpae		-
+
+arm64	3.13.0-54	generic		3.13.0-54-generic		-
+
+ppc64el	3.13.0-54	generic		3.13.0-54-generic		-
+
+# Ports
+# arch	version		flavour		installedname			suffix	bdep
+powerpc	3.13.0-54	powerpc-smp	3.13.0-54-powerpc-smp	-	
+powerpc	3.13.0-54	powerpc64-smp	3.13.0-54-powerpc64-smp	-	
+powerpc	3.13.0-54	powerpc-e500	3.13.0-54-powerpc-e500	-	
+powerpc 3.13.0-54	powerpc-e500mc	3.13.0-54-powerpc-e500mc	-	

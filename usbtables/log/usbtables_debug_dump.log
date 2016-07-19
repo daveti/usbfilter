@@ -1,0 +1,218 @@
+usbtables - Info: debug mode enabled
+usbtables - Info: dump all the rules
+usbtables - Info: waiting for a new connection
+usbtables - Info: pid [3370]
+usbtables - Info: gud netlink socket init done
+usbtables_init_netlink: Info - send netlink init msg to the kernel
+usbtables_netlink_send: Info - send netlink msg to the kernel
+Dump the usbfilter nlmsg:
+opcode = [8]
+type = [1]
+behavior = [0]
+result = [0]
+Ack:
+opcode=8
+type=1
+behavior=0
+result=0
+action=0
+name=__usbfilter_kernel_ack__
+type=0
+pgid: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+usbtables - Info: got netlink init msg response from the kernel [__usbfilter_kernel_ack__]
+usbtables - Info: sending the command
+Dump the usbfilter nlmsg:
+opcode = [7]
+type = [0]
+behavior = [0]
+result = [0]
+Dmp: dump the rules from the kernel
+usbtables_netlink_send: Info - send netlink msg to the kernel
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Debug: got [1] msgs(packets) in the queue
+Dump the usbfilter nlmsg:
+opcode = [8]
+type = [1]
+behavior = [0]
+result = [0]
+Ack:
+opcode=8
+type=1
+behavior=0
+result=0
+action=1
+name=config_dmp
+type=0
+pgid: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+usbtables - Info: operation succeeded
+opcode=8
+type=1
+behavior=0
+result=0
+action=1
+name=config_dmp
+type=0
+pgid: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Debug: got [1] msgs(packets) in the queue
+Dump the usbfilter nlmsg:
+opcode = [8]
+type = [0]
+behavior = [0]
+result = [0]
+Ack:
+opcode=8
+type=0
+behavior=0
+result=0
+action=0
+name=kernel
+mod=(nil)
+valid=0
+pid=0
+ppid=1
+pgid=-1
+uid=-1
+euid=0
+gid=0
+egid=0
+comm=
+valid=0
+busnum=0
+devnum=0
+portnum=0
+devpath=
+product=
+manufacturer=
+serial=
+valid=0
+type=0
+direction=0
+endpoint=0
+address=0
+valid=0
+name=
+usbtables - Info: operation succeeded
+opcode=8
+type=0
+behavior=0
+result=0
+action=0
+name=kernel
+mod=(nil)
+valid=0
+pid=0
+ppid=1
+pgid=-1
+uid=-1
+euid=0
+gid=0
+egid=0
+comm=
+valid=0
+busnum=0
+devnum=0
+portnum=0
+devpath=
+product=
+manufacturer=
+serial=
+valid=0
+type=0
+direction=0
+endpoint=0
+address=0
+valid=0
+name=
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Debug: got [1] msgs(packets) in the queue
+Dump the usbfilter nlmsg:
+opcode = [8]
+type = [0]
+behavior = [0]
+result = [0]
+Ack:
+opcode=8
+type=0
+behavior=0
+result=0
+action=0
+name=system
+mod=(nil)
+valid=1
+pid=1953066601
+ppid=0
+pgid=0
+uid=0
+euid=1953724787
+gid=761556325
+egid=1986356341
+comm=d
+valid=25705
+busnum=1853189997
+devnum=116
+portnum=0
+devpath=
+product=
+manufacturer=
+serial=USB
+valid=0
+type=1819047278
+direction=0
+endpoint=0
+address=0
+valid=1819047278
+name=
+usbtables - Info: operation succeeded
+opcode=8
+type=0
+behavior=0
+result=0
+action=0
+name=system
+mod=(nil)
+valid=1
+pid=1953066601
+ppid=0
+pgid=0
+uid=0
+euid=1953724787
+gid=761556325
+egid=1986356341
+comm=d
+valid=25705
+busnum=1853189997
+devnum=116
+portnum=0
+devpath=
+product=
+manufacturer=
+serial=USB
+valid=0
+type=1819047278
+direction=0
+endpoint=0
+address=0
+valid=1819047278
+name=
+usbtables - Info: waiting for ack(s)
+usbtables - Info: received ack(s)
+usbtables - Debug: got [1] msgs(packets) in the queue
+Dump the usbfilter nlmsg:
+opcode = [8]
+type = [1]
+behavior = [0]
+result = [1]
+Ack:
+opcode=8
+type=1
+behavior=0
+result=1
+action=0
+name=
+type=0
+pgid: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+usbtables - Info: closing the current connection
